@@ -1,0 +1,1918 @@
+{
+  "texts": [
+    {
+      "id": "machado_capitu",
+      "title": "Dom Casmurro — Cap. CXLVIII",
+      "author": "Machado de Assis",
+      "year": 1899,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Agora, por que é que nenhuma dessas caprichosas me deu o mesmo trabalho que a Capitu? Talvez porque as outras não tinham os olhos de ressaca, que metiam o mundo dentro deles. Ou então porque não eram tão teimosas em crescer.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o sujeito da primeira frase.",
+          "target": "nenhuma dessas caprichosas",
+          "hint_highlight": [
+            "nenhuma",
+            "caprichosas"
+          ],
+          "explanation": "O sujeito é 'nenhuma dessas caprichosas' — expressão nominal que representa quem não deu trabalho ao narrador."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "O narrador compara Capitu com outras mulheres. Qual conclusão está implícita?",
+          "options": [
+            "Capitu era menos bonita que as outras",
+            "Capitu era mais difícil de esquecer ou ignorar",
+            "Capitu era mais obediente",
+            "Capitu era mais jovem"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "mesmo trabalho",
+            "teimosas em crescer"
+          ],
+          "explanation": "'Mesmo trabalho' indica que Capitu exigia mais envolvimento emocional. Os 'olhos de ressaca' reforçam seu poder de atração."
+        },
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique cada trecho: Fato ou Opinião do narrador?",
+          "items": [
+            {
+              "text": "os olhos de ressaca, que metiam o mundo dentro deles",
+              "answer": "opiniao"
+            },
+            {
+              "text": "não eram tão teimosas em crescer",
+              "answer": "opiniao"
+            }
+          ],
+          "explanation": "Ambos expressam a percepção subjetiva do narrador — não fatos verificáveis."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "Bentinho diz que Capitu 'não deu trabalho' para aprender a ler. O que essa observação revela sobre o narrador?",
+          "options": [
+            "Que Capitu era inteligente — elogio direto",
+            "Que o narrador esperava que ela desse trabalho — a ausência de esforço o surpreende e o incomoda",
+            "Que o narrador é um bom professor",
+            "Que a educação de mulheres era fácil na época"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "não deu trabalho",
+            "nenhuma dessas caprichosas"
+          ],
+          "explanation": "A surpresa implícita revela a expectativa contrária. Bentinho esperava dificuldade — porque esperava que Capitu fosse difícil. A admiração já contém o ciúme futuro."
+        }
+      ]
+    },
+    {
+      "id": "machado_espelho",
+      "title": "O Espelho",
+      "author": "Machado de Assis",
+      "year": 1882,
+      "level": "avancado",
+      "genre": "conto",
+      "content": "Cada criatura humana traz duas almas consigo: uma que olha de dentro para fora, outra que olha de fora para dentro. A primeira não tem consciência de si mesma; é a alma exterior. A segunda é a consciência.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O que distingue a 'alma exterior' da 'alma interior'?",
+          "options": [
+            "A alma exterior é visível; a interior é invisível",
+            "A alma exterior é como os outros nos veem; a interior é nossa autoconsciência",
+            "A alma exterior é mais forte",
+            "A alma exterior pertence ao corpo; a interior, à mente"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "fora para dentro",
+            "dentro para fora",
+            "consciência"
+          ],
+          "explanation": "Machado define 'alma exterior' como a imagem que projetamos, e 'alma interior' como nossa própria consciência."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o verbo principal da segunda frase.",
+          "target": "tem",
+          "hint_highlight": [
+            "não tem",
+            "consciência"
+          ],
+          "explanation": "'Tem' é o verbo principal — negado: 'não tem consciência de si mesma'."
+        }
+      ]
+    },
+    {
+      "id": "machado_memorias",
+      "title": "Memórias Póstumas de Brás Cubas — Cap. I",
+      "author": "Machado de Assis",
+      "year": 1881,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Algum tempo hesitei se devia abrir estas memórias pelo princípio ou pelo fim, isto é, se poria em primeiro lugar o meu nascimento ou a minha morte. Suposto o uso vulgar seja começar pelo nascimento, duas considerações me levaram a adotar diferente método: a primeira é que eu não sou propriamente um autor defunto, mas um defunto autor.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O narrador se define como 'defunto autor', não 'autor defunto'. Por que essa inversão importa?",
+          "options": [
+            "É apenas um jogo de palavras sem significado especial",
+            "Indica que a morte vem antes da autoria — ele escreve depois de morto",
+            "Sugere que ele é um autor famoso que morreu",
+            "Mostra que ele não gostava de escrever"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "defunto autor",
+            "autor defunto",
+            "morte"
+          ],
+          "explanation": "'Autor defunto' é um autor que morreu. 'Defunto autor' é um morto que escreve. Machado inaugura um narrador póstumo — perspectiva radicalmente nova no romance brasileiro."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom predominante desta abertura?",
+          "options": [
+            "Melancolia e tristeza pela morte",
+            "Ironia e distanciamento — o narrador trata a própria morte com leveza",
+            "Indignação com a condição humana",
+            "Entusiasmo pela vida que teve"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "hesitei",
+            "defunto autor"
+          ],
+          "explanation": "Brás Cubas discute se começa pela morte ou pelo nascimento com a leveza de quem escolhe a ordem de uma lista. A ironia está na frieza diante do próprio fim."
+        }
+      ]
+    },
+    {
+      "id": "machado_missa",
+      "title": "Missa do Galo",
+      "author": "Machado de Assis",
+      "year": 1893,
+      "level": "intermediario",
+      "genre": "conto",
+      "content": "Nunca pude entender a conversação que tive com uma senhora, há muitos anos, contando eu dezessete, ela trinta. Era a noite de Natal. Tendo ajustado com um vizinho ir à missa do galo, preferi não dormir, e para isso fui sentar com ela na sala de visitas.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Encontre o adjunto adverbial de tempo na segunda frase.",
+          "target": "a noite de Natal",
+          "hint_highlight": [
+            "noite de Natal"
+          ],
+          "explanation": "'Era a noite de Natal' situa a cena no tempo — adjunto adverbial que contextualiza as ações seguintes."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "O narrador diz que 'nunca pude entender' a conversa. O que isso sugere?",
+          "options": [
+            "A conversa foi em outro idioma",
+            "O evento teve uma ambiguidade que o narrador não sabe nomear",
+            "A senhora falava muito baixo",
+            "O narrador era jovem demais para entender"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "nunca pude entender",
+            "dezessete",
+            "trinta"
+          ],
+          "explanation": "A diferença de idade e o contexto sugerem tensão implícita. O narrador adulto ainda não consegue nomear o que aconteceu."
+        }
+      ]
+    },
+    {
+      "id": "clarice_amor",
+      "title": "Amor",
+      "author": "Clarice Lispector",
+      "year": 1952,
+      "level": "avancado",
+      "genre": "conto",
+      "content": "Um pouco cansada, com as compras deformando o novo saco de tricô, Ana subiu no bonde. Depositou o volume no colo e o bonde começou a andar. Recostou-se então satisfeita, mãe de família, mulher de lar, refeita e tranquila.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Encontre todos os verbos de ação neste trecho.",
+          "targets": [
+            "subiu",
+            "depositou",
+            "começou",
+            "recostou-se"
+          ],
+          "hint_highlight": [
+            "subiu",
+            "depositou",
+            "começou",
+            "recostou"
+          ],
+          "explanation": "Cada verbo marca uma ação sequencial. A sequência cria um ritmo cotidiano, quase mecânico — propositalmente."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom predominante?",
+          "options": [
+            "Alegria intensa",
+            "Tensão e conflito",
+            "Tranquilidade rotineira, quase entorpecida",
+            "Tristeza e melancolia"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "cansada",
+            "satisfeita",
+            "tranquila"
+          ],
+          "explanation": "'Satisfeita', 'tranquila', 'refeita' indicam paz que beira o entorpecimento. Clarice descreve uma mulher que se tornou sua própria função."
+        }
+      ]
+    },
+    {
+      "id": "clarice_hora",
+      "title": "A Hora da Estrela — abertura",
+      "author": "Clarice Lispector",
+      "year": 1977,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Tudo no mundo começou com um sim. Uma molécula disse sim a outra molécula e nasceu a vida. Mas antes da pré-história havia a pré-história da pré-história e havia o nunca e havia o sim. Sempre houve. Não sei o quê, mas sei que o universo jamais começou.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O que a repetição da palavra 'sim' comunica?",
+          "options": [
+            "A narradora concorda com tudo que foi dito antes",
+            "O 'sim' é apresentado como força primordial — origem de toda existência",
+            "A narradora está respondendo a uma pergunta implícita",
+            "Indica que o texto será sobre biologia"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "sim",
+            "começou",
+            "vida"
+          ],
+          "explanation": "Clarice usa 'sim' como conceito filosófico — o consentimento original que gerou a existência. É uma abertura cosmológica."
+        },
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique cada afirmação.",
+          "items": [
+            {
+              "text": "Tudo no mundo começou com um sim",
+              "answer": "opiniao"
+            },
+            {
+              "text": "Uma molécula disse sim a outra molécula e nasceu a vida",
+              "answer": "opiniao"
+            }
+          ],
+          "explanation": "Ambas são afirmações filosóficas e metafóricas — não declarações científicas verificáveis."
+        }
+      ]
+    },
+    {
+      "id": "clarice_galinha",
+      "title": "Laços de Família — A Galinha",
+      "author": "Clarice Lispector",
+      "year": 1960,
+      "level": "intermediario",
+      "genre": "conto",
+      "content": "Era uma galinha de domingo. Ainda viva porque não passava de nove horas da manhã. Parecia calma. Desde sábado encolhera num canto da cozinha. Não olhava para ninguém, ninguém olhava para ela.",
+      "exercises": [
+        {
+          "type": "tom",
+          "instruction": "Como o narrador descreve a galinha? Qual efeito isso cria?",
+          "options": [
+            "Com frieza clínica",
+            "Com humor — a galinha é cômica",
+            "Com humanização sutil — a galinha parece ter consciência do destino",
+            "Com admiração — ela é bela"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "calma",
+            "encolhera",
+            "não olhava"
+          ],
+          "explanation": "'Parecia calma', 'encolhera num canto' — verbos de comportamento humano aplicados à galinha. Clarice cria empatia sem sentimentalismo."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "'Não olhava para ninguém, ninguém olhava para ela' tem uma estrutura especial. Qual é ela?",
+          "options": [
+            "Pergunta retórica",
+            "Quiasmo — a frase se inverte e se espelha",
+            "Comparação entre dois sujeitos",
+            "Enumeração de fatos"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não olhava para ninguém",
+            "ninguém olhava para ela"
+          ],
+          "explanation": "Quiasmo: elementos de uma frase repetidos em ordem inversa. A:B / B:A. O espelhamento reforça o isolamento mútuo."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "A galinha é descrita como 'burra, tímida e livre'. O que a coexistência desses três adjetivos sugere sobre o narrador?",
+          "options": [
+            "Que o narrador admira a galinha",
+            "Que o narrador projeta na galinha uma liberdade que ele próprio não tem — e a deprecia por isso",
+            "Que a galinha é personagem principal do conto",
+            "Que Clarice usou adjetivos ao acaso"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "burra",
+            "tímida",
+            "livre"
+          ],
+          "explanation": "A combinação é paradoxal: 'burra e tímida' depreciam, 'livre' eleva. O narrador não aguenta a liberdade da galinha sem diminuí-la — inferência sobre quem observa, não sobre o que é observado."
+        }
+      ]
+    },
+    {
+      "id": "lima_triste",
+      "title": "Triste Fim de Policarpo Quaresma",
+      "author": "Lima Barreto",
+      "year": 1915,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "Havia na figura de Policarpo Quaresma qualquer coisa de D. Quixote. Não a loucura, mas uma convicção. Ele acreditava no Brasil.",
+      "exercises": [
+        {
+          "type": "inferencia",
+          "instruction": "Que qualidade o narrador associa a D. Quixote?",
+          "options": [
+            "Covardia",
+            "Idealismo ingênuo diante da realidade",
+            "Inteligência prática",
+            "Riqueza material"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "loucura",
+            "convicção",
+            "acreditava"
+          ],
+          "explanation": "D. Quixote é símbolo do idealismo que choca com a realidade. Lima Barreto usa essa referência para preparar a trajetória trágica de Quaresma."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "'Não a loucura, mas uma convicção' — o que o narrador está fazendo?",
+          "options": [
+            "Dizendo que Quaresma era mentalmente são",
+            "Refinando a comparação com D. Quixote, especificando qual aspecto é válido",
+            "Contradizendo o que disse antes",
+            "Elogiando Quaresma"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não a loucura",
+            "mas uma convicção"
+          ],
+          "explanation": "Epanortose — o narrador se corrige para ser mais preciso. Quer a semelhança com D. Quixote, mas não o rótulo de louco."
+        }
+      ]
+    },
+    {
+      "id": "lima_isaias",
+      "title": "Recordações do Escrivão Isaías Caminha",
+      "author": "Lima Barreto",
+      "year": 1909,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Fui percebendo que a minha cor fechava-me muitas portas. Não era bem a cor, era a situação que ela representava. Havia um preconceito que eu não podia combater com argumentos, porque ele não era racional — era instintivo.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O narrador distingue 'a cor' da 'situação que ela representava'. O que essa distinção revela?",
+          "options": [
+            "Que o racismo é apenas estético",
+            "Que o racismo é estrutural — a cor opera como marcador de posição social",
+            "Que o narrador não acreditava no racismo",
+            "Que a situação era de pobreza, não de raça"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "não era bem a cor",
+            "situação que ela representava"
+          ],
+          "explanation": "Lima Barreto antecipa o que o século XX chamaria de racismo estrutural: não é a cor em si, mas o conjunto de desvantagens sociais que ela carrega."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "'Não era racional — era instintivo.' Qual recurso o narrador usa?",
+          "options": [
+            "Comparação com outro preconceito",
+            "Exemplo concreto",
+            "Antítese — dois opostos que definem o fenômeno por contraste",
+            "Pergunta retórica"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "não era racional",
+            "era instintivo"
+          ],
+          "explanation": "Antítese: dois opostos definem o preconceito pelo que ele não é antes de dizer o que é."
+        }
+      ]
+    },
+    {
+      "id": "alencar_iracema",
+      "title": "Iracema — Capítulo I",
+      "author": "José de Alencar",
+      "year": 1865,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "Além, muito além daquela serra, que ainda azula no horizonte, nasceu Iracema. Iracema, a virgem dos lábios de mel, que tinha os cabelos mais negros que a asa da graúna, e mais longos que o talhe esbelto de palmeira.",
+      "exercises": [
+        {
+          "type": "figuras",
+          "instruction": "Identifique as comparações (símiles) usadas para descrever Iracema.",
+          "targets": [
+            "mais negros que a asa da graúna",
+            "mais longos que o talhe esbelto de palmeira"
+          ],
+          "hint_highlight": [
+            "que a asa",
+            "que o talhe"
+          ],
+          "explanation": "Símiles — comparações explícitas usando 'mais... que'. Alencar usa elementos da natureza brasileira para descrever a personagem."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "Por que Alencar descreve Iracema com elementos da natureza brasileira?",
+          "options": [
+            "Porque não havia outros elementos disponíveis",
+            "Para mostrar que Iracema é parte inseparável da terra — ela é a própria natureza do Brasil",
+            "Para mostrar que ela era selvagem",
+            "Para facilitar a compreensão dos leitores europeus"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "graúna",
+            "palmeira",
+            "serra"
+          ],
+          "explanation": "O projeto de Alencar era criar uma identidade nacional. Descrever a índia com flora e fauna locais funde personagem e terra — Iracema é alegoria do Brasil."
+        }
+      ]
+    },
+    {
+      "id": "alencar_senhora",
+      "title": "Senhora — Parte I",
+      "author": "José de Alencar",
+      "year": 1875,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "Havia no Rio de Janeiro, em 1845, uma moça a quem o povo com a sua habitual franqueza apelidara a Aurélia. O cognome não era gratuito; havia em Aurélia qualquer coisa de áureo, de rico e de altivo, que justificava plenamente a alcunha.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o sujeito da primeira frase.",
+          "target": "uma moça",
+          "hint_highlight": [
+            "uma moça",
+            "apelidara"
+          ],
+          "explanation": "'Uma moça' é o sujeito — quem recebeu o apelido. O sujeito está posposto ao verbo, comum em construções com 'havia'."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "'Aurélia' vem do latim 'aureus' (ouro). Como isso se conecta à descrição?",
+          "options": [
+            "Ela gostava de joias de ouro",
+            "O nome carrega o significado de riqueza e brilho — exatamente o que o narrador vê nela",
+            "Ela tinha cabelos dourados",
+            "O narrador não faz nenhuma conexão com o nome"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "áureo",
+            "rico",
+            "altivo"
+          ],
+          "explanation": "Alencar escolhe o nome conscientemente: 'áureo' (da mesma raiz de Aurélia) aparece na descrição. O nome funciona como programa — anuncia o caráter da personagem."
+        }
+      ]
+    },
+    {
+      "id": "camoes_luisiadas",
+      "title": "Os Lusíadas — Canto I, Estrofe 1",
+      "author": "Luís de Camões",
+      "year": 1572,
+      "level": "avancado",
+      "genre": "poesia",
+      "content": "As armas e os barões assinalados,\nQue da ocidental praia lusitana,\nPor mares nunca de antes navegados,\nPassaram ainda além da Taprobana,",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Camões abre com 'As armas e os barões'. O que cada termo representa?",
+          "options": [
+            "Armas = soldados; barões = nobres ricos",
+            "Armas = feitos guerreiros; barões = heróis notáveis — juntos representam guerra e glória",
+            "Armas = navios; barões = reis",
+            "São apenas palavras de abertura"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "armas",
+            "barões",
+            "assinalados"
+          ],
+          "explanation": "Camões imita Virgílio ('Arma virumque cano'). 'Armas' = feitos militares; 'barões assinalados' = homens notáveis. O poema celebrará tanto a ação quanto os homens."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Identifique a figura de linguagem em 'por mares nunca de antes navegados'.",
+          "options": [
+            "Metáfora",
+            "Hipérbole",
+            "Perífrase — descreve os mares novos sem nomeá-los diretamente",
+            "Personificação"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "mares nunca de antes navegados"
+          ],
+          "explanation": "Perífrase: descrever algo sem nomeá-lo. Em vez de 'Oceano Índico', Camões descreve pela característica extraordinária: nunca tinham sido navegados."
+        }
+      ]
+    },
+    {
+      "id": "camoes_soneto",
+      "title": "Transforma-se o amador na coisa amada",
+      "author": "Luís de Camões",
+      "year": 1595,
+      "level": "avancado",
+      "genre": "poesia",
+      "content": "Transforma-se o amador na coisa amada,\nPor virtude do muito imaginar;\nNão tenho, logo, mais que desejar,\nPois em mim tenho a parte desejada.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O que Camões quer dizer com 'transforma-se o amador na coisa amada'?",
+          "options": [
+            "O amante fisicamente muda de forma",
+            "Quem ama tanto imagina o ser amado que passa a carregá-lo dentro de si",
+            "O amor transforma negativamente quem ama",
+            "O amante torna-se semelhante ao amado em comportamento"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "imaginar",
+            "em mim tenho",
+            "desejada"
+          ],
+          "explanation": "A imaginação intensa faz com que o amado exista dentro do amante — portanto, o amante já possui o objeto do desejo em si mesmo."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Qual conectivo lógico Camões usa na terceira linha?",
+          "options": [
+            "'Pois' — indica causa",
+            "'Logo' — indica conclusão lógica",
+            "'Mas' — indica oposição",
+            "'Porque' — indica explicação"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "logo",
+            "mais que desejar"
+          ],
+          "explanation": "'Logo' é conectivo de conclusão silogística. Camões estrutura o soneto como argumento lógico: premissa → conclusão → confirmação."
+        }
+      ]
+    },
+    {
+      "id": "pessoa_tabacaria",
+      "title": "Tabacaria",
+      "author": "Fernando Pessoa (Álvaro de Campos)",
+      "year": 1928,
+      "level": "avancado",
+      "genre": "poesia",
+      "content": "Não sou nada.\nNunca serei nada.\nNão posso querer ser nada.\nÀ parte isso, tenho em mim todos os sonhos do mundo.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Três linhas negam tudo. A quarta afirma tudo. O que esse contraste cria?",
+          "options": [
+            "Uma contradição sem sentido",
+            "Uma tensão entre o eu empírico (nada) e o eu imaginativo (tudo) — a identidade como paradoxo",
+            "Um erro de lógica do poeta",
+            "A ideia de que sonhos compensam a realidade"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não sou nada",
+            "todos os sonhos do mundo"
+          ],
+          "explanation": "Campos coloca em confronto o 'eu' real (nulo) e o 'eu' imaginativo (infinito). O paradoxo é a condição do poeta moderno: vazio existencialmente, ilimitado imaginativamente."
+        },
+        {
+          "type": "figuras",
+          "instruction": "Como se chama a figura de linguagem das três primeiras linhas?",
+          "options": [
+            "Anáfora — repetição de termos no início de versos consecutivos",
+            "Metáfora",
+            "Hipérbole",
+            "Eufemismo"
+          ],
+          "correct": 0,
+          "hint_highlight": [
+            "Não sou",
+            "Nunca serei",
+            "Não posso"
+          ],
+          "explanation": "Anáfora: repetição de palavra no início de versos consecutivos. A negação repetida cria ritmo de acumulação e intensidade."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "O poema começa 'Não sou nada. / Nunca serei nada.' Mas o verso seguinte é 'Não posso querer ser nada.' O que a impossibilidade de querer o nada revela?",
+          "options": [
+            "Que o poeta mente — no fundo quer ser alguém",
+            "Que existe um desejo irrepreensível de existir que o poeta não consegue anular, mesmo querendo",
+            "Que Campos é mais pessimista que Pessoa",
+            "Que o poeta confunde nihilismo com depressão"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não posso querer ser nada"
+          ],
+          "explanation": "A impossibilidade de querer o nada é a afirmação implícita do desejo de ser. O poema nega tudo na superfície, mas a estrutura lógica da negação pressupõe algo que não consegue se extinguir."
+        }
+      ]
+    },
+    {
+      "id": "pessoa_caeiro",
+      "title": "Poema em Linha Reta (Alberto Caeiro)",
+      "author": "Fernando Pessoa (Alberto Caeiro)",
+      "year": 1914,
+      "level": "intermediario",
+      "genre": "poesia",
+      "content": "Nunca guardei rebanhos,\nMas é como se os guardasse.\nMinha alma é como um pastor,\nConhece o vento e o sol\nE anda pela mão das Estações\nA seguir e a olhar.",
+      "exercises": [
+        {
+          "type": "figuras",
+          "instruction": "Identifique a metáfora central deste trecho.",
+          "options": [
+            "A comparação do vento com o sol",
+            "A alma descrita como um pastor que guarda rebanhos",
+            "As estações do ano personificadas",
+            "O poeta comparando-se a um animal"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "alma é como um pastor"
+          ],
+          "explanation": "'Minha alma é como um pastor' — a alma tem a paciência e o movimento lento de quem cuida de rebanhos. Caeiro usa a figura para expressar sua filosofia de contemplação simples."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "Caeiro diz que nunca guardou rebanhos 'mas é como se os guardasse'. O que isso revela?",
+          "options": [
+            "Ele mente sobre sua experiência",
+            "A experiência interior tem a mesma validade que a real — contemplar é tão real quanto agir",
+            "Ele deseja ter sido pastor",
+            "Ele compara a poesia ao pastoreio"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "é como se os guardasse",
+            "alma"
+          ],
+          "explanation": "Caeiro defende que a percepção direta da natureza é suficiente. Não é necessário ter sido pastor — basta ter a atenção e calma de um pastor."
+        }
+      ]
+    },
+    {
+      "id": "graciliano_vidas",
+      "title": "Vidas Secas — Fabiano",
+      "author": "Graciliano Ramos",
+      "year": 1938,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Fabiano, você é um bicho. Isso mesmo, um bicho. Não sabia falar direito, mas era forte. Tinha o costume de resmungar frases, esquecer as palavras, misturar tudo. Às vezes dirigia-se às pessoas, mas logo se arrependia.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O narrador descreve Fabiano como 'um bicho'. Isso é insulto ou reflexo de sua condição social?",
+          "options": [
+            "É um insulto do narrador",
+            "É a forma como o próprio Fabiano se vê — internalização da opressão social",
+            "É comparação literária sem juízo de valor",
+            "É a visão dos fazendeiros"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "você é um bicho",
+            "não sabia falar",
+            "forte"
+          ],
+          "explanation": "Graciliano usa discurso indireto livre — voz do narrador e de Fabiano se misturam. 'Você é um bicho' é o que Fabiano pensa de si mesmo. É a tragédia da consciência de classe internalizada."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom do narrador ao descrever as limitações de Fabiano?",
+          "options": [
+            "Zombaria",
+            "Distância seca e clínica, sem sentimentalismo — que paradoxalmente cria empatia",
+            "Compaixão explícita e emotiva",
+            "Indiferença total"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "resmungar",
+            "esquecer",
+            "misturar tudo"
+          ],
+          "explanation": "Graciliano descreve sem adjetivos emocionais. A secura do estilo espelha a secura do sertão. Essa distância calculada é mais poderosa que qualquer lamento."
+        }
+      ]
+    },
+    {
+      "id": "graciliano_infancia",
+      "title": "Infância",
+      "author": "Graciliano Ramos",
+      "year": 1945,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "As primeiras recordações são da fazenda. Não me lembro de nada anterior a isso. Parece que nasci ali, naquelas terras áridas, naquele silêncio imenso. Meu pai era duro. Minha mãe era dura. O mundo era duro.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique a figura de linguagem em 'Meu pai era duro. Minha mãe era dura. O mundo era duro.'",
+          "options": [
+            "Hipérbole",
+            "Gradação — a dureza aumenta do particular ao universal",
+            "Antítese",
+            "Metonímia"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Meu pai",
+            "Minha mãe",
+            "O mundo"
+          ],
+          "explanation": "Gradação ascendente: pai (indivíduo) → mãe (indivíduo) → mundo (totalidade). A dureza se expande do mais próximo ao mais amplo — sem escape."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual recurso de estilo Graciliano usa para comunicar a dureza da infância?",
+          "options": [
+            "Frases longas e complexas",
+            "Vocabulário rico e poético",
+            "Frases curtas e declarativas que reproduzem a secura da memória",
+            "Uso intenso de adjetivos negativos"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "Meu pai era duro",
+            "O mundo era duro"
+          ],
+          "explanation": "Cada frase tem sujeito + verbo + predicativo. Sem subordinadas, sem explicações. A forma espelha o conteúdo: dura, seca, sem adornos."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "Graciliano escreve em primeira pessoa sobre a infância sofrida. O que o estilo seco e sem adornos comunica além do conteúdo?",
+          "options": [
+            "Que o autor não sabe usar figuras de linguagem",
+            "Que a dureza da forma imita a dureza da experiência — conteúdo e forma são inseparáveis",
+            "Que memórias de infância são sempre simples",
+            "Que o narrador não quer despertar comoção"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "era duro",
+            "era dura",
+            "era duro"
+          ],
+          "explanation": "Em Graciliano, a forma é argumento. Escrever sem ornamentos sobre uma infância sem ornamentos é uma escolha política e estética ao mesmo tempo. A crueza do estilo é a crueza do mundo."
+        }
+      ]
+    },
+    {
+      "id": "drummond_gauche",
+      "title": "Poema de Sete Faces",
+      "author": "Carlos Drummond de Andrade",
+      "year": 1930,
+      "level": "intermediario",
+      "genre": "poesia",
+      "content": "Quando nasci, um anjo torto\ndesses que vivem na sombra\ndisse: Vai, Carlos! ser gauche na vida.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O que significa o anjo dizer que Carlos vai 'ser gauche na vida'?",
+          "options": [
+            "Que ele seria destro e habilidoso",
+            "Que ele viveria deslocado, fora do lugar, torto em relação ao mundo",
+            "Que ele seria muito tímido",
+            "Que ele teria dificuldades financeiras"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "anjo torto",
+            "sombra",
+            "gauche"
+          ],
+          "explanation": "'Gauche' em francês significa 'esquerdo' no sentido de desajeitado, deslocado. O destino de Drummond é ser o que não se encaixa."
+        },
+        {
+          "type": "figuras",
+          "instruction": "O que representa o 'anjo torto que vive na sombra'?",
+          "options": [
+            "Um ser sobrenatural que o poeta viu",
+            "Uma força negativa que traz má sorte",
+            "O destino ou o impulso poético — algo que age sobre o poeta sem que ele controle",
+            "Uma referência religiosa ao demônio"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "anjo torto",
+            "sombra",
+            "disse"
+          ],
+          "explanation": "O anjo é alegoria do destino ou da vocação poética. 'Torto' e 'sombra' o diferenciam dos anjos convencionais — não é protetor, é formador."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "O poema diz 'No meio do caminho tinha uma pedra'. A pedra nunca é explicada. O que a ausência de explicação produz?",
+          "options": [
+            "Ambiguidade proposital — a pedra é qualquer obstáculo que cada leitor projeta",
+            "Erro de omissão — Drummond deveria ter explicado",
+            "Referência a um evento histórico específico",
+            "Recurso para tornar o poema mais curto"
+          ],
+          "correct": 0,
+          "hint_highlight": [
+            "tinha uma pedra",
+            "tinha uma pedra"
+          ],
+          "explanation": "A pedra sem referente fixo é uma armadilha semântica produtiva. Cada leitor preenche com seu próprio obstáculo — guerra, perda, fracasso. A repetição reforça a opacidade intencional."
+        }
+      ]
+    },
+    {
+      "id": "drummond_jose",
+      "title": "José",
+      "author": "Carlos Drummond de Andrade",
+      "year": 1942,
+      "level": "basico",
+      "genre": "poesia",
+      "content": "E agora, José?\nA festa acabou,\na luz apagou,\no povo sumiu,\na noite esfriou,\ne agora, José?\ne agora, você?",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Quem é José neste poema?",
+          "options": [
+            "Um personagem histórico específico",
+            "Uma pessoa qualquer — o nome comum representa o homem diante do vazio",
+            "O próprio Drummond",
+            "Um político da época"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "José",
+            "você"
+          ],
+          "explanation": "José é o nome mais comum do Brasil — deliberado. Drummond transforma a crise individual em crise universal."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "O que os verbos 'acabou', 'apagou', 'sumiu', 'esfriou' têm em comum?",
+          "options": [
+            "São verbos de movimento físico",
+            "São todos verbos no passado que indicam perda e desaparecimento",
+            "São verbos no futuro indicando esperança",
+            "São verbos de ação violenta"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "acabou",
+            "apagou",
+            "sumiu",
+            "esfriou"
+          ],
+          "explanation": "Todos no pretérito perfeito, todos indicando término e desaparecimento. A acumulação cria ritmo de esvaziamento progressivo."
+        }
+      ]
+    },
+    {
+      "id": "rosa_grande_sertao",
+      "title": "Grande Sertão: Veredas — abertura",
+      "author": "João Guimarães Rosa",
+      "year": 1956,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Nonada. Tiros que o senhor ouviu foram de briga de homem não, Deus esteja. Alvejei mira em árvore, no quintal, no baixo do córrego. Por entreter. O diabo existe e não existe? Dou o dito. Abrenúncio.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Rosa abre com 'Nonada' (palavra arcaica que significa 'nada'). O que esse começo comunica?",
+          "options": [
+            "O romance não tem enredo importante",
+            "O narrador começa uma conversa já em andamento — o leitor entra no meio",
+            "O autor declara que a obra não tem valor",
+            "É uma saudação regional"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Nonada",
+            "que o senhor ouviu"
+          ],
+          "explanation": "'Nonada' e 'que o senhor ouviu' indicam que Riobaldo já está conversando. Rosa cria a ilusão de uma conversa oral em andamento."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é a característica mais marcante da linguagem de Rosa neste trecho?",
+          "options": [
+            "Clareza e precisão científica",
+            "Linguagem que mistura arcaísmos, regionalismos e neologismos",
+            "Estilo jornalístico direto",
+            "Português europeu clássico"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Nonada",
+            "Abrenúncio",
+            "Alvejei mira"
+          ],
+          "explanation": "Rosa inventa uma língua: 'Nonada' é arcaísmo, 'Alvejei mira' é construção regional, 'Abrenúncio' é fórmula religiosa latinizada."
+        }
+      ]
+    },
+    {
+      "id": "eça_padre_amaro",
+      "title": "O Crime do Padre Amaro — Cap. I",
+      "author": "Eça de Queirós",
+      "year": 1875,
+      "level": "avancado",
+      "genre": "romance",
+      "content": "Amaro Vieira tinha vinte e seis anos, era bem feito de corpo, com a tez morena e os olhos negros muito vivos. Havia nele esse ar eclesiástico que é uma forma de hipocrisia social: a gravidade aprendida, o olhar de misericórdia comprada, a voz untada de mel.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Como Eça descreve o 'ar eclesiástico' do padre? O que está sugerindo?",
+          "options": [
+            "Que padres são naturalmente santos",
+            "Que o comportamento religioso é uma performance aprendida, não virtude genuína",
+            "Que Amaro era um padre exemplar",
+            "Que a aparência do padre impressionava as pessoas"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "hipocrisia social",
+            "gravidade aprendida",
+            "misericórdia comprada",
+            "voz untada de mel"
+          ],
+          "explanation": "Cada adjetivo é uma condenação: 'aprendida', 'comprada', 'untada'. Eça usa a descrição física para revelar caráter moral — aparência de virtude esconde sua ausência."
+        },
+        {
+          "type": "figuras",
+          "instruction": "'Voz untada de mel' — qual figura de linguagem é essa?",
+          "options": [
+            "Comparação",
+            "Metáfora sinestésica — mistura sentido auditivo (voz) com tato/paladar (untada, mel)",
+            "Hipérbole",
+            "Personificação"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "voz untada de mel"
+          ],
+          "explanation": "Sinestesia: mistura de sensações de sentidos diferentes. 'Voz' é auditiva; 'untada de mel' é tátil e gustativa. Cria a imagem de uma voz artificialmente suave e falsa."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "Eça descreve a voz do padre como 'untada de mel'. O que esse elogio velado comunica?",
+          "options": [
+            "Que o padre tem uma voz bonita e o narrador o admira",
+            "Que a suavidade da voz é artificial — mel é doce demais, untar é cobrir para esconder",
+            "Que o mel é símbolo religioso positivo",
+            "Que Eça admirava a retórica clerical"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "voz untada de mel"
+          ],
+          "explanation": "O verbo 'untar' carrega conotação negativa — unta-se para lubrificar, para cobrir uma superfície, para enganar. A sinestesia é bela, mas o veneno está no verbo: a doçura é aplicada, não genuína."
+        }
+      ]
+    },
+    {
+      "id": "eça_primo_basilio",
+      "title": "O Primo Basílio — Cap. I",
+      "author": "Eça de Queirós",
+      "year": 1878,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "Luísa estava sozinha, lendo num canapé, quando Juliana entrou. Ergueu os olhos do livro, viu a criada parada à porta e disse apenas: — Que é? A criada trazia nas mãos um embrulho.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Quantas personagens aparecem? Identifique-as.",
+          "targets": [
+            "Luísa",
+            "Juliana"
+          ],
+          "hint_highlight": [
+            "Luísa",
+            "Juliana",
+            "criada"
+          ],
+          "explanation": "Duas personagens: Luísa (a patroa, lendo) e Juliana (a criada). A hierarquia social está marcada nos papéis."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "O diálogo é reduzido a '— Que é?' O que esse mínimo comunica?",
+          "options": [
+            "Que elas têm relação amigável",
+            "Que Luísa é tímida",
+            "Que a relação é hierárquica — a patroa não precisa de cortesia com a criada",
+            "Que Luísa estava preocupada com o embrulho"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "disse apenas",
+            "Que é"
+          ],
+          "explanation": "'Disse apenas' — o mínimo. Sem cumprimento, sem nome, usando a interrogação mais curta possível. A brevidade é marcação de poder social."
+        }
+      ]
+    },
+    {
+      "id": "verissimo_incidente",
+      "title": "Incidente em Antares",
+      "author": "Érico Veríssimo",
+      "year": 1971,
+      "level": "intermediario",
+      "genre": "romance",
+      "content": "Os mortos saíram de seus caixões e foram para a praça central da cidade. Ninguém soube dizer por quê. Os vivos olharam para os mortos e os mortos olharam para os vivos, e por muito tempo ninguém disse nada.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Os mortos ficam em silêncio. O que esse silêncio representa numa ditadura militar (1971)?",
+          "options": [
+            "Os mortos não sabem falar após a morte",
+            "O silêncio é uma acusação — os mortos confrontam os vivos sem precisar de palavras",
+            "A cena é apenas fantástica, sem significado político",
+            "Os mortos têm medo dos vivos"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "os mortos olharam para os vivos",
+            "ninguém disse nada"
+          ],
+          "explanation": "Os mortos que voltam e confrontam os vivos em silêncio são alegoria das vítimas do regime. O silêncio é mais acusatório que qualquer discurso."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "'Os vivos olharam para os mortos e os mortos olharam para os vivos' — qual figura de linguagem?",
+          "options": [
+            "Anáfora",
+            "Quiasmo — inversão espelhada dos elementos",
+            "Hipérbole",
+            "Metáfora"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "vivos olharam para os mortos",
+            "mortos olharam para os vivos"
+          ],
+          "explanation": "Quiasmo: A olha para B / B olha para A. A inversão cria simetria e tensão — vivos e mortos se espelham, igualados pelo olhar."
+        }
+      ]
+    },
+    {
+      "id": "clarice_felicidade",
+      "title": "Felicidade Clandestina",
+      "author": "Clarice Lispector",
+      "year": 1971,
+      "level": "basico",
+      "genre": "conto",
+      "content": "Ela era gorda, baixa, sardenta e de cabelos excessivamente crespos, meio arruivados. Tinha um busto enorme, enquanto nós todas ainda éramos achatadas. Como se não bastasse, enchia os dois bolsos da blusa, por cima do busto opulento, com balas.",
+      "exercises": [
+        {
+          "type": "tom",
+          "instruction": "Como a narradora descreve a menina? Qual é o tom?",
+          "options": [
+            "Admiração e carinho",
+            "Crueldade disfarçada de descrição objetiva — cada detalhe escolhido para ridicularizar",
+            "Indiferença científica",
+            "Compaixão pela colega diferente"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "gorda",
+            "excessivamente",
+            "como se não bastasse",
+            "opulento"
+          ],
+          "explanation": "A narradora acumula adjetivos negativos e usa 'como se não bastasse' — indicando que cada característica é um defeito adicional. A crueldade infantil está mimetizada na forma."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Qual é a função de 'Como se não bastasse'?",
+          "options": [
+            "Indica uma concessão — algo positivo após algo negativo",
+            "Indica acumulação — adiciona mais uma característica negativa como se as anteriores já fossem demais",
+            "Indica surpresa",
+            "Introduz explicação causal"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Como se não bastasse"
+          ],
+          "explanation": "Conectivo de acumulação irônica — pressupõe que o que veio antes já era suficientemente ruim. Serve para adicionar as balas ao quadro de 'defeitos' da menina."
+        }
+      ]
+    },
+    {
+      "id": "drummond_maquina",
+      "title": "A Máquina do Mundo",
+      "author": "Carlos Drummond de Andrade",
+      "year": 1951,
+      "level": "avancado",
+      "genre": "poesia",
+      "content": "E como eu palmilhasse vagamente\numa estrada de Minas, pedregosa,\ne no fecho da tarde um sino rouco\nse misturasse ao som de meus sapatos",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Qual é o tempo verbal predominante e o que ele indica?",
+          "options": [
+            "Presente — a cena acontece agora",
+            "Pretérito imperfeito do subjuntivo — ação passada em andamento, cria suspensão",
+            "Futuro",
+            "Pretérito perfeito — ação acabada"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "palmilhasse",
+            "se misturasse"
+          ],
+          "explanation": "'Palmilhasse' e 'se misturasse' — pretérito imperfeito do subjuntivo. Drummond narra como estado contínuo — o caminhante estava em movimento quando algo aconteceu."
+        },
+        {
+          "type": "figuras",
+          "instruction": "Identifique a sinestesia no trecho.",
+          "options": [
+            "A estrada pedregosa",
+            "'Sino rouco' — qualidade vocal aplicada a som de instrumento",
+            "A tarde e o sino",
+            "Minas e a estrada"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "sino rouco"
+          ],
+          "explanation": "'Rouco' é adjetivo de voz humana aplicado ao sino. Transferência de qualidade sensorial — cria atmosfera de fim de tarde e cansaço."
+        }
+      ]
+    },
+    {
+      "id": "bandeira_pneumotorax",
+      "title": "Pneumotórax",
+      "author": "Manuel Bandeira",
+      "year": 1930,
+      "level": "intermediario",
+      "genre": "poesia",
+      "content": "Febre, hemoptise, dispneia e suores noturnos.\nA vida inteira que podia ter sido e que não foi.\nTosse, tosse, tosse.\nMandaram-me para Teresópolis.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O poema mistura termos médicos com 'a vida inteira que podia ter sido'. O que esse contraste cria?",
+          "options": [
+            "Mostra que o poeta era médico",
+            "Contrasta o vocabulário clínico frio com a dimensão existencial — a doença não é só sintomas, é vida perdida",
+            "Indica que o poeta estava confuso",
+            "É apenas uma lista de fatos"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Febre, hemoptise",
+            "vida inteira que podia ter sido",
+            "Tosse, tosse, tosse"
+          ],
+          "explanation": "Termos médicos são clínicos e distantes. 'A vida inteira que podia ter sido' é existencial. Lado a lado, revelam que a doença é tanto biológica quanto biográfica."
+        },
+        {
+          "type": "figuras",
+          "instruction": "A repetição 'Tosse, tosse, tosse' reproduz algo além do sentido da palavra. O que?",
+          "options": [
+            "Indica que o poeta tossiu três vezes",
+            "É anáfora para criar ênfase",
+            "O ritmo mimetiza o próprio ato físico — repetitivo, involuntário, exaustivo",
+            "É um erro tipográfico"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "Tosse, tosse, tosse"
+          ],
+          "explanation": "A repetição é mimética: reproduz no ritmo da leitura a experiência física da tosse — algo que se repete sem controle. A forma imita o conteúdo."
+        }
+      ]
+    },
+    {
+      "id": "adelia_prado",
+      "title": "Com Licença Poética",
+      "author": "Adélia Prado",
+      "year": 1976,
+      "level": "intermediario",
+      "genre": "poesia",
+      "content": "Quando nasci um anjo esbelto,\ndesses que tocam trombeta, anunciou:\nVai ser cozinheira.\nNão! Poeta, poeta,\ngritei eu mesma para o anjo esbelto.\nE a certa altura da vida\narrumei ser as duas coisas.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Este poema dialoga com o 'Poema de Sete Faces' de Drummond. Qual é a principal diferença?",
+          "options": [
+            "Drummond aceita seu destino; Adélia rejeita o dela",
+            "Adélia não aceita o destino que o anjo anuncia e negocia sua própria identidade",
+            "Os dois poemas têm anjos com a mesma função",
+            "Adélia critica Drummond abertamente"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não! Poeta, poeta",
+            "gritei eu mesma",
+            "arrumei ser as duas coisas"
+          ],
+          "explanation": "No poema de Drummond, o anjo determina e o poeta aceita. Em Adélia, ela recusa e negocia: será cozinheira e poeta. É uma resposta feminista ao poema de Drummond."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom de 'Não! Poeta, poeta, / gritei eu mesma para o anjo'?",
+          "options": [
+            "Resignação e aceitação",
+            "Rebeldia e afirmação de si — a voz recusa ser definida por outros",
+            "Medo do anjo",
+            "Humor sem seriedade"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Não!",
+            "gritei eu mesma"
+          ],
+          "explanation": "O ponto de exclamação, o grito e 'eu mesma' (ênfase na agência própria) constroem tom de afirmação e resistência — não apenas rejeição, mas reivindicação de identidade."
+        }
+      ]
+    },
+    {
+      "id": "texto_opiniao_lingua",
+      "title": "A Língua em Transformação (artigo de opinião)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "basico",
+      "genre": "artigo de opinião",
+      "content": "A língua portuguesa não está em perigo por causa da internet. Ela está se transformando, como sempre fez. O latim virou português. O português medieval virou o que falamos hoje. Línguas não morrem por mudança — morrem por silêncio.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Qual é a tese central do texto?",
+          "options": [
+            "A internet está destruindo o português",
+            "Mudança linguística é natural — o perigo real é o silêncio, o desuso",
+            "O latim era superior ao português",
+            "Devemos preservar o português medieval"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "não está em perigo",
+            "transformando",
+            "não morrem por mudança",
+            "morrem por silêncio"
+          ],
+          "explanation": "O autor nega a tese oposta e apresenta a sua: mudança é vida — o risco é o desaparecimento pelo desuso."
+        },
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique cada afirmação.",
+          "items": [
+            {
+              "text": "O latim virou português",
+              "answer": "fato"
+            },
+            {
+              "text": "A língua portuguesa não está em perigo por causa da internet",
+              "answer": "opiniao"
+            },
+            {
+              "text": "Línguas não morrem por mudança — morrem por silêncio",
+              "answer": "opiniao"
+            }
+          ],
+          "explanation": "A evolução do latim ao português é fato histórico. As afirmações sobre perigo e causas de morte de línguas são posições argumentativas."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Por que o autor usa exemplos históricos para sustentar seu argumento?",
+          "options": [
+            "Porque exemplos históricos são sempre indiscutíveis",
+            "Para tornar o argumento concreto — mostram que a transformação já aconteceu antes e não foi catástrofe",
+            "Para o leitor verificar na internet",
+            "Para deixar o texto mais longo"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "latim virou português",
+            "português medieval"
+          ],
+          "explanation": "Exemplos históricos são evidências concretas. Ao mostrar que o português já passou por transformações radicais e sobreviveu, o autor desmonta o argumento de que a mudança atual é excepcional."
+        }
+      ]
+    },
+    {
+      "id": "texto_sertao_eucl",
+      "title": "Os Sertões — O Meio",
+      "author": "Euclides da Cunha",
+      "year": 1902,
+      "level": "intermediario",
+      "genre": "prosa não-ficcional",
+      "content": "O sertão é um inferno. Mas é um inferno habitado por anjos. A terra racha, o sol queima, a chuva não vem. E o sertanejo fica. Não por falta de opção — por amor. O sertão não é o que ele tem: é o que ele é.",
+      "exercises": [
+        {
+          "type": "figuras",
+          "instruction": "Identifique o paradoxo em 'um inferno habitado por anjos'.",
+          "options": [
+            "Não é paradoxo — é apenas exagero",
+            "Inferno (sofrimento) e anjos (bondade) são incompatíveis — o paradoxo revela a complexidade do sertão",
+            "É uma metáfora religiosa simples",
+            "Refere-se a personagens específicos"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "inferno",
+            "anjos"
+          ],
+          "explanation": "Paradoxo: dois elementos contraditórios que juntos revelam uma verdade mais profunda. O sertão é hostil (inferno) e habitado por pessoas de força moral extraordinária (anjos)."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "O texto diz que o sertanejo fica 'não por falta de opção — por amor'. O que isso revela?",
+          "options": [
+            "Que o autor condena o sertanejo por não sair",
+            "Que o autor respeita o sertanejo — nega a explicação fácil para dar uma mais digna",
+            "Que o amor à terra é fraqueza",
+            "Que o sertanejo deveria migrar"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "não por falta de opção",
+            "por amor"
+          ],
+          "explanation": "'Não por X — por Y' eleva a agência do sujeito. Euclides não quer que o sertanejo seja visto como vítima passiva, mas como alguém que escolhe — mesmo que a escolha seja dura."
+        }
+      ]
+    },
+    {
+      "id": "texto_cronica_basico",
+      "title": "No Trânsito (crônica)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "basico",
+      "genre": "crônica",
+      "content": "São oito da manhã. O carro à frente não anda. O motorista buzina, como se a buzina abrisse o asfalto. O pedestre olha para o celular, como se o celular fosse levá-lo ao outro lado. Todos têm pressa. Ninguém chega.",
+      "exercises": [
+        {
+          "type": "figuras",
+          "instruction": "Identifique a ironia em 'Todos têm pressa. Ninguém chega.'",
+          "options": [
+            "Não há ironia — é literal",
+            "A ironia está no contraste: pressa (intenção) × não chegar (resultado) — o esforço não produz o efeito",
+            "A ironia está em 'ninguém' — hipérbole",
+            "É apenas observação pessimista"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "todos têm pressa",
+            "ninguém chega"
+          ],
+          "explanation": "Ironia situacional: a expectativa é que quem tem pressa chegue. A realidade é que o trânsito anula o esforço de todos igualmente."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "O autor usa 'como se' duas vezes. Qual é a função?",
+          "options": [
+            "Indica incerteza dos fatos",
+            "Introduz comparação hipotética que expõe o absurdo do comportamento humano",
+            "É recurso de concordância verbal",
+            "Indica ação futura"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "como se a buzina abrisse",
+            "como se o celular fosse"
+          ],
+          "explanation": "'Como se' introduz hipótese irreal. O autor usa para expor o automatismo — as pessoas agem como se seus gestos tivessem poderes que não têm."
+        }
+      ]
+    },
+    {
+      "id": "texto_argumentativo_leitura",
+      "title": "Por que ler? (texto argumentativo)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "basico",
+      "genre": "dissertação",
+      "content": "Ler não é passatempo. É uma forma de pensar junto com alguém que não está na sala. Quando você lê Machado de Assis, você pensa com Machado — e ele morreu em 1908. A leitura vence o tempo. Por isso quem lê muito pensa de formas que quem não lê ainda não descobriu.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O autor define leitura como 'pensar junto com alguém que não está na sala'. O que essa metáfora comunica?",
+          "options": [
+            "Que leitura é solitária e isolante",
+            "Que leitura é diálogo com a mente do autor — conversa intelectual que transcende tempo e espaço",
+            "Que o leitor imagina o autor presente fisicamente",
+            "Que livros substituem a convivência social"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "pensar junto",
+            "não está na sala",
+            "pensa com Machado"
+          ],
+          "explanation": "A metáfora transforma leitura de ato solitário em ato relacional. 'Junto' implica colaboração; 'não está na sala' marca distância física mas não intelectual."
+        },
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique as afirmações.",
+          "items": [
+            {
+              "text": "Machado de Assis morreu em 1908",
+              "answer": "fato"
+            },
+            {
+              "text": "Ler não é passatempo",
+              "answer": "opiniao"
+            },
+            {
+              "text": "Quem lê muito pensa de formas que quem não lê ainda não descobriu",
+              "answer": "opiniao"
+            }
+          ],
+          "explanation": "A data de morte é verificável — fato. As afirmações sobre o que a leitura é ou faz são posições argumentativas do autor."
+        }
+      ]
+    },
+    {
+      "id": "texto_narrativo_basico",
+      "title": "O Primeiro Dia de Escola (narrativa)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "basico",
+      "genre": "narrativa",
+      "content": "Ana acordou antes do alarme. Olhou para o uniforme que a mãe havia passado na noite anterior. Respirou fundo. Era o primeiro dia. Ela não conhecia ninguém. Mas sabia que, em alguma sala, alguém também estava com medo.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o sujeito e o verbo da primeira frase.",
+          "target": "Ana acordou",
+          "hint_highlight": [
+            "Ana",
+            "acordou"
+          ],
+          "explanation": "'Ana' é o sujeito — quem realizou a ação. 'Acordou' é o verbo — a ação realizada."
+        },
+        {
+          "type": "inferencia",
+          "instruction": "Ana sabia que 'alguém também estava com medo'. O que o 'também' revela?",
+          "options": [
+            "Que Ana não estava com medo",
+            "Que Ana estava com medo — o 'também' confirma isso indiretamente",
+            "Que a escola era assustadora para todos",
+            "Que Ana conhecia alguém na escola"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "também estava com medo"
+          ],
+          "explanation": "'Também' pressupõe que Ana compartilha do estado que atribui ao outro. Se alguém 'também' tem medo, Ana tem medo primeiro — inferência que o leitor precisa fazer."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom do trecho?",
+          "options": [
+            "Alegre e empolgado",
+            "Tenso e ansioso, mas com fundo de esperança",
+            "Triste e desesperado",
+            "Indiferente e neutro"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Respirou fundo",
+            "não conhecia ninguém",
+            "alguém também estava com medo"
+          ],
+          "explanation": "Acordar antes do alarme, respirar fundo, não conhecer ninguém — ansiedade. A última frase traz consolo: o medo é universal."
+        }
+      ]
+    },
+    {
+      "id": "texto_cientifico",
+      "title": "Como a Linguagem Muda o Pensamento (texto científico adaptado)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "intermediario",
+      "genre": "texto científico",
+      "content": "Pesquisadores demonstraram que a língua que falamos influencia como percebemos o tempo, o espaço e as cores. Falantes do russo distinguem azul-claro de azul-escuro com mais velocidade que falantes do inglês, porque o russo tem palavras separadas para cada um. A língua não apenas descreve o mundo — ela o organiza.",
+      "exercises": [
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique cada afirmação.",
+          "items": [
+            {
+              "text": "Pesquisadores demonstraram que a língua influencia como percebemos cores",
+              "answer": "fato"
+            },
+            {
+              "text": "A língua não apenas descreve o mundo — ela o organiza",
+              "answer": "opiniao"
+            }
+          ],
+          "explanation": "A primeira cita pesquisas empíricas — resultado verificável. A segunda é conclusão interpretativa do autor, indo além dos dados."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "O exemplo do russo e do azul serve para quê?",
+          "options": [
+            "Para mostrar que o russo é superior ao inglês",
+            "Para ser evidência concreta que sustenta a tese sobre língua e percepção",
+            "Para explicar como aprender russo",
+            "Para comparar duas culturas"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Falantes do russo",
+            "mais velocidade",
+            "porque o russo tem palavras separadas"
+          ],
+          "explanation": "O exemplo transforma afirmação abstrata em dado concreto e testável. Estrutura: tese geral → exemplo específico → conclusão reforçada."
+        }
+      ]
+    },
+    {
+      "id": "texto_instrucional",
+      "title": "Como Ler um Poema (texto instrucional)",
+      "author": "Texto didático",
+      "year": 2024,
+      "level": "basico",
+      "genre": "texto instrucional",
+      "content": "Primeiro, leia em voz alta. O poema é som antes de ser sentido. Depois, identifique o que repete — palavras, sons, estruturas. A repetição no poema não é descuido: é intenção. Por fim, pergunte: o que este poema não diz? O silêncio também faz parte.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Quais conectivos organizam a sequência de instruções?",
+          "targets": [
+            "Primeiro",
+            "Depois",
+            "Por fim"
+          ],
+          "hint_highlight": [
+            "Primeiro",
+            "Depois",
+            "Por fim"
+          ],
+          "explanation": "'Primeiro', 'Depois', 'Por fim' são conectivos de ordenação temporal — transformam o texto em sequência de passos, característica do texto instrucional."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "'O silêncio também faz parte' do poema. O que isso significa?",
+          "options": [
+            "Que poemas devem ser lidos em silêncio",
+            "Que o que o poema omite carrega tanto significado quanto o que diz",
+            "Que pausas na leitura são importantes",
+            "Que o poema termina com silêncio"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "o que este poema não diz",
+            "silêncio também faz parte"
+          ],
+          "explanation": "O silêncio aqui é o não-dito: o que o poeta escolheu omitir. Em poesia, o espaço em branco e a palavra que falta também comunicam."
+        }
+      ]
+    },
+    {
+      "id": "machado_conto_basico",
+      "title": "O Espelho — abertura",
+      "author": "Machado de Assis",
+      "year": 1882,
+      "level": "basico",
+      "genre": "conto",
+      "content": "Jacobina era moço, pobre e honesto. A tia riquíssima prometeu-lhe a herança se ele a tratasse bem. Ele tratava. Era primo-colocado em casa dela, onde vivia e comia. A tia chamava-o de anjo.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o sujeito da frase: 'A tia chamava-o de anjo.'",
+          "targets": [
+            "tia"
+          ],
+          "category": "sujeito",
+          "hint_highlight": [
+            "tia",
+            "chamava"
+          ],
+          "explanation": "'A tia' é o sujeito simples — é ela que pratica a ação de chamar. O pronome oblíquo '-o' retoma Jacobina (objeto direto). 'De anjo' é o predicativo do objeto."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o verbo da frase: 'Jacobina era moço, pobre e honesto.'",
+          "targets": [
+            "era"
+          ],
+          "category": "verbo",
+          "hint_highlight": [
+            "Jacobina",
+            "era",
+            "moço"
+          ],
+          "explanation": "'Era' é verbo de ligação — conecta o sujeito (Jacobina) ao predicativo (moço, pobre e honesto). Não indica ação, mas estado."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "Por que Machado menciona que Jacobina 'tratava bem' a tia logo depois de dizer que ela 'prometeu-lhe a herança'?",
+          "options": [
+            "Para mostrar que Jacobina era genuinamente bondoso",
+            "Para sugerir que o bom trato tinha motivação interesseira",
+            "Para indicar que a tia era difícil de tratar",
+            "Para descrever os costumes familiares da época"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "prometeu-lhe",
+            "herança",
+            "tratava"
+          ],
+          "explanation": "A justaposição é irônica: a promessa da herança vem antes do bom trato. Machado insinua causalidade sem afirmá-la — é o narrador deixando o leitor tirar a conclusão."
+        }
+      ]
+    },
+    {
+      "id": "estrutura_basico_clareza",
+      "title": "A Menina do Narizinho Arrebitado — trecho",
+      "author": "Monteiro Lobato",
+      "year": 1920,
+      "level": "basico",
+      "genre": "conto",
+      "content": "No meio de um pinheiro enorme morava uma velhinha chamada Benta. Ela tinha duas netas: Narizinho e Pedrinho. Narizinho morava com a avó no sítio. Pedrinho vinha de São Paulo nas férias. Os dois adoravam as aventuras do Sítio do Picapau Amarelo.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o sujeito da frase: 'Narizinho morava com a avó no sítio.'",
+          "targets": [
+            "Narizinho"
+          ],
+          "category": "sujeito",
+          "hint_highlight": [
+            "Narizinho",
+            "morava"
+          ],
+          "explanation": "'Narizinho' é o sujeito simples — é ela que pratica a ação de morar. O sujeito simples tem apenas um núcleo."
+        },
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o objeto direto em: 'Os dois adoravam as aventuras do Sítio do Picapau Amarelo.'",
+          "targets": [
+            "aventuras"
+          ],
+          "category": "objeto",
+          "hint_highlight": [
+            "adoravam",
+            "aventuras"
+          ],
+          "explanation": "'As aventuras do Sítio do Picapau Amarelo' é o objeto direto — completa o sentido do verbo 'adorar' sem preposição. Pergunta-se: adoravam o quê? As aventuras."
+        },
+        {
+          "type": "fato_opiniao",
+          "instruction": "Classifique: 'Pedrinho vinha de São Paulo nas férias.' — fato ou opinião?",
+          "hint_highlight": [
+            "Pedrinho",
+            "vinha",
+            "férias"
+          ],
+          "explanation": "Fato: é uma informação verificável sobre o personagem, narrada como dado objetivo da história, sem marca de subjetividade ou julgamento.",
+          "items": [
+            {
+              "text": "Pedrinho vinha de São Paulo nas férias.",
+              "answer": "fato",
+              "reason": "Informação verificável no texto, narrada como dado objetivo sem julgamento de valor."
+            },
+            {
+              "text": "Narizinho era a mais esperta das duas.",
+              "answer": "opiniao",
+              "reason": "Julgamento comparativo — 'mais esperta' expressa avaliação subjetiva, não dado verificável."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carolina_quarto",
+      "title": "Quarto de Despejo — 15 de julho de 1955",
+      "author": "Carolina Maria de Jesus",
+      "year": 1960,
+      "level": "intermediario",
+      "genre": "diário",
+      "content": "Aniversário de minha filha Vera Eunice. Eu pretendia comprar um par de sapatos para ela. Mas o custo dos generos alimenticios nos impede a realização dos nossos desejos. Atualmente somos escravos do custo de vida. Eu achei um par de sapatos no lixo. Lavei e remendei para ela calçar. Eu não tinha coragem de dizer a ela que o calçado era do lixo. Pois ela vive num mundo de adultos. Depois virá a fase do mundo real.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "Qual é a ideia central deste trecho do diário de Carolina?",
+          "options": [
+            "A alegria de celebrar o aniversário da filha",
+            "A crítica ao sistema político da época",
+            "O contraste entre o desejo materno e a realidade da pobreza",
+            "A descrição dos costumes da favela nos anos 1950"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "pretendia",
+            "impede",
+            "lixo",
+            "coragem"
+          ],
+          "explanation": "O texto é construído sobre uma tensão: o desejo (comprar sapatos) e o impedimento (custo de vida). O par de sapatos do lixo é o símbolo dessa tensão — e a frase final aprofunda: Carolina poupa a filha da realidade por enquanto."
+        },
+        {
+          "type": "tom",
+          "instruction": "Como se caracteriza o tom da narradora neste trecho?",
+          "options": [
+            "Revoltado e agressivo",
+            "Sentimental e autocomiserativo",
+            "Seco e direto, com dignidade contida",
+            "Irônico e sarcástico"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "somos escravos",
+            "não tinha coragem",
+            "mundo real"
+          ],
+          "explanation": "Carolina narra fatos brutais sem melodrama. A frase 'somos escravos do custo de vida' é análise, não lamento. O não contar à filha revela cuidado, não fraqueza. A contenção emocional é uma marca da voz de Carolina."
+        },
+        {
+          "type": "figuras",
+          "instruction": "Identifique a figura de linguagem em: 'atualmente somos escravos do custo de vida.'",
+          "targets": [
+            "escravos"
+          ],
+          "category": "metáfora",
+          "hint_highlight": [
+            "escravos",
+            "custo de vida"
+          ],
+          "explanation": "Metáfora: Carolina compara a sujeição econômica à escravidão sem usar 'como'. A figura é especialmente densa vinda de uma mulher negra, descendente de escravizados — o sentido histórico redobra o sentido figurado."
+        }
+      ]
+    },
+    {
+      "id": "graciliano_fabiano",
+      "title": "Vidas Secas — Fabiano",
+      "author": "Graciliano Ramos",
+      "year": 1938,
+      "level": "basico",
+      "genre": "romance",
+      "content": "Fabiano ia satisfeito. Sim senhor, arranjara trabalho. Era bruto, não sabia ler, mas tinha força. E a família estava junta. A mulher e os meninos iam com ele, procurando sombra nas pedras. O sol era bravo. Mas havia o trabalho. E havia a família.",
+      "exercises": [
+        {
+          "type": "estrutura",
+          "instruction": "Identifique o predicado nominal em: 'O sol era bravo.'",
+          "targets": [
+            "era bravo"
+          ],
+          "category": "predicado",
+          "hint_highlight": [
+            "sol",
+            "era",
+            "bravo"
+          ],
+          "explanation": "'Era bravo' é predicado nominal — núcleo é o verbo de ligação 'era' mais o predicativo do sujeito 'bravo'. O predicado nominal não indica ação, mas atribui uma qualidade ao sujeito 'o sol'."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "As frases curtas e repetidas ('E havia o trabalho. E havia a família.') criam que efeito?",
+          "options": [
+            "Transmitem a pressa e agitação de Fabiano",
+            "Imitam a simplicidade do pensamento de Fabiano e a dureza de sua realidade",
+            "Indicam que o narrador é pouco culto",
+            "Criam ironia sobre a situação de miséria"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "bruto",
+            "não sabia ler",
+            "havia"
+          ],
+          "explanation": "Graciliano usa frases curtas deliberadamente: é a tradução do estilo narrativo para a forma mental de Fabiano, que pensa por blocos, sem subordinação sintática. A repetição de 'havia' cria uma litania — o trabalho e a família como únicos pilares."
+        }
+      ]
+    },
+    {
+      "id": "conceicao_escrevivencia",
+      "title": "Olhos d'Água — incipit",
+      "author": "Conceição Evaristo",
+      "year": 2014,
+      "level": "intermediario",
+      "genre": "conto",
+      "content": "A cor dos olhos de minha mãe? Francisca tinha olhos que não ficavam quietos. Olhos que perseguiam os filhos, que vasculhavam os cantos escuros da casa, que mediam as distâncias e as possibilidades de nossa sobrevivência. Olhos d'água, minha mãe tinha olhos d'água.",
+      "exercises": [
+        {
+          "type": "figuras",
+          "instruction": "Identifique a figura predominante em: 'Olhos que perseguiam os filhos, que vasculhavam os cantos escuros da casa, que mediam as distâncias.'",
+          "targets": [
+            "perseguiam",
+            "vasculhavam",
+            "mediam"
+          ],
+          "category": "anáfora",
+          "hint_highlight": [
+            "que perseguiam",
+            "que vasculhavam",
+            "que mediam"
+          ],
+          "explanation": "Anáfora: repetição de 'que' no início das orações subordinadas. O recurso cria acumulação de ações — os olhos da mãe fazem tudo isso simultaneamente — e confere ritmo ao período, como uma lista poética."
+        },
+        {
+          "type": "interpretacao",
+          "instruction": "O que significa 'olhos d'água' no contexto do texto?",
+          "options": [
+            "Olhos azuis, da cor da água",
+            "Olhos que choram frequentemente",
+            "Olhos que expressam vigilância, cuidado e talvez sofrimento",
+            "Olhos com problema de visão"
+          ],
+          "correct": 2,
+          "hint_highlight": [
+            "perseguiam",
+            "vasculhavam",
+            "mediam",
+            "sobrevivência"
+          ],
+          "explanation": "A expressão é polissêmica: pode indicar lágrimas (sofrimento), mas o contexto a enriquece — os olhos vigiam, medem, calculam a sobrevivência. São olhos de mãe em estado de alerta permanente. A 'água' é fluida, adaptável, persistente."
+        },
+        {
+          "type": "tom",
+          "instruction": "Qual é o tom dominante na voz narradora?",
+          "options": [
+            "Nostálgico e amoroso",
+            "Analítico e distante",
+            "Raivoso e ressentido",
+            "Irônico e crítico"
+          ],
+          "correct": 0,
+          "hint_highlight": [
+            "minha mãe",
+            "olhos d'água"
+          ],
+          "explanation": "A narradora descreve a mãe com afeto e admiração — a força da mãe é celebrada, não lamentada. O tom nostálgico aparece na pergunta inicial (busca de uma memória) e na repetição final, que tem a estrutura de uma evocação carinhosa."
+        }
+      ]
+    },
+    {
+      "id": "pessoa_mensagem_basico",
+      "title": "Mensagem — D. Sebastião",
+      "author": "Fernando Pessoa",
+      "year": 1934,
+      "level": "basico",
+      "genre": "poesia",
+      "content": "Louco, sim, louco, porque quis grandeza\nQual a Sorte a não dá.\nNão coube em mim minha certeza;\nPor isso onde o areal está\nFicou meu ser que houve, não o que há.",
+      "exercises": [
+        {
+          "type": "interpretacao",
+          "instruction": "O poema defende que D. Sebastião era louco. Qual é a posição de Pessoa sobre essa loucura?",
+          "options": [
+            "Condena a loucura como irresponsabilidade",
+            "Celebra a loucura como grandeza impossível de caber no real",
+            "Descreve a loucura com neutralidade histórica",
+            "Lamenta que a loucura levou Portugal à ruína"
+          ],
+          "correct": 1,
+          "hint_highlight": [
+            "Louco, sim",
+            "quis grandeza",
+            "certeza"
+          ],
+          "explanation": "Pessoa inverte o juízo: o 'sim' inicial não é concessão — é afirmação orgulhosa. Ser louco por 'querer grandeza que a sorte não dá' é, para Pessoa, a única forma digna de existir. O poema celebra o excesso como virtude."
+        },
+        {
+          "type": "figuras",
+          "instruction": "Identifique a figura em: 'Não coube em mim minha certeza.'",
+          "targets": [
+            "Não coube em mim minha certeza"
+          ],
+          "category": "hipérbole",
+          "hint_highlight": [
+            "coube",
+            "certeza"
+          ],
+          "explanation": "Hipérbole: a certeza (abstrata) é tão grande que literalmente não cabe no ser humano. A imagem do transbordamento — algo demais para o recipiente do eu — é recorrente na poética pessoana sobre o excesso de alma."
+        }
+      ]
+    }
+  ]
+}

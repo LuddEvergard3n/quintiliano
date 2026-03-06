@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quintiliano — Ambiente interativo de interpretação e estrutura textual para o ensino de Língua Portuguesa e Literatura.">
+  <meta name="theme-color" content="#1a1208">
+
+  <title>Quintiliano — Língua Portuguesa e Literatura</title>
+
+  <!-- Favicon SVG — círculo âmbar com letra Q -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23c8922a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia%2Cserif' font-size='20' font-weight='700' fill='%23fdf8f0'%3EQ%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph — preview ao compartilhar o link -->
+  <meta property="og:title"       content="Quintiliano — Língua Portuguesa e Literatura">
+  <meta property="og:description" content="Ambiente interativo de interpretação, gramática, literatura e retórica. 17 módulos, zero dependências.">
+  <meta property="og:type"        content="website">
+  <meta name="twitter:card"       content="summary">
+
+  <!-- Pré-conexão com Google Fonts para performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!--
+    Módulo principal: carregado como ES Module.
+    O atributo 'type="module"' garante que imports funcionem nativamente no browser.
+    O defer é implícito em módulos.
+  -->
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Cabeçalho global -->
+    <header id="site-header" role="banner">
+      <!-- Linha 1: logo -->
+      <div class="header-inner">
+        <a href="#/" class="site-logo" aria-label="Quintiliano — Página inicial">
+          <span class="site-logo-word">Quintiliano</span>
+          <span class="site-logo-sub">Língua Portuguesa &amp; Literatura</span>
+        </a>
+
+        <span id="nav-active-label" aria-hidden="true"></span>
+
+        <button
+          id="nav-toggle"
+          type="button"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Abrir menu de navegação"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Linha 2: módulos 1–12 + Retórica -->
+      <div class="header-nav-row">
+        <nav id="main-nav" role="navigation" aria-label="Módulos principais">
+          <button class="nav-link" data-route="/" onclick="window.location.hash='/'" aria-label="Início">Início</button>
+          <button class="nav-link" data-route="/modulo/leitura" onclick="window.location.hash='/modulo/leitura'" aria-label="Módulo Leitura">Leitura</button>
+          <button class="nav-link" data-route="/modulo/interpretacao" onclick="window.location.hash='/modulo/interpretacao'" aria-label="Módulo Interpretação">Interpretação</button>
+          <button class="nav-link" data-route="/modulo/sintaxe" onclick="window.location.hash='/modulo/sintaxe'" aria-label="Módulo Sintaxe">Sintaxe</button>
+          <button class="nav-link" data-route="/modulo/etimologia" onclick="window.location.hash='/modulo/etimologia'" aria-label="Módulo Etimologia">Etimologia</button>
+          <button class="nav-link" data-route="/modulo/literatura" onclick="window.location.hash='/modulo/literatura'" aria-label="Módulo Literatura">Literatura</button>
+          <button class="nav-link" data-route="/modulo/escrita" onclick="window.location.hash='/modulo/escrita'" aria-label="Módulo Escrita">Escrita</button>
+          <button class="nav-link" data-route="/modulo/poesia" onclick="window.location.hash='/modulo/poesia'" aria-label="Módulo Poesia">Poesia</button>
+          <button class="nav-link" data-route="/modulo/regras" onclick="window.location.hash='/modulo/regras'" aria-label="Módulo Regras">Regras</button>
+          <button class="nav-link" data-route="/modulo/argumentacao" onclick="window.location.hash='/modulo/argumentacao'" aria-label="Módulo Argumentação">Argumentação</button>
+          <button class="nav-link" data-route="/modulo/ortografia" onclick="window.location.hash='/modulo/ortografia'" aria-label="Módulo Ortografia">Ortografia</button>
+          <button class="nav-link" data-route="/modulo/redacao" onclick="window.location.hash='/modulo/redacao'" aria-label="Módulo Redação">Redação</button>
+          <button class="nav-link" data-route="/modulo/retorica" onclick="window.location.hash='/modulo/retorica'" aria-label="Módulo Retórica">Retórica</button>
+        </nav>
+      </div>
+
+      <!-- Linha 3: módulos avançados + ABL -->
+      <div class="header-nav-row header-nav-row--secondary">
+        <nav id="main-nav-secondary" role="navigation" aria-label="Módulos avançados">
+          <button class="nav-link nav-link--secondary" data-route="/modulo/prosodia" onclick="window.location.hash='/modulo/prosodia'" aria-label="Módulo Prosódia">Prosódia</button>
+          <button class="nav-link nav-link--secondary" data-route="/modulo/coesao" onclick="window.location.hash='/modulo/coesao'" aria-label="Módulo Coesão e Coerência">Coesão e Coerência</button>
+          <button class="nav-link nav-link--secondary" data-route="/modulo/variacao" onclick="window.location.hash='/modulo/variacao'" aria-label="Módulo Variação Linguística">Variação Linguística</button>
+          <button class="nav-link nav-link--secondary" data-route="/modulo/premios" onclick="window.location.hash='/modulo/premios'" aria-label="Prêmios Literários">Prêmios</button>
+          <button class="nav-link nav-link--secondary" data-route="/modulo/grandes-nomes" onclick="window.location.hash='/modulo/grandes-nomes'" aria-label="Grandes Nomes da Língua Portuguesa">Grandes Nomes</button>
+          <span class="nav-sep" aria-hidden="true"></span>
+          <button class="nav-link nav-link--secondary nav-link--abl" data-route="/abl" onclick="window.location.hash='/abl'" aria-label="Academia Brasileira de Letras">ABL</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal: o roteador injeta aqui -->
+    <main id="main-content" role="main" aria-live="polite" aria-label="Conteúdo da página">
+      <!-- Carregando... (substituído pelo JS imediatamente) -->
+      <div style="text-align:center;padding:4rem 2rem;color:var(--color-ink-ghost);font-family:var(--font-ui);font-size:0.875rem">
+        Carregando…
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer role="contentinfo" style="
+      background-color:var(--color-paper-dark);
+      border-top:1px solid var(--color-paper-border);
+      padding:var(--space-6) var(--space-8);
+      text-align:center;
+    ">
+      <p style="
+        font-family:var(--font-ui);
+        font-size:var(--text-xs);
+        color:var(--color-ink-ghost);
+        letter-spacing:0.04em;
+      ">
+        Quintiliano &mdash; Sistema educacional de Língua Portuguesa e Literatura.
+        Funciona completamente offline, sem dependências externas.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

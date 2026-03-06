@@ -1,0 +1,17 @@
+{
+  "name": "quintiliano",
+  "version": "0.20.0",
+  "description": "Ambiente de língua portuguesa e literatura — 18 rotas, 66 testes, zero dependências.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "test:data": "node tests/run-tests.js --data",
+    "test:router": "node tests/run-tests.js --router",
+    "test:modules": "node tests/run-tests.js --modules",
+    "test:raw": "node --test tests/test-data.js tests/test-router.js tests/test-modules.js"
+  }
+}

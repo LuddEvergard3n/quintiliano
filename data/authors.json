@@ -1,0 +1,803 @@
+{
+  "authors": [
+    {
+      "id": "machado",
+      "name": "Machado de Assis",
+      "nationality": "Brasileiro",
+      "birth": 1839,
+      "death": 1908,
+      "movement": "Realismo",
+      "short_bio": "Joaquim Maria Machado de Assis nasceu no Rio de Janeiro, filho de um mulato e uma portuguesa das Ilhas. Autodidata, tornou-se o maior escritor brasileiro. Sua obra madura — a partir de 'Memórias Póstumas de Brás Cubas' (1881) — inaugura um narrador irônico e pouco confiável, que subverte as convenções do romance europeu.",
+      "style": "Ironia fina, narrador não confiável, foco no comportamento humano e nas convenções sociais. Frases curtas intercaladas com longos períodos de reflexão.",
+      "context": "Escreve no Brasil pós-abolição (1888), em plena transição da monarquia para a república. Sua obra reflete ceticismo sobre o progresso e a natureza humana.",
+      "signature_quote": "O homem que não dá, pode ao menos sorrir — e o sorriso é o genro do nada e primo direito do sórdido.",
+      "key_works": [
+        {
+          "title": "Memórias Póstumas de Brás Cubas",
+          "year": 1881,
+          "genre": "Romance",
+          "gutenberg_id": 54829,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/54829/pg54829.txt"
+        },
+        {
+          "title": "Quincas Borba",
+          "year": 1891,
+          "genre": "Romance"
+        },
+        {
+          "title": "Dom Casmurro",
+          "year": 1899,
+          "genre": "Romance",
+          "gutenberg_id": 55752,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/55752/pg55752.txt"
+        },
+        {
+          "title": "Papéis Avulsos",
+          "year": 1882,
+          "genre": "Contos"
+        }
+      ],
+      "gutenberg_works": [
+        {
+          "title": "Dom Casmurro",
+          "year": 1899,
+          "genre": "Romance",
+          "gutenberg_id": 55752
+        },
+        {
+          "title": "Memórias Póstumas de Brás Cubas",
+          "year": 1881,
+          "genre": "Romance",
+          "gutenberg_id": 54829
+        },
+        {
+          "title": "O Alienista",
+          "year": 1882,
+          "genre": "Novela",
+          "gutenberg_id": 57703
+        }
+      ]
+    },
+    {
+      "id": "clarice",
+      "name": "Clarice Lispector",
+      "nationality": "Brasileira (nascida na Ucrânia)",
+      "birth": 1920,
+      "death": 1977,
+      "movement": "Modernismo tardio / Literatura de introspecção",
+      "short_bio": "Nascida na Ucrânia, chegou ao Brasil ainda bebê. Formou-se em Direito, trabalhou como jornalista e publicou seu primeiro romance aos 23 anos. Sua escrita é radicalmente subjetiva — explora a consciência das personagens de dentro para fora.",
+      "style": "Fluxo de consciência, frases fragmentadas, epifanias cotidianas. A linguagem é o próprio pensamento em movimento. Nega explicações fáceis.",
+      "context": "Escreve durante a ditadura militar brasileira (1964-1985). Sua escrita apolítica na superfície é profundamente humanista na essência.",
+      "signature_quote": "Escrever é procurar entender, é procurar reproduzir o irreproduzível, é sentir até o último fim o sentimento que permaneceria apenas vago e sufocante.",
+      "key_works": [
+        {
+          "title": "Perto do Coração Selvagem",
+          "year": 1943,
+          "genre": "Romance"
+        },
+        {
+          "title": "Laços de Família",
+          "year": 1960,
+          "genre": "Contos"
+        },
+        {
+          "title": "A Paixão Segundo G.H.",
+          "year": 1964,
+          "genre": "Romance"
+        },
+        {
+          "title": "A Hora da Estrela",
+          "year": 1977,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "lima",
+      "name": "Lima Barreto",
+      "nationality": "Brasileiro",
+      "birth": 1881,
+      "death": 1922,
+      "movement": "Pré-modernismo",
+      "short_bio": "Afonso Henriques de Lima Barreto nasceu no Rio de Janeiro, filho de um tipógrafo mulato. Trabalhou como funcionário público e viveu em condições precárias. Foi um dos primeiros escritores brasileiros a tratar abertamente do preconceito racial, da exclusão social e da crítica à elite republicana.",
+      "style": "Prosa direta e jornalística, marcada pela ironia social. Personagens marginalizados como protagonistas. Vocabulário acessível, distante do rebuscamento parnasiano.",
+      "context": "Escreve na Primeira República (1889-1930), período de modernização excludente do Rio de Janeiro. Sua obra documenta a vida dos subúrbios e a hipocrisia da belle époque carioca.",
+      "signature_quote": "A nossa geração tem o dever de reagir contra essa imbecilidade triunfante.",
+      "key_works": [
+        {
+          "title": "Recordações do Escrivão Isaías Caminha",
+          "year": 1909,
+          "genre": "Romance"
+        },
+        {
+          "title": "Triste Fim de Policarpo Quaresma",
+          "year": 1915,
+          "genre": "Romance",
+          "gutenberg_id": 65285,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/65285/pg65285.txt"
+        },
+        {
+          "title": "Vida e Morte de M.J. Gonzaga de Sá",
+          "year": 1919,
+          "genre": "Romance"
+        },
+        {
+          "title": "Histórias e Sonhos",
+          "year": 1920,
+          "genre": "Contos"
+        }
+      ],
+      "gutenberg_works": [
+        {
+          "title": "Triste Fim de Policarpo Quaresma",
+          "year": 1915,
+          "genre": "Romance",
+          "gutenberg_id": 65285
+        }
+      ]
+    },
+    {
+      "id": "alencar",
+      "name": "José de Alencar",
+      "nationality": "Brasileiro",
+      "birth": 1829,
+      "death": 1877,
+      "movement": "Romantismo",
+      "short_bio": "José Martiniano de Alencar nasceu no Ceará. Advogado, jornalista, político e dramaturgo, é o fundador do romance brasileiro. Buscou criar uma literatura nacional autêntica, afastada dos modelos portugueses, incorporando a paisagem, os mitos e os tipos humanos do Brasil.",
+      "style": "Prosa lírica e colorida, vocabulário rico em brasilismos. Idealização do indígena como símbolo nacional. Narrativas de formação e identidade.",
+      "context": "Escreve no Segundo Reinado (1840-1889), período de construção da identidade nacional brasileira pós-Independência. Participa do debate sobre o que seria uma literatura genuinamente brasileira.",
+      "signature_quote": "A língua é a fisionomia espiritual do povo.",
+      "key_works": [
+        {
+          "title": "O Guarani",
+          "year": 1857,
+          "genre": "Romance"
+        },
+        {
+          "title": "Iracema",
+          "year": 1865,
+          "genre": "Romance",
+          "gutenberg_id": 32880,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/32880/pg32880.txt"
+        },
+        {
+          "title": "Senhora",
+          "year": 1875,
+          "genre": "Romance"
+        },
+        {
+          "title": "Ubirajara",
+          "year": 1874,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": [
+        {
+          "title": "Iracema",
+          "year": 1865,
+          "genre": "Romance",
+          "gutenberg_id": 32880
+        }
+      ]
+    },
+    {
+      "id": "camoes",
+      "name": "Luís de Camões",
+      "nationality": "Português",
+      "birth": 1524,
+      "death": 1580,
+      "movement": "Classicismo / Renascimento",
+      "short_bio": "O maior poeta da língua portuguesa. Soldado, prisioneiro e exilado, Camões viveu uma vida aventurosa que percorreu Portugal, Ceuta, Goa, Macau e Moçambique. Sintetizou a tradição clássica greco-latina com a sensibilidade portuguesa, produzindo tanto o épico nacional quanto uma lírica de profunda melancolia.",
+      "style": "Domínio absoluto de formas clássicas (soneto, ode, écloga). Tensão entre o ideal e o real, o amor platônico e o sensual, a glória e a tragédia. Linguagem densa e musical.",
+      "context": "Escreve no auge e início do declínio do Império Português. Os Lusíadas (1572) celebram e questionam simultaneamente a epopeia expansionista.",
+      "signature_quote": "Mudam-se os tempos, mudam-se as vontades, muda-se o ser, muda-se a confiança.",
+      "key_works": [
+        {
+          "title": "Os Lusíadas",
+          "year": 1572,
+          "genre": "Poema épico",
+          "gutenberg_id": 3333,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/3333/pg3333.txt"
+        },
+        {
+          "title": "Rimas",
+          "year": 1595,
+          "genre": "Poesia lírica"
+        }
+      ],
+      "gutenberg_works": [
+        {
+          "title": "Os Lusíadas",
+          "year": 1572,
+          "genre": "Poema épico",
+          "gutenberg_id": 3333
+        }
+      ]
+    },
+    {
+      "id": "pessoa",
+      "name": "Fernando Pessoa",
+      "nationality": "Português",
+      "birth": 1888,
+      "death": 1935,
+      "movement": "Modernismo",
+      "short_bio": "Fernando António Nogueira Pessoa nasceu em Lisboa e passou a adolescência em Durban, África do Sul. De volta a Portugal, criou heterônimos — poetas com biografias, estilos e filosofias próprias, radicalmente distintos entre si — tornando a questão da identidade o centro de toda sua obra. A Mensagem (1934) é seu único livro em português publicado em vida.",
+      "style": "Desdobramento da personalidade em heterônimos: Alberto Caeiro (sensacionismo puro), Álvaro de Campos (futurismo, intensidade), Ricardo Reis (paganismo clássico). O ortônimo Pessoa explora o fingimento e a consciência.",
+      "context": "Escreve na Primeira República Portuguesa e no Estado Novo nascente. Portugal vivia a crise de identidade de uma potência colonial em declínio.",
+      "signature_quote": "O poeta é um fingidor. Finge tão completamente que chega a fingir que é dor a dor que deveras sente.",
+      "key_works": [
+        {
+          "title": "Mensagem",
+          "year": 1934,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Livro do Desassossego",
+          "year": 1982,
+          "genre": "Prosa poética (póstumo)"
+        },
+        {
+          "title": "Odes de Ricardo Reis",
+          "year": 1946,
+          "genre": "Poesia (póstumo)"
+        },
+        {
+          "title": "Ode Triunfal (Campos)",
+          "year": 1914,
+          "genre": "Poesia"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "drummond",
+      "name": "Carlos Drummond de Andrade",
+      "nationality": "Brasileiro",
+      "birth": 1902,
+      "death": 1987,
+      "movement": "Modernismo",
+      "short_bio": "Carlos Drummond de Andrade nasceu em Itabira, Minas Gerais. Funcionário público e jornalista, tornou-se o maior poeta brasileiro do século XX. Sua obra vai do gauche existencial ao engajamento político, da melancolia ao humor, sempre com dicção precisa e imagem surpreendente.",
+      "style": "Dicção coloquial e rigor formal simultâneos. A pedra como símbolo de obstáculo e permanência. Ironia, autoironia e compaixão. Verso livre com tensão interna.",
+      "context": "Estreia com Alguma Poesia (1930) no mesmo ano da Revolução que trouxe Getúlio Vargas. Atravessa o Estado Novo, a democratização, o golpe de 1964 e a redemocratização.",
+      "signature_quote": "No meio do caminho tinha uma pedra / tinha uma pedra no meio do caminho.",
+      "key_works": [
+        {
+          "title": "Alguma Poesia",
+          "year": 1930,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Sentimento do Mundo",
+          "year": 1940,
+          "genre": "Poesia"
+        },
+        {
+          "title": "A Rosa do Povo",
+          "year": 1945,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Claro Enigma",
+          "year": 1951,
+          "genre": "Poesia"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "graciliano",
+      "name": "Graciliano Ramos",
+      "nationality": "Brasileiro",
+      "birth": 1892,
+      "death": 1953,
+      "movement": "Modernismo / Regionalismo",
+      "short_bio": "Graciliano Ramos nasceu em Quebrângulo, Alagoas. Foi prefeito, diretor de instrução pública e preso político durante o Estado Novo (1936-37). Sua experiência na seca nordestina e na prisão alimentou uma obra de contenção formal extrema, onde cada palavra é necessária e nenhuma é decorativa.",
+      "style": "Prosa seca, econômica e dura como a caatinga. Frases curtas. Personagens oprimidos pela natureza, pela miséria e pelo poder. Nenhum sentimentalismo.",
+      "context": "Escreve durante a Era Vargas e o Estado Novo. A seca nordestina, o coronelismo e a violência estrutural são seus temas centrais.",
+      "signature_quote": "Não sou bem romancista. Não tenho facilidade. Cada substantivo me custa um trabalho enorme.",
+      "key_works": [
+        {
+          "title": "São Bernardo",
+          "year": 1934,
+          "genre": "Romance"
+        },
+        {
+          "title": "Angústia",
+          "year": 1936,
+          "genre": "Romance"
+        },
+        {
+          "title": "Vidas Secas",
+          "year": 1938,
+          "genre": "Romance"
+        },
+        {
+          "title": "Memórias do Cárcere",
+          "year": 1953,
+          "genre": "Memórias"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "rosa",
+      "name": "João Guimarães Rosa",
+      "nationality": "Brasileiro",
+      "birth": 1908,
+      "death": 1967,
+      "movement": "Modernismo tardio",
+      "short_bio": "João Guimarães Rosa nasceu em Cordisburgo, Minas Gerais. Médico, diplomata e políglota, transformou o sertão mineiro em universo mítico. Reinventou a língua portuguesa incorporando arcaísmos, neologismos e a oralidade do sertanejo em uma sintaxe radicalmente original.",
+      "style": "Linguagem inventiva: neologismos, arcaísmos, sintaxe deformada intencionalmente. O sertão como microcosmo do humano. Narrativa oral que é, ao mesmo tempo, filosófica.",
+      "context": "Publica Grande Sertão: Veredas em 1956, em pleno desenvolvimentismo de JK. O Brasil moderno e o Brasil arcaico em tensão.",
+      "signature_quote": "O sertão é do tamanho do mundo.",
+      "key_works": [
+        {
+          "title": "Sagarana",
+          "year": 1946,
+          "genre": "Contos"
+        },
+        {
+          "title": "Grande Sertão: Veredas",
+          "year": 1956,
+          "genre": "Romance"
+        },
+        {
+          "title": "Corpo de Baile",
+          "year": 1956,
+          "genre": "Novelas"
+        },
+        {
+          "title": "Primeiras Estórias",
+          "year": 1962,
+          "genre": "Contos"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "eca",
+      "name": "Eça de Queirós",
+      "nationality": "Português",
+      "birth": 1845,
+      "death": 1900,
+      "movement": "Realismo / Naturalismo",
+      "short_bio": "José Maria de Eça de Queirós nasceu em Póvoa de Varzim. Diplomata e jornalista, introduziu o Realismo em Portugal com força demolidora. Seus romances dissecam a hipocrisia da burguesia católica portuguesa com ironia cirúrgica.",
+      "style": "Ironia fina e impiedosa. Narrador onisciente que julga seus personagens sem piedade. Diálogos vivos, descrições precisas. Crítica à Igreja, ao casamento burguês e ao provincianismo português.",
+      "context": "Escreve na segunda metade do século XIX. A Geração de 70 promove a ruptura com o Romantismo e adoção do positivismo e realismo europeus.",
+      "signature_quote": "A ironia é a higiene da mente.",
+      "key_works": [
+        {
+          "title": "O Crime do Padre Amaro",
+          "year": 1875,
+          "genre": "Romance",
+          "gutenberg_id": 10765,
+          "gutenberg_url": "https://www.gutenberg.org/cache/epub/10765/pg10765.txt"
+        },
+        {
+          "title": "O Primo Basílio",
+          "year": 1878,
+          "genre": "Romance"
+        },
+        {
+          "title": "Os Maias",
+          "year": 1888,
+          "genre": "Romance"
+        },
+        {
+          "title": "A Relíquia",
+          "year": 1887,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": [
+        {
+          "title": "O Crime do Padre Amaro",
+          "year": 1875,
+          "genre": "Romance",
+          "gutenberg_id": 10765
+        }
+      ]
+    },
+    {
+      "id": "bandeira",
+      "name": "Manuel Bandeira",
+      "nationality": "Brasileiro",
+      "birth": 1886,
+      "death": 1968,
+      "movement": "Modernismo",
+      "short_bio": "Manuel Carneiro de Sousa Bandeira Filho nasceu no Recife. A tuberculose que contraiu aos 18 anos marcou toda sua obra — a morte como presença constante, o presente como única certeza. Participou da Semana de Arte Moderna de 1922 e tornou-se uma das vozes mais amadas da poesia brasileira.",
+      "style": "Síntese entre o coloquial e o lírico. O poema breve como forma ideal. O humor e a leveza como resistência ao sofrimento. Vocabulário do cotidiano elevado à dimensão do simbólico.",
+      "context": "Atravessa o Modernismo brasileiro desde suas origens até o Concretismo, sem se filiar a nenhum grupo.",
+      "signature_quote": "Estou farto do lirismo comedido / Do lirismo bem comportado / Do lirismo funcionário público com livro de ponto.",
+      "key_works": [
+        {
+          "title": "A Cinza das Horas",
+          "year": 1917,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Libertinagem",
+          "year": 1930,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Estrela da Manhã",
+          "year": 1936,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Mafuá do Malungo",
+          "year": 1948,
+          "genre": "Poesia"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "adelia",
+      "name": "Adélia Prado",
+      "nationality": "Brasileira",
+      "birth": 1935,
+      "death": null,
+      "movement": "Poesia contemporânea",
+      "short_bio": "Adélia Luzia Prado Freitas nasceu em Divinópolis, Minas Gerais. Professora de filosofia e mãe de cinco filhos, publicou seu primeiro livro aos 40 anos. Sua poesia combina o sagrado e o doméstico, o erótico e o religioso, com uma dicção que parece conversa mas carrega densidade metafísica.",
+      "style": "Verso longo e respirado, próximo da fala. O feminino como perspectiva filosófica. O corpo, a casa e Deus como territórios igualmente sagrados. Imagens concretas que abrem para o transcendente.",
+      "context": "Surge na abertura política dos anos 1970-80. Mulher, católica e do interior, contraria todos os perfis do cânone literário então dominante.",
+      "signature_quote": "Não sou ave de rapina, sou fêmea, e Deus, quando me fez assim, sabia o que fazia.",
+      "key_works": [
+        {
+          "title": "Bagagem",
+          "year": 1976,
+          "genre": "Poesia"
+        },
+        {
+          "title": "O Coração Disparado",
+          "year": 1978,
+          "genre": "Poesia"
+        },
+        {
+          "title": "Terra de Santa Cruz",
+          "year": 1981,
+          "genre": "Poesia"
+        },
+        {
+          "title": "A Faca no Peito",
+          "year": 1988,
+          "genre": "Poesia"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "verissimo",
+      "name": "Érico Veríssimo",
+      "nationality": "Brasileiro",
+      "birth": 1905,
+      "death": 1975,
+      "movement": "Modernismo / Regionalismo gaúcho",
+      "short_bio": "Erico Lopes Veríssimo nasceu em Cruz Alta, Rio Grande do Sul. Autodidata, tornou-se o maior escritor gaúcho e um dos mais lidos do Brasil. Sua trilogia O Tempo e o Vento narra quatro séculos da história do Rio Grande do Sul através de uma família fictícia.",
+      "style": "Narrativa fluida e cinematográfica. Galeria de personagens memoráveis de todas as classes sociais. Humanismo explícito: simpatia pelos fracos, crítica ao militarismo. Prosa acessível sem ser simplória.",
+      "context": "Escreve durante a Era Vargas, o Estado Novo e a Guerra Fria. O Rio Grande do Sul fronteiriço e militarizado como cenário de reflexão sobre civilização e barbárie.",
+      "signature_quote": "Quero ser enterrado de pé, para não perder o costume.",
+      "key_works": [
+        {
+          "title": "Clarissa",
+          "year": 1933,
+          "genre": "Romance"
+        },
+        {
+          "title": "Caminhos Cruzados",
+          "year": 1935,
+          "genre": "Romance"
+        },
+        {
+          "title": "O Tempo e o Vento",
+          "year": 1949,
+          "genre": "Trilogia"
+        },
+        {
+          "title": "Incidente em Antares",
+          "year": 1971,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "carolina",
+      "name": "Carolina Maria de Jesus",
+      "nationality": "Brasileira",
+      "birth": 1914,
+      "death": 1977,
+      "movement": "Literatura de testemunho / Literatura marginal",
+      "short_bio": "Carolina Maria de Jesus nasceu em Sacramento, Minas Gerais. Filha de mãe solteira, completou apenas dois anos de escola. Foi catadora de papel na favela do Canindé, São Paulo, e escrevia em cadernos recolhidos do lixo. Quando o jornalista Audálio Dantas leu seus diários, o mundo conheceu uma das vozes mais devastadoras da literatura brasileira.",
+      "style": "Prosa direta, em primeira pessoa, com a data no cabeçalho de cada entrada. A realidade da fome narrada sem ornamentos — e por isso mais poderosa do que qualquer ficção.",
+      "context": "Escreve nos anos 1950-60, durante o desenvolvimentismo de JK, enquanto São Paulo se transformava em metrópole industrial. Quarto de Despejo (1960) expôs o Brasil que o milagre econômico ignorava.",
+      "signature_quote": "Eu classifico São Paulo assim: O Palácio é a sala de visita. A Prefeitura é a sala de jantar. A cidade é o jardim. A favela é o quintal onde jogam os lixos.",
+      "key_works": [
+        {
+          "title": "Quarto de Despejo: Diário de uma Favelada",
+          "year": 1960,
+          "genre": "Diário / Memórias"
+        },
+        {
+          "title": "Casa de Alvenaria",
+          "year": 1961,
+          "genre": "Diário"
+        },
+        {
+          "title": "Pedaços da Fome",
+          "year": 1963,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "conceicao",
+      "name": "Conceição Evaristo",
+      "nationality": "Brasileira",
+      "birth": 1946,
+      "death": null,
+      "movement": "Literatura afro-brasileira / Escrevivência",
+      "short_bio": "Maria da Conceição Evaristo de Brito nasceu em Belo Horizonte em família pobre. Empregada doméstica na infância, tornou-se professora e doutora em Literatura Comparada. Cunhou o conceito de 'escrevivência': a escrita como ato de vida, resistência e memória coletiva do povo negro brasileiro.",
+      "style": "Prosa lírica que entrelaça memória individual e história coletiva. Personagens negras e periféricas como protagonistas plenas, não como vítimas. Linguagem que carrega a oralidade da tradição afro-brasileira.",
+      "context": "Publica sua obra principal nas décadas de 1990-2010, período de afirmação da identidade negra no Brasil. Tornou-se símbolo da literatura que o cânone tenta excluir.",
+      "signature_quote": "Escrevivência: a escrita que nasce da vida vivida, da dor sentida, da alegria experimentada.",
+      "key_works": [
+        {
+          "title": "Ponciá Vicêncio",
+          "year": 2003,
+          "genre": "Romance"
+        },
+        {
+          "title": "Becos da Memória",
+          "year": 2006,
+          "genre": "Romance"
+        },
+        {
+          "title": "Insubmissas Lágrimas de Mulheres",
+          "year": 2011,
+          "genre": "Contos"
+        },
+        {
+          "title": "Olhos d'Água",
+          "year": 2014,
+          "genre": "Contos"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "euclides",
+      "name": "Euclides da Cunha",
+      "nationality": "Brasileiro",
+      "birth": 1866,
+      "death": 1909,
+      "movement": "Pré-Modernismo",
+      "short_bio": "Engenheiro, jornalista e escritor fluminense, Euclides da Cunha cobriu a Guerra de Canudos como correspondente de O Estado de S. Paulo em 1897. O material colhido tornou-se Os Sertões (1902), obra que combina ciência, história e literatura para retratar o sertão nordestino e a tragédia do movimento liderado por Antônio Conselheiro.",
+      "style": "Prosa híbrida que mistura determinismo científico, vocabulário técnico da geologia e meteorologia, e lirismo épico. Períodos longos, densos de subordinadas. A natureza é personagem antes dos homens.",
+      "context": "Escreveu no limiar entre o positivismo do Império e a república recém-proclamada. Influenciado pelo determinismo geográfico e racial de sua época — que hoje exige leitura crítica —, mas capaz de subvertê-lo ao admitir a grandeza moral dos sertanejos que descrevia como 'inferiores'.",
+      "signature_quote": "O sertanejo é, antes de tudo, um forte.",
+      "key_works": [
+        {
+          "title": "Os Sertões",
+          "year": 1902,
+          "genre": "Prosa não-ficcional"
+        },
+        {
+          "title": "À Margem da História",
+          "year": 1909,
+          "genre": "Ensaios"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "lobato",
+      "name": "Monteiro Lobato",
+      "nationality": "Brasileiro",
+      "birth": 1882,
+      "death": 1948,
+      "movement": "Pré-Modernismo",
+      "short_bio": "José Bento Monteiro Lobato foi escritor, editor e empresário paulista. Fundou a moderna indústria editorial brasileira e criou o Sítio do Picapau Amarelo, universo literário infantil que introduziu personagens como Narizinho, Emília e o Visconde de Sabugosa. Também escreveu contos regionalistas adultos, como os de Urupês (1918), onde criou o icônico Jeca Tatu.",
+      "style": "Prosa direta, irônica e coloquial. Na literatura infantil, mistura fantasia, humor e didatismo sem infantilizar a linguagem. Nos contos adultos, tom naturalista e crítico, com personagens do interior paulista. Pioneiro no uso de uma língua próxima do falar brasileiro cotidiano.",
+      "context": "Escreveu na transição entre o regionalismo do século XIX e o Modernismo de 1922. Rejeitou o academicismo da geração anterior e defendeu uma literatura nacional com identidade própria. Seu ativismo editorial e político — inclusive sua campanha pelo petróleo brasileiro — marcaram tanto quanto sua obra literária.",
+      "signature_quote": "Um país se faz com homens e livros.",
+      "key_works": [
+        {
+          "title": "Urupês",
+          "year": 1918,
+          "genre": "Contos"
+        },
+        {
+          "title": "A Menina do Narizinho Arrebitado",
+          "year": 1920,
+          "genre": "Literatura infantil"
+        },
+        {
+          "title": "O Saci",
+          "year": 1921,
+          "genre": "Literatura infantil"
+        },
+        {
+          "title": "Emília no País da Gramática",
+          "year": 1934,
+          "genre": "Literatura infantil"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "chico_buarque",
+      "name": "Chico Buarque",
+      "nationality": "Brasileiro",
+      "birth": 1944,
+      "death": null,
+      "movement": "Música popular / Literatura contemporânea",
+      "short_bio": "Francisco Buarque de Hollanda é compositor, cancionista, romancista e dramaturgo paulistano. Considerado um dos maiores letristas da língua portuguesa, estreou na prosa com Fazenda Modelo (1974), sátira política em forma de fábula, e consolidou-se como romancista com Estorvo (1991), Benjamim (1995) e Budapeste (2003), este vencedor do Jabuti.",
+      "style": "Prosa densa, cinematográfica e labiríntica. Narrador não confiável, frases de estrutura hipnótica, tempo narrativo fragmentado. Em Budapeste, joga com identidade e autoria. Em Leite Derramado, a memória de um aristocrata senil desconstrói a história oficial brasileira.",
+      "context": "Formou-se durante a ditadura militar, período em que a canção de protesto era o principal veículo de resistência cultural. Sua literatura carrega essa mesma tensão — entre o que se diz e o que se cala, entre a superfície e o que fica implícito.",
+      "signature_quote": "Geni e o Zeppelin, tantas as flores do seu saber.",
+      "key_works": [
+        {
+          "title": "Estorvo",
+          "year": 1991,
+          "genre": "Romance"
+        },
+        {
+          "title": "Budapeste",
+          "year": 2003,
+          "genre": "Romance"
+        },
+        {
+          "title": "Leite Derramado",
+          "year": 2009,
+          "genre": "Romance"
+        },
+        {
+          "title": "O Irmão Alemão",
+          "year": 2014,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "milton_hatoum",
+      "name": "Milton Hatoum",
+      "nationality": "Brasileiro",
+      "birth": 1952,
+      "death": null,
+      "movement": "Literatura contemporânea / Regionalismo amazônico",
+      "short_bio": "Milton Hatoum nasceu em Manaus, de família de origem libanesa. É um dos principais romancistas brasileiros contemporâneos. Relato de um Certo Oriente (1989), seu romance de estreia, ganhou o Jabuti. Dois Irmãos (2000) é sua obra mais lida — a história de gêmeos rivais narrada por um filho bastardo em Manaus.",
+      "style": "Prosa lírica e memorialística. A Amazônia é cenário e personagem — o calor, o rio, a decadência de famílias de imigrantes. Narrador em primeira pessoa que reconstrói o passado por fragmentos e lacunas. Influência de Faulkner e de autores árabes como Naguib Mahfouz.",
+      "context": "Escreve sobre o deslocamento cultural — a diáspora libanesa no Norte do Brasil, a modernização que destrói a Manaus colonial, a memória como único arquivo possível. Sua obra dialoga com o regionalismo de Guimarães Rosa sem copiá-lo.",
+      "signature_quote": "A memória é uma viagem ao passado que sempre chega tarde demais.",
+      "key_works": [
+        {
+          "title": "Relato de um Certo Oriente",
+          "year": 1989,
+          "genre": "Romance"
+        },
+        {
+          "title": "Dois Irmãos",
+          "year": 2000,
+          "genre": "Romance"
+        },
+        {
+          "title": "Cinzas do Norte",
+          "year": 2005,
+          "genre": "Romance"
+        },
+        {
+          "title": "Órfãos do Eldorado",
+          "year": 2008,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "raduan_nassar",
+      "name": "Raduan Nassar",
+      "nationality": "Brasileiro",
+      "birth": 1935,
+      "death": null,
+      "movement": "Literatura contemporânea",
+      "short_bio": "Raduan Nassar é escritor e fazendeiro paulista de origem libanesa. Sua obra é pequena e absolutamente singular: um romance, Lavoura Arcaica (1975), e alguns contos reunidos em Menina a Caminho (1994). Venceu o Camões em 2016. Abandonou a literatura para trabalhar na terra — escolha que dialoga tematicamente com sua própria ficção.",
+      "style": "Prosa bíblica e litúrgica. Período longo, ritmado, próximo ao versículo. Lavoura Arcaica narra o conflito entre o pai (ordem, terra, repetição) e o filho André (liberdade, desejo, ruptura) em linguagem que mistura Eclesiastes, Dostoiévski e tragédia grega.",
+      "context": "Escreveu durante a ditadura, mas sua obra é atemporal — trata do conflito primordial entre lei e desejo, pertencimento e liberdade. Sua recusa em ser um 'escritor profissional' é parte da coerência que sua obra exige.",
+      "signature_quote": "Ninguém vai me tirar esta herança: enquanto os meus pés estiverem no chão, o chão é meu.",
+      "key_works": [
+        {
+          "title": "Lavoura Arcaica",
+          "year": 1975,
+          "genre": "Romance"
+        },
+        {
+          "title": "Um Copo de Cólera",
+          "year": 1978,
+          "genre": "Novela"
+        },
+        {
+          "title": "Menina a Caminho",
+          "year": 1994,
+          "genre": "Contos"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "daniel_galera",
+      "name": "Daniel Galera",
+      "nationality": "Brasileiro",
+      "birth": 1979,
+      "death": null,
+      "movement": "Literatura contemporânea / Nova geração",
+      "short_bio": "Daniel Galera é escritor e tradutor gaúcho, um dos nomes centrais da geração surgida nos anos 2000. Publicou seus primeiros livros pela editora independente Livros do Mal antes de ser lançado pela Companhia das Letras. Cordilheira (2008) e Barba Ensopada de Sangue (2012) consolidaram sua posição como um dos mais importantes romancistas da nova geração brasileira.",
+      "style": "Narrativa objetiva e visceral, influenciada pelo minimalismo americano (Carver, McCarthy). Foco em protagonistas masculinos em crise — identidade, violência, luto, corpo. Barba Ensopada de Sangue usa um narrador que perde a memória episódica como metáfora da construção de identidade.",
+      "context": "Escreve em um Brasil pós-abertura democrática, sem a urgência política explícita da geração anterior. Sua violência é cotidiana e existencial, não histórica. Traduz autores como Cormac McCarthy e David Mitchell — o que molda diretamente seu estilo.",
+      "signature_quote": "A amnésia é uma forma de nascer de novo — sem escolha.",
+      "key_works": [
+        {
+          "title": "Dentes Guardados",
+          "year": 2001,
+          "genre": "Contos"
+        },
+        {
+          "title": "Cordilheira",
+          "year": 2008,
+          "genre": "Romance"
+        },
+        {
+          "title": "Barba Ensopada de Sangue",
+          "year": 2012,
+          "genre": "Romance"
+        },
+        {
+          "title": "O Deus das Avulsas",
+          "year": 2023,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    },
+    {
+      "id": "patricia_melo",
+      "name": "Patrícia Melo",
+      "nationality": "Brasileira",
+      "birth": 1962,
+      "death": null,
+      "movement": "Literatura contemporânea / Romance noir",
+      "short_bio": "Patrícia Melo é escritora e roteirista paulistana, pioneira do romance policial literário no Brasil. O Matador (1995) foi seu grande lançamento — a história de um pistoleiro de São Paulo que virou referência no gênero. Traduzida para mais de 20 idiomas, é uma das escritoras brasileiras de maior circulação internacional.",
+      "style": "Narrativa ágil, cinematográfica. Usa a estrutura do noir americano com ambientação urbana brasileira — violência, classe, exclusão. Voz narrativa direta, às vezes na primeira pessoa do criminoso. A tensão entre normalidade e brutalidade é o motor de seus romances.",
+      "context": "Escreve sobre o Brasil urbano violento dos anos 1990 e 2000 — São Paulo como cenário de desigualdade extrema. Sua obra antecipou discussões sobre violência estrutural, masculinidade tóxica e sistema penal que só se tornaram centrais no debate público brasileiro anos depois.",
+      "signature_quote": "Matar é fácil. O difícil é ter que continuar vivendo depois.",
+      "key_works": [
+        {
+          "title": "O Matador",
+          "year": 1995,
+          "genre": "Romance"
+        },
+        {
+          "title": "Inferno",
+          "year": 2000,
+          "genre": "Romance"
+        },
+        {
+          "title": "Valsa Negra",
+          "year": 2003,
+          "genre": "Romance"
+        },
+        {
+          "title": "Mulheres Empilhadas",
+          "year": 2019,
+          "genre": "Romance"
+        }
+      ],
+      "gutenberg_works": []
+    }
+  ]
+}

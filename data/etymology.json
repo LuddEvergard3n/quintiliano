@@ -1,0 +1,1297 @@
+{
+  "words": [
+    {
+      "word": "amor",
+      "root": "amor, amoris",
+      "language_origin": "latim",
+      "meaning_origin": "afeição, amor",
+      "evolution": [
+        "latim: amor → português: amor"
+      ],
+      "family": [
+        "amar",
+        "amado",
+        "amante",
+        "amável",
+        "desamor",
+        "enamorar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "amor",
+        "francês": "amour",
+        "italiano": "amore",
+        "inglês": "amour (empréstimo)"
+      },
+      "curiosity": "A mesma raiz latina gerou o nome 'Romeu' por via indireta e o mês de 'abril' — do latim 'aperire', abrir, mês em que a primavera abre as flores."
+    },
+    {
+      "word": "palavra",
+      "root": "parabola",
+      "language_origin": "latim",
+      "meaning_origin": "comparação, parábola (figura retórica)",
+      "evolution": [
+        "grego: parabolē → latim: parabola → latim vulgar: *paraula → português: palavra"
+      ],
+      "family": [
+        "palavrão",
+        "palavreado",
+        "empalavrar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "palabra",
+        "francês": "parole",
+        "catalão": "paraula"
+      },
+      "curiosity": "A palavra 'parábola' (história com ensinamento moral) e 'palavra' têm a mesma raiz — ambas vêm da ideia grega de comparação e discurso metafórico."
+    },
+    {
+      "word": "livro",
+      "root": "liber, libri",
+      "language_origin": "latim",
+      "meaning_origin": "casca interna de árvore (onde se escrevia)",
+      "evolution": [
+        "latim: liber → português: livro"
+      ],
+      "family": [
+        "livreiro",
+        "livraria",
+        "livreto",
+        "libelo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "libro",
+        "francês": "livre",
+        "italiano": "libro"
+      },
+      "curiosity": "Liber era a camada entre a casca e o lenho das árvores, usada como suporte de escrita antes do pergaminho. O mesmo radical gerou 'liberdade' (liber = livre) — coincidência que os romanos exploravam retoricamente."
+    },
+    {
+      "word": "escola",
+      "root": "schola",
+      "language_origin": "latim",
+      "meaning_origin": "lazer, tempo livre (para estudar)",
+      "evolution": [
+        "grego: skholē (lazer) → latim: schola → português: escola"
+      ],
+      "family": [
+        "escolar",
+        "escolástico",
+        "escolaridade"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "escuela",
+        "francês": "école",
+        "inglês": "school",
+        "italiano": "scuola"
+      },
+      "curiosity": "O grego skholē significava 'lazer' ou 'tempo livre' — porque estudar era um privilégio dos que não precisavam trabalhar. A escola era, originalmente, o lugar do ócio intelectual."
+    },
+    {
+      "word": "tempo",
+      "root": "tempus, temporis",
+      "language_origin": "latim",
+      "meaning_origin": "divisão, período, estação",
+      "evolution": [
+        "latim: tempus → português: tempo"
+      ],
+      "family": [
+        "temporal",
+        "temporário",
+        "contemporâneo",
+        "tempestade",
+        "tempero"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "tiempo",
+        "francês": "temps",
+        "italiano": "tempo"
+      },
+      "curiosity": "'Tempestade' e 'tempero' compartilham a mesma raiz: ambas vêm da ideia de mistura e proporção adequada — a tempestade é o clima fora de proporção; o tempero é a mistura na proporção certa."
+    },
+    {
+      "word": "língua",
+      "root": "lingua",
+      "language_origin": "latim",
+      "meaning_origin": "língua (órgão) e linguagem",
+      "evolution": [
+        "latim: lingua → português: língua"
+      ],
+      "family": [
+        "linguagem",
+        "linguística",
+        "linguiça",
+        "bilíngue"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "lengua",
+        "francês": "langue",
+        "italiano": "lingua"
+      },
+      "curiosity": "O mesmo órgão que saboreia a comida é o que articula a fala — e os romanos usavam 'lingua' para ambos. 'Linguiça' vem da mesma raiz: era um embutido feito com língua de porco."
+    },
+    {
+      "word": "autor",
+      "root": "auctor, auctoris",
+      "language_origin": "latim",
+      "meaning_origin": "quem aumenta, quem faz crescer; criador, responsável",
+      "evolution": [
+        "latim: auctor → português: autor"
+      ],
+      "family": [
+        "autoria",
+        "autoridade",
+        "autorizar",
+        "autógrafo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "autor",
+        "francês": "auteur",
+        "inglês": "author"
+      },
+      "curiosity": "Auctor vem de 'augere' (aumentar, fazer crescer). O autor é quem 'faz crescer' uma obra. 'Autoridade' compartilha a raiz — a autoridade é quem tem o poder de 'fazer crescer' ou sancionar algo."
+    },
+    {
+      "word": "forma",
+      "root": "forma",
+      "language_origin": "latim",
+      "meaning_origin": "figura, aparência, molde",
+      "evolution": [
+        "latim: forma → português: forma"
+      ],
+      "family": [
+        "formal",
+        "formato",
+        "reformar",
+        "informar",
+        "conformar",
+        "uniforme"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "forma",
+        "francês": "forme",
+        "inglês": "form",
+        "italiano": "forma"
+      },
+      "curiosity": "'Informar' significa literalmente 'dar forma' a uma ideia na mente de alguém. 'Uniforme' é o que tem 'uma só forma'. A raiz está em mais de 50 palavras portuguesas."
+    },
+    {
+      "word": "texto",
+      "root": "textus",
+      "language_origin": "latim",
+      "meaning_origin": "tecido, algo entrelaçado",
+      "evolution": [
+        "latim: texere (tecer) → textus (tecido) → português: texto"
+      ],
+      "family": [
+        "textura",
+        "têxtil",
+        "contexto",
+        "pretexto",
+        "subtexto"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "texto",
+        "francês": "texte",
+        "inglês": "text"
+      },
+      "curiosity": "Um texto é, literalmente, um tecido — fios de palavras entrelaçados. 'Contexto' é o que está 'tecido junto' ao redor. 'Pretexto' é o que está 'tecido na frente' para esconder outra coisa."
+    },
+    {
+      "word": "verso",
+      "root": "versus",
+      "language_origin": "latim",
+      "meaning_origin": "linha de escrita; ação de virar, girar",
+      "evolution": [
+        "latim: vertere (girar, virar) → versus → português: verso"
+      ],
+      "family": [
+        "versão",
+        "reverso",
+        "universo",
+        "diverso",
+        "inversão",
+        "conversar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "verso",
+        "francês": "vers",
+        "inglês": "verse"
+      },
+      "curiosity": "O verso da poesia tem esse nome porque, quando se chegava ao fim de uma linha na pedra ou argila, o escriba 'virava' (vertere) para continuar na linha seguinte. 'Universo' é o que foi 'girado em uma só direção'."
+    },
+    {
+      "word": "nome",
+      "root": "nomen, nominis",
+      "language_origin": "latim",
+      "meaning_origin": "nome, denominação",
+      "evolution": [
+        "latim: nomen → português: nome"
+      ],
+      "family": [
+        "nomear",
+        "nominativo",
+        "pronome",
+        "denominação",
+        "renomado"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "nombre",
+        "francês": "nom",
+        "inglês": "noun (via francês)"
+      },
+      "curiosity": "O latim 'nomen' deu origem à categoria gramatical 'substantivo' via 'nome'. Em muitas línguas (espanhol, francês, inglês), a palavra para 'nome' e para 'substantivo' são a mesma."
+    },
+    {
+      "word": "sentido",
+      "root": "sensus",
+      "language_origin": "latim",
+      "meaning_origin": "percepção, sensação; direção",
+      "evolution": [
+        "latim: sentire (perceber) → sensus → português: sentido"
+      ],
+      "family": [
+        "sentir",
+        "sensível",
+        "sensação",
+        "consenso",
+        "dissentir"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "sentido",
+        "francês": "sens",
+        "inglês": "sense"
+      },
+      "curiosity": "A mesma palavra cobre os cinco sentidos corporais, o 'sentido' de uma palavra e a 'direção' de uma via de trânsito. Em todos os casos, a ideia é de percepção orientada."
+    },
+    {
+      "word": "gramática",
+      "root": "grammatikē",
+      "language_origin": "grego",
+      "meaning_origin": "arte das letras, da escrita",
+      "evolution": [
+        "grego: gramma (letra, escrita) → grammatikē → latim: grammatica → português: gramática"
+      ],
+      "family": [
+        "gramatical",
+        "agramatical",
+        "programa",
+        "telegrama",
+        "diagrama"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "gramática",
+        "francês": "grammaire",
+        "inglês": "grammar"
+      },
+      "curiosity": "Gramma em grego significava qualquer coisa escrita ou desenhada — uma letra, um sinal, um desenho. Daí vêm 'programa' (escrito de antemão), 'telegrama' (escrito à distância) e 'diagrama' (desenhado através)."
+    },
+    {
+      "word": "poesia",
+      "root": "poiēsis",
+      "language_origin": "grego",
+      "meaning_origin": "criação, fabricação",
+      "evolution": [
+        "grego: poiein (fazer, criar) → poiēsis → latim: poesis → português: poesia"
+      ],
+      "family": [
+        "poema",
+        "poeta",
+        "poético"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "poesía",
+        "francês": "poésie",
+        "inglês": "poetry"
+      },
+      "curiosity": "Poiēsis em grego era um termo geral para qualquer ato de criação — fazer um sapato ou fazer um poema. Aristóteles o especializou para a criação literária. Heidegger o resgatou no século XX como conceito filosófico."
+    },
+    {
+      "word": "metáfora",
+      "root": "metaphorá",
+      "language_origin": "grego",
+      "meaning_origin": "transporte, transferência",
+      "evolution": [
+        "grego: meta (além) + pherein (carregar) → metaphorá → latim: metaphora → português: metáfora"
+      ],
+      "family": [
+        "metafórico",
+        "metaforizar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "metáfora",
+        "francês": "métaphore",
+        "inglês": "metaphor"
+      },
+      "curiosity": "Em grego moderno, 'metaphorá' ainda significa 'caminhão de mudança' ou 'transporte'. A metáfora é literalmente um veículo: ela transporta o sentido de um domínio para outro."
+    },
+    {
+      "word": "ironia",
+      "root": "eirōneía",
+      "language_origin": "grego",
+      "meaning_origin": "dissimulação, fingimento de ignorância",
+      "evolution": [
+        "grego: eirōn (aquele que dissimula) → eirōneía → latim: ironia → português: ironia"
+      ],
+      "family": [
+        "irônico",
+        "ironizar",
+        "antiirônico"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "ironía",
+        "francês": "ironie",
+        "inglês": "irony"
+      },
+      "curiosity": "O eirōn era um tipo cômico grego: o personagem que fingia ser mais tolo do que era para enganar o alazon (o fanfarrão). Sócrates foi chamado de eirōn por seus contemporâneos — fingindo não saber para revelar a ignorância dos outros."
+    },
+    {
+      "word": "símbolo",
+      "root": "symbolon",
+      "language_origin": "grego",
+      "meaning_origin": "sinal de reconhecimento; objeto partido ao meio",
+      "evolution": [
+        "grego: syn (junto) + ballein (lançar) → symbolon → latim: symbolum → português: símbolo"
+      ],
+      "family": [
+        "simbólico",
+        "simbolismo",
+        "simbolizar",
+        "símbolo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "símbolo",
+        "francês": "symbole",
+        "inglês": "symbol"
+      },
+      "curiosity": "O symbolon era um objeto (moeda, osso, anel) partido ao meio: cada parte ficava com um contratante. Para autenticar o acordo, juntavam as metades. O símbolo é algo que 'junta' dois mundos — o visível e o invisível."
+    },
+    {
+      "word": "crise",
+      "root": "krisis",
+      "language_origin": "grego",
+      "meaning_origin": "decisão, ponto de virada, julgamento",
+      "evolution": [
+        "grego: krinein (separar, julgar, decidir) → krisis → latim: crisis → português: crise"
+      ],
+      "family": [
+        "crítico",
+        "crítica",
+        "critério",
+        "discernir",
+        "hipócrita"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "crisis",
+        "francês": "crise",
+        "inglês": "crisis"
+      },
+      "curiosity": "Na medicina grega, krisis era o momento decisivo de uma doença — quando o paciente ou melhorava ou morria. A crise não é o caos: é o ponto em que se decide. 'Hipócrita' vem da mesma raiz: o que 'julga por baixo', interpreta um papel."
+    },
+    {
+      "word": "lógica",
+      "root": "logikē",
+      "language_origin": "grego",
+      "meaning_origin": "arte do raciocínio; relativa ao logos",
+      "evolution": [
+        "grego: logos (palavra, razão, discurso) → logikē → latim: logica → português: lógica"
+      ],
+      "family": [
+        "lógico",
+        "logos",
+        "monólogo",
+        "diálogo",
+        "prólogo",
+        "epílogo",
+        "biologia",
+        "psicologia"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "lógica",
+        "francês": "logique",
+        "inglês": "logic"
+      },
+      "curiosity": "Logos em grego carregava três sentidos simultâneos: palavra, razão e discurso. Daí deriva metade do vocabulário científico em '-logia' (biologia, psicologia, sociologia) — cada ciência é um logos sobre seu objeto."
+    },
+    {
+      "word": "retórica",
+      "root": "rhētorikē",
+      "language_origin": "grego",
+      "meaning_origin": "arte do orador",
+      "evolution": [
+        "grego: rhētōr (orador) → rhētorikē → latim: rhetorica → português: retórica"
+      ],
+      "family": [
+        "retórico",
+        "retoricamente"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "retórica",
+        "francês": "rhétorique",
+        "inglês": "rhetoric"
+      },
+      "curiosity": "Aristóteles definiu retórica como 'a faculdade de descobrir os meios de persuasão disponíveis em cada caso'. Para os gregos, era uma ciência séria — não o uso vazio de palavras belas, como o termo pejorativamente sugere hoje."
+    },
+    {
+      "word": "sintaxe",
+      "root": "syntaxis",
+      "language_origin": "grego",
+      "meaning_origin": "ordenação conjunta, arranjo",
+      "evolution": [
+        "grego: syn (junto) + tassein (ordenar) → syntaxis → latim: syntaxis → português: sintaxe"
+      ],
+      "family": [
+        "sintático",
+        "parataxe",
+        "hipotaxe"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "sintaxis",
+        "francês": "syntaxe",
+        "inglês": "syntax"
+      },
+      "curiosity": "Tassein em grego era um termo militar: ordenar as tropas em formação. A sintaxe é a disposição das palavras em 'formação de combate' — cada uma no posto que lhe confere função e sentido."
+    },
+    {
+      "word": "alface",
+      "root": "al-khass",
+      "language_origin": "árabe",
+      "meaning_origin": "a alface (planta)",
+      "evolution": [
+        "árabe: al-khass → português medieval: alface"
+      ],
+      "family": [],
+      "cognates_other_languages": {
+        "espanhol": "lechuga (do latim)",
+        "catalão": "enciam"
+      },
+      "curiosity": "O português tem mais de 900 palavras de origem árabe, legado dos sete séculos de presença mourisca na Península Ibérica (711-1492). Quase todas começam com 'al-' — o artigo árabe que se fundiu com a palavra."
+    },
+    {
+      "word": "algoritmo",
+      "root": "al-Khwārizmī",
+      "language_origin": "árabe",
+      "meaning_origin": "nome latinizado do matemático Muhammad ibn Musa al-Khwārizmī",
+      "evolution": [
+        "nome próprio: al-Khwārizmī → latim medieval: algorismus → português: algoritmo"
+      ],
+      "family": [
+        "algorítmico"
+      ],
+      "cognates_other_languages": {
+        "inglês": "algorithm",
+        "francês": "algorithme"
+      },
+      "curiosity": "Al-Khwārizmī (c. 780-850) foi o matemático que formalizou a álgebra — palavra que também vem do árabe 'al-jabr' (reunião de partes fraturadas), do título de seu livro. Seu nome tornou-se sinônimo de procedimento de cálculo."
+    },
+    {
+      "word": "álgebra",
+      "root": "al-jabr",
+      "language_origin": "árabe",
+      "meaning_origin": "reunião de partes fraturadas; restauração (de ossos)",
+      "evolution": [
+        "árabe: al-jabr (do título 'Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr') → latim medieval: algebra → português: álgebra"
+      ],
+      "family": [
+        "algébrico",
+        "algebrista"
+      ],
+      "cognates_other_languages": {
+        "inglês": "algebra",
+        "francês": "algèbre"
+      },
+      "curiosity": "Al-jabr era originalmente um termo de medicina — a ação de 'reunir' ossos fraturados. Al-Khwārizmī o usou metaforicamente para a operação de 'reunir' termos de uma equação. Na Espanha medieval, algebrista era sinônimo de cirurgião ortopedista."
+    },
+    {
+      "word": "assassino",
+      "root": "hashshāshīn",
+      "language_origin": "árabe",
+      "meaning_origin": "consumidor de haxixe",
+      "evolution": [
+        "árabe: hashshāsh (consumidor de haxixe) → plural: hashshāshīn → italiano medieval: assassino → português: assassino"
+      ],
+      "family": [
+        "assassinato",
+        "assassinar"
+      ],
+      "cognates_other_languages": {
+        "inglês": "assassin",
+        "francês": "assassin"
+      },
+      "curiosity": "Hashshāshīn era o nome dado pelos cruzados a uma ordem muçulmana de guerreiros secretos (os Nizaris). A lenda dizia que consumiam haxixe antes de suas missões. Marco Polo popularizou a história. O nome chegou ao português via italiano medieval."
+    },
+    {
+      "word": "caju",
+      "root": "acajú",
+      "language_origin": "tupi",
+      "meaning_origin": "fruto amarelo",
+      "evolution": [
+        "tupi: acajú → português: caju"
+      ],
+      "family": [
+        "cajueiro",
+        "cajuína"
+      ],
+      "cognates_other_languages": {
+        "inglês": "cashew (via português)",
+        "francês": "cajou"
+      },
+      "curiosity": "A palavra 'caju' é um dos inúmeros tupismos que o português brasileiro absorveu — especialmente para flora e fauna sem equivalente europeu. O inglês 'cashew' e o francês 'cajou' vêm do português, que veio do tupi."
+    },
+    {
+      "word": "abacaxi",
+      "root": "ibá cati",
+      "language_origin": "tupi",
+      "meaning_origin": "fruta de cheiro forte",
+      "evolution": [
+        "tupi: ibá cati (fruta + cheiro forte) → português: abacaxi"
+      ],
+      "family": [],
+      "cognates_other_languages": {
+        "espanhol": "piña (do espanhol)",
+        "inglês": "pineapple"
+      },
+      "curiosity": "O espanhol e o inglês chamam o abacaxi de 'piña/pineapple' por sua semelhança visual com a pinha do pinheiro. O português usou o nome tupi, que descreve o cheiro intenso da fruta. 'Abacaxi' no sentido de 'problema difícil' é um uso brasileiro do século XX."
+    },
+    {
+      "word": "marimbondo",
+      "root": "mbarimbondo",
+      "language_origin": "quimbundo",
+      "meaning_origin": "vespa grande e agressiva",
+      "evolution": [
+        "quimbundo (língua banta de Angola): mbarimbondo → português: marimbondo"
+      ],
+      "family": [],
+      "cognates_other_languages": {},
+      "curiosity": "O quimbundo é uma das línguas bantas de Angola, trazida ao Brasil pelos escravizados. Além de marimbondo, deixou palavras como moleque, quilombo, caçula, candomblé, samba e mocambo."
+    },
+    {
+      "word": "samba",
+      "root": "semba",
+      "language_origin": "quimbundo",
+      "meaning_origin": "umbigada, gesto ritual de convite à dança",
+      "evolution": [
+        "quimbundo: semba (umbigada) → português brasileiro: samba"
+      ],
+      "family": [
+        "sambar",
+        "sambista",
+        "sambódromo"
+      ],
+      "cognates_other_languages": {},
+      "curiosity": "A umbigada (semba) era um gesto ritual das danças bantas em que os dançarinos se tocavam os umbigos — convite ao par para dançar. O ritmo e a dança que conhecemos hoje como samba foram forjados no Brasil, mas a palavra e os gestos fundadores vêm diretamente da África."
+    },
+    {
+      "word": "guerra",
+      "root": "werra",
+      "language_origin": "germânico",
+      "meaning_origin": "confusão, briga, discórdia",
+      "evolution": [
+        "germânico: werra → francês antigo: guerre → português: guerra"
+      ],
+      "family": [
+        "guerreiro",
+        "guerrilha",
+        "guerrilheiro"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "guerra",
+        "francês": "guerre",
+        "italiano": "guerra"
+      },
+      "curiosity": "O latim tinha 'bellum' para guerra — que sobreviveu em 'bélico', 'beligerante', 'rebelde'. Mas o termo do dia a dia do português (e espanhol, francês, italiano) veio dos invasores germânicos que não tinham equivalente palatável para 'bellum'."
+    },
+    {
+      "word": "guarda",
+      "root": "wardōn",
+      "language_origin": "germânico",
+      "meaning_origin": "vigiar, proteger",
+      "evolution": [
+        "germânico: wardōn → francês antigo: garder → português: guardar/guarda"
+      ],
+      "family": [
+        "guardar",
+        "guardião",
+        "guarda-roupa",
+        "resguardar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "guardar",
+        "francês": "garder",
+        "inglês": "ward, guard (do mesmo radical)"
+      },
+      "curiosity": "O inglês 'guard' e o francês 'garder' vêm do mesmo radical germânico. O português tomou a palavra via francês, com o prefixo 'gu-' característico das palavras de origem germânica."
+    },
+    {
+      "word": "coragem",
+      "root": "corage",
+      "language_origin": "francês",
+      "meaning_origin": "disposição do coração (cor = coração em latim)",
+      "evolution": [
+        "latim: cor, cordis (coração) → francês antigo: corage → português: coragem"
+      ],
+      "family": [
+        "corajoso",
+        "encorajar",
+        "descorajar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "coraje",
+        "francês": "courage",
+        "inglês": "courage"
+      },
+      "curiosity": "Coragem literalmente significa 'o que vem do coração'. O mesmo vale para 'acordo' (ad + cor: de coração a coração), 'recordar' (re + cor: trazer de volta ao coração) e 'discórdia' (dis + cor: corações separados)."
+    },
+    {
+      "word": "virtude",
+      "root": "virtus, virtutis",
+      "language_origin": "latim",
+      "meaning_origin": "excelência, força, virilidade",
+      "evolution": [
+        "latim: vir (homem) → virtus (excelência masculina) → português: virtude"
+      ],
+      "family": [
+        "virtuoso",
+        "virtual",
+        "virtualmente"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "virtud",
+        "francês": "vertu",
+        "inglês": "virtue"
+      },
+      "curiosity": "'Virtual' vem da mesma raiz: 'virtus' no sentido escolástico medieval de 'potência' ou 'força em potencial'. O 'mundo virtual' é o mundo que tem a potência de existir, mas não existe visivelmente."
+    },
+    {
+      "word": "argumento",
+      "root": "argumentum",
+      "language_origin": "latim",
+      "meaning_origin": "prova, demonstração; enredo de uma peça",
+      "evolution": [
+        "latim: arguere (tornar claro, demonstrar) → argumentum → português: argumento"
+      ],
+      "family": [
+        "argumentar",
+        "argumentação",
+        "argumentativo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "argumento",
+        "francês": "argument",
+        "inglês": "argument"
+      },
+      "curiosity": "Arguere em latim significava 'tornar claro' — o argumento é o que ilumina, não o que confunde. Em teatro latino, argumentum era o resumo do enredo — sentido que sobrevive quando falamos do 'argumento' de um filme."
+    },
+    {
+      "word": "discurso",
+      "root": "discursus",
+      "language_origin": "latim",
+      "meaning_origin": "ação de correr em diferentes direções; movimento do pensamento",
+      "evolution": [
+        "latim: dis (em direções diferentes) + currere (correr) → discursus → português: discurso"
+      ],
+      "family": [
+        "discursivo",
+        "discorrer",
+        "curso",
+        "percurso",
+        "recurso",
+        "concurso"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "discurso",
+        "francês": "discours",
+        "inglês": "discourse"
+      },
+      "curiosity": "O pensamento 'corre' de ideia em ideia — daí 'discurso'. A mesma raiz 'currere' deu 'currículo' (percurso de vida), 'corrida', 'corrente', 'concurso' (correr junto) e 'incursão' (correr sobre o inimigo)."
+    },
+    {
+      "word": "fábula",
+      "root": "fabula",
+      "language_origin": "latim",
+      "meaning_origin": "conversa, história, boato",
+      "evolution": [
+        "latim: fari (falar) → fabula → português: fábula"
+      ],
+      "family": [
+        "fabuloso",
+        "afável",
+        "fama",
+        "nefasto",
+        "infante"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "fábula",
+        "francês": "fable",
+        "inglês": "fable"
+      },
+      "curiosity": "'Infante' (criança) vem da mesma raiz: in + fans = 'aquele que não fala ainda'. 'Nefasto' é o que não se pode pronunciar (nefas = proibido de falar). 'Fama' é o que as pessoas falam sobre alguém."
+    },
+    {
+      "word": "narrar",
+      "root": "narrare",
+      "language_origin": "latim",
+      "meaning_origin": "contar, relatar; tornar conhecido",
+      "evolution": [
+        "latim: gnarus (que conhece) → narrare → português: narrar"
+      ],
+      "family": [
+        "narrativa",
+        "narrador",
+        "narração",
+        "inenarrável"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "narrar",
+        "francês": "narrer",
+        "inglês": "narrate"
+      },
+      "curiosity": "Narrare vem de gnarus — 'aquele que sabe'. Narrar é tornar algo conhecido. A mesma raiz gnarus deu 'ignorar' (ig + narus = não saber) e, via grego, 'gnose' (conhecimento espiritual)."
+    },
+    {
+      "word": "parágrafo",
+      "root": "paragraphos",
+      "language_origin": "grego",
+      "meaning_origin": "escrito ao lado; linha de separação",
+      "evolution": [
+        "grego: para (ao lado) + graphein (escrever) → paragraphos → latim: paragraphus → português: parágrafo"
+      ],
+      "family": [
+        "parágrafos",
+        "parágrafo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "párrafo",
+        "francês": "paragraphe",
+        "inglês": "paragraph"
+      },
+      "curiosity": "Na Antiguidade, o parágrafo era um sinal (uma linha ou ângulo) desenhado na margem para indicar uma mudança de assunto — não o bloco de texto em si. Só no século XVI o sentido migrou para o bloco de texto."
+    },
+    {
+      "word": "página",
+      "root": "pagina",
+      "language_origin": "latim",
+      "meaning_origin": "coluna de escrita; grade, treliça",
+      "evolution": [
+        "latim: pangere (fixar, pregar) → pagina → português: página"
+      ],
+      "family": [
+        "paginação",
+        "paginar",
+        "compaginar"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "página",
+        "francês": "page",
+        "inglês": "page"
+      },
+      "curiosity": "Pagina vem de pangere (fixar, pregar) — a mesma raiz de 'pagar' (fixar um débito). A página era originalmente a 'grade' de texto fixada em colunas na folha de papiro."
+    },
+    {
+      "word": "estilo",
+      "root": "stilus",
+      "language_origin": "latim",
+      "meaning_origin": "instrumento de escrita pontudo; haste",
+      "evolution": [
+        "latim: stilus (estilete de escrever em cera) → português: estilo"
+      ],
+      "family": [
+        "estilístico",
+        "estilística",
+        "estilizar",
+        "estilete"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "estilo",
+        "francês": "style",
+        "inglês": "style"
+      },
+      "curiosity": "Estilo era o instrumento de ferro ou osso com que os romanos escreviam nas tabuinhas de cera — um estilete. Como cada escritor tinha uma forma particular de mover o stilus, o instrumento tornou-se metáfora para a maneira individual de escrever."
+    },
+    {
+      "word": "clássico",
+      "root": "classicus",
+      "language_origin": "latim",
+      "meaning_origin": "relativo à primeira classe de cidadãos; modelo",
+      "evolution": [
+        "latim: classis (divisão, classe) → classicus → português: clássico"
+      ],
+      "family": [
+        "classe",
+        "classificar",
+        "clássico",
+        "classicismo"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "clásico",
+        "francês": "classique",
+        "inglês": "classic"
+      },
+      "curiosity": "Classicus era o cidadão romano da primeira classe censitária — o mais rico, o modelo. A obra 'clássica' é a que serve de modelo para todas as outras. O uso se expande no Renascimento para designar os autores greco-latinos como padrão de excelência."
+    },
+    {
+      "word": "crítica",
+      "root": "kritikē",
+      "language_origin": "grego",
+      "meaning_origin": "arte de julgar, de separar o bom do ruim",
+      "evolution": [
+        "grego: krinein (separar, julgar) → kritikē → latim: critica → português: crítica"
+      ],
+      "family": [
+        "crítico",
+        "criticar",
+        "autocrítica",
+        "discernir",
+        "crise",
+        "hipócrita"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "crítica",
+        "francês": "critique",
+        "inglês": "critique, critic"
+      },
+      "curiosity": "Krinein em grego significava separar fisicamente — como separar o joio do trigo. A crítica é a faculdade de separar o que tem valor do que não tem. 'Crise' e 'crítico' têm a mesma raiz: ambos são momentos de julgamento e separação."
+    },
+    {
+      "word": "ensaio",
+      "root": "exagium",
+      "language_origin": "latim",
+      "meaning_origin": "ato de pesar, de provar; teste",
+      "evolution": [
+        "latim: exagium (ação de pesar) → latim vulgar: *exagiare → francês antigo: essai → português: ensaio"
+      ],
+      "family": [
+        "ensaiar",
+        "ensaiador"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "ensayo",
+        "francês": "essai",
+        "inglês": "essay"
+      },
+      "curiosity": "Montaigne (1533-1592) chamou seus textos de 'Essais' — tentativas, experimentos. O gênero literário do ensaio é, literalmente, uma 'pesagem' de ideias sem a pretensão de concluir. A mesma raiz deu 'exame' (outra forma de pesar/testar)."
+    },
+    {
+      "word": "tese",
+      "root": "thesis",
+      "language_origin": "grego",
+      "meaning_origin": "ação de colocar, posição afirmada",
+      "evolution": [
+        "grego: tithenai (colocar, pôr) → thesis → latim: thesis → português: tese"
+      ],
+      "family": [
+        "tético",
+        "antítese",
+        "síntese",
+        "hipótese",
+        "parêntese",
+        "epiteto"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "tesis",
+        "francês": "thèse",
+        "inglês": "thesis"
+      },
+      "curiosity": "Tithenai é uma das raízes mais produtivas do vocabulário intelectual: 'tese' (o que se coloca), 'antítese' (o que se coloca contra), 'síntese' (o que se coloca junto), 'hipótese' (o que se coloca como base). 'Parêntese' é o que se 'coloca entre'."
+    },
+    {
+      "word": "cânone",
+      "root": "kanōn",
+      "language_origin": "grego",
+      "meaning_origin": "régua, regra, padrão de medida",
+      "evolution": [
+        "grego: kanōn (régua) → latim: canon → português: cânone"
+      ],
+      "family": [
+        "canônico",
+        "canonizar",
+        "canonização"
+      ],
+      "cognates_other_languages": {
+        "espanhol": "canon",
+        "francês": "canon",
+        "inglês": "canon"
+      },
+      "curiosity": "Kanōn era a régua do carpinteiro — instrumento de medição. O cânone bíblico é o conjunto de textos que 'medem' a fé. O cânone literário é o conjunto de obras que 'medem' a literatura. Na música, o cânone é a composição em que as vozes seguem a mesma 'régua' com defasagem."
+    },
+    {
+      "word": "capim",
+      "root": "ka'apim",
+      "language_origin": "tupi",
+      "meaning_origin": "'ka'a' = mato + 'pim' = fino, delgado",
+      "evolution": [
+        "ka'apim (tupi)",
+        "capim (português colonial)",
+        "capim (português moderno)"
+      ],
+      "family": [
+        "capinzal",
+        "capinar"
+      ],
+      "cognates_other_languages": [],
+      "curiosity": "Os colonizadores usaram a palavra tupi porque não tinham termo para o capim da savana brasileira. Passou direto ao português sem adaptação."
+    },
+    {
+      "word": "piranha",
+      "root": "pira + anha",
+      "language_origin": "tupi",
+      "meaning_origin": "'pira' = peixe + 'anha' = mau, ruim → 'peixe mau'",
+      "evolution": [
+        "piranha (tupi)",
+        "piranha (português colonial)",
+        "piranha (português moderno)"
+      ],
+      "family": [
+        "piranhal"
+      ],
+      "cognates_other_languages": [
+        "piranha (inglês, espanhol — palavra emprestada)"
+      ],
+      "curiosity": "Entrou em várias línguas europeias sem tradução — a criatura era tão específica que o nome tupi foi adotado diretamente."
+    },
+    {
+      "word": "açúcar",
+      "root": "sukkar",
+      "language_origin": "árabe",
+      "meaning_origin": "Do árabe 'sukkar', do sânscrito 'sharkara' = grânulo, areia",
+      "evolution": [
+        "sharkara (sânscrito)",
+        "sukkar (árabe)",
+        "zucchero (italiano medieval)",
+        "açúcar (português)"
+      ],
+      "family": [
+        "açucareiro",
+        "açucarado",
+        "açucarar"
+      ],
+      "cognates_other_languages": [
+        "sugar (inglês)",
+        "sucre (francês)",
+        "zucchero (italiano)",
+        "Zucker (alemão)"
+      ],
+      "curiosity": "O açúcar chegou à Europa via comércio árabe. A palavra percorreu sânscrito → persa → árabe → italiano/português — rastro da Rota da Seda."
+    },
+    {
+      "word": "alquimia",
+      "root": "al-kīmiyā",
+      "language_origin": "árabe",
+      "meaning_origin": "Do árabe 'al-kīmiyā', possivelmente do grego 'khumeia' = fusão de metais",
+      "evolution": [
+        "khumeia (grego)",
+        "al-kīmiyā (árabe)",
+        "alchimia (latim medieval)",
+        "alquimia (português)"
+      ],
+      "family": [
+        "alquimista",
+        "alquímico"
+      ],
+      "cognates_other_languages": [
+        "alchemy (inglês)",
+        "alchimie (francês)",
+        "Alchemie (alemão)"
+      ],
+      "curiosity": "O prefixo 'al-' é o artigo definido árabe. Dezenas de palavras científicas portuguesas começam com 'al-': álgebra, algoritmo, alambique, alcool."
+    },
+    {
+      "word": "soneto",
+      "root": "sonetto",
+      "language_origin": "italiano",
+      "meaning_origin": "Diminutivo de 'suono' = som → 'pequeno som', 'pequena canção'",
+      "evolution": [
+        "sonus (latim)",
+        "suono (italiano)",
+        "sonetto (italiano medieval)",
+        "sonnet (francês)",
+        "soneto (português)"
+      ],
+      "family": [
+        "sonetista",
+        "sonetear"
+      ],
+      "cognates_other_languages": [
+        "sonnet (inglês, francês)",
+        "Sonett (alemão)"
+      ],
+      "curiosity": "Inventado na Sicília no século XIII, o soneto chegou ao português via Itália e Espanha. Camões o consagrou em português no século XVI — 14 versos, dois quartetos, dois tercetos."
+    },
+    {
+      "word": "piano",
+      "root": "pianoforte",
+      "language_origin": "italiano",
+      "meaning_origin": "Contração de 'pianoforte' = 'piano e forte' = suave e forte, referindo-se à dinâmica do instrumento",
+      "evolution": [
+        "pianoforte (italiano, c.1700)",
+        "piano (abreviação)",
+        "piano (português, inglês, francês)"
+      ],
+      "family": [
+        "pianista",
+        "pianola",
+        "pianíssimo"
+      ],
+      "cognates_other_languages": [
+        "piano (inglês, francês, espanhol, alemão — empréstimo universal)"
+      ],
+      "curiosity": "Inventado por Bartolomeo Cristofori por volta de 1700 em Florença. Seu nome completo descrevia a inovação técnica: podia tocar suave (piano) e forte — ao contrário do cravo."
+    },
+    {
+      "word": "clichê",
+      "root": "cliché",
+      "language_origin": "francês",
+      "meaning_origin": "Do francês 'cliché' = chapa de impressão tipográfica copiada. Metáfora: ideia copiada sem reflexão",
+      "evolution": [
+        "cliché (francês tipográfico, séc.XIX)",
+        "clichê (português, séc.XX)"
+      ],
+      "family": [
+        "clichear",
+        "desclichê"
+      ],
+      "cognates_other_languages": [
+        "cliché (inglês — mesmo empréstimo)",
+        "Klischee (alemão)"
+      ],
+      "curiosity": "Na tipografia, 'cliché' era a placa metálica usada para reproduzir imagens. A metáfora é exata: uma ideia-clichê é reproduzida mecanicamente, sem criação."
+    },
+    {
+      "word": "romance",
+      "root": "romanice",
+      "language_origin": "francês",
+      "meaning_origin": "Do latim 'romanice' = 'à maneira romana' → língua vulgar → texto em língua vulgar → narrativa longa em prosa",
+      "evolution": [
+        "romanice (latim vulgar)",
+        "romanz (francês antigo)",
+        "roman (francês medieval)",
+        "romance (português)"
+      ],
+      "family": [
+        "romancear",
+        "romanceiro",
+        "romancista"
+      ],
+      "cognates_other_languages": [
+        "roman (francês)",
+        "Roman (alemão)",
+        "romanzo (italiano)",
+        "novel (inglês — via outro caminho)"
+      ],
+      "curiosity": "No início, 'romance' era qualquer texto escrito em língua vulgar (não em latim). Depois especializou-se em narrativa ficcional longa. O inglês preferiu 'novel' para o mesmo gênero."
+    },
+    {
+      "word": "ambição",
+      "root": "ambitio",
+      "language_origin": "latim",
+      "meaning_origin": "'ambitio' de 'ambire' = 'andar em torno' → candidatos romanos circulavam para pedir votos → desejo de poder",
+      "evolution": [
+        "ambire (latim)",
+        "ambitio (latim clássico)",
+        "ambition (francês medieval)",
+        "ambição (português)"
+      ],
+      "family": [
+        "ambicioso",
+        "ambicionar"
+      ],
+      "cognates_other_languages": [
+        "ambition (inglês, francês)",
+        "Ambition (alemão)"
+      ],
+      "curiosity": "O sentido original era neutro: andar em torno para conseguir votos. A conotação negativa (desejo excessivo de poder) veio depois, quando os romanos passaram a ver com desconfiança quem 'circulava demais'."
+    },
+    {
+      "word": "candidato",
+      "root": "candidatus",
+      "language_origin": "latim",
+      "meaning_origin": "'candidatus' = 'vestido de branco' — candidatos romanos usavam toga branca (candida) para se destacar nas eleições",
+      "evolution": [
+        "candidus (latim) = branco, brilhante",
+        "candidatus (latim clássico)",
+        "candidat (francês)",
+        "candidato (português)"
+      ],
+      "family": [
+        "candidatura",
+        "candidatar",
+        "candidatamente"
+      ],
+      "cognates_other_languages": [
+        "candidate (inglês)",
+        "candidat (francês)",
+        "Kandidat (alemão)"
+      ],
+      "curiosity": "Da mesma raiz vem 'cândido' (puro, ingênuo) e 'incandescente' (brilhante de calor). A toga branca sinalizava tanto pureza moral quanto visibilidade pública."
+    },
+    {
+      "word": "capital",
+      "root": "caput",
+      "language_origin": "latim",
+      "meaning_origin": "'caput' = cabeça → o que está na cabeça, o principal, o fundamental",
+      "evolution": [
+        "caput (latim)",
+        "capitalis (latim medieval)",
+        "capital (português, francês)"
+      ],
+      "family": [
+        "capitalismo",
+        "capitalista",
+        "capitão",
+        "capítulo",
+        "decapitar"
+      ],
+      "cognates_other_languages": [
+        "capital (inglês, francês)",
+        "Kapital (alemão)",
+        "capitale (italiano)"
+      ],
+      "curiosity": "'Capitão', 'capítulo', 'capita', 'decapitar', 'recapitular' — todos vêm de 'caput'. A metáfora da cabeça como centro de controle está em toda a família."
+    },
+    {
+      "word": "fórum",
+      "root": "forum",
+      "language_origin": "latim",
+      "meaning_origin": "'forum' = praça pública de Roma onde se realizavam julgamentos, negócios e debates",
+      "evolution": [
+        "forum (latim clássico)",
+        "forum (latim medieval)",
+        "fórum (português)"
+      ],
+      "family": [
+        "forense",
+        "foro"
+      ],
+      "cognates_other_languages": [
+        "forum (inglês)",
+        "forum (francês, alemão — empréstimo direto)"
+      ],
+      "curiosity": "O 'Fórum Romano' era o centro político de Roma. A palavra migrou para o direito (forense = do fórum) e para a internet (fórum de discussão) mantendo o sentido de espaço coletivo de debate."
+    },
+    {
+      "word": "enciclopédia",
+      "root": "enkyklios paideia",
+      "language_origin": "grego",
+      "meaning_origin": "'enkyklios' = circular, completo + 'paideia' = educação → 'educação completa', o círculo inteiro do saber",
+      "evolution": [
+        "enkyklios paideia (grego)",
+        "encyclopaedia (latim humanista)",
+        "enciclopédia (português)"
+      ],
+      "family": [
+        "enciclopédico",
+        "enciclopedista"
+      ],
+      "cognates_other_languages": [
+        "encyclopedia (inglês)",
+        "encyclopédie (francês)",
+        "Enzyklopädie (alemão)"
+      ],
+      "curiosity": "O projeto enciclopédico pressupõe que o conhecimento é circular e completo — pode ser abraçado. A Grande Enciclopédia Francesa (1751–1772) de Diderot e D'Alembert foi o projeto mais ambicioso do Iluminismo."
+    },
+    {
+      "word": "nostalgia",
+      "root": "nostos + algos",
+      "language_origin": "grego",
+      "meaning_origin": "'nostos' = retorno ao lar + 'algos' = dor → 'dor de não poder voltar para casa'",
+      "evolution": [
+        "nostalgia (latim científico, séc.XVII)",
+        "nostalgie (francês)",
+        "nostalgia (português)"
+      ],
+      "family": [
+        "nostálgico",
+        "nostalgicamente"
+      ],
+      "cognates_other_languages": [
+        "nostalgia (inglês, espanhol, italiano — empréstimo universal)"
+      ],
+      "curiosity": "Criada em 1688 pelo médico suíço Johannes Hofer para descrever uma doença dos soldados suíços que queriam voltar para os Alpes. Começou como diagnóstico clínico, virou sentimento universal."
+    },
+    {
+      "word": "protagonista",
+      "root": "protos + agonistes",
+      "language_origin": "grego",
+      "meaning_origin": "'protos' = primeiro + 'agonistes' = lutador, ator → 'o primeiro ator', o que entra primeiro em cena",
+      "evolution": [
+        "protagonistes (grego clássico)",
+        "protagonista (latim)",
+        "protagonista (português)"
+      ],
+      "family": [
+        "protagonismo",
+        "protagonizar"
+      ],
+      "cognates_other_languages": [
+        "protagonist (inglês)",
+        "protagoniste (francês)",
+        "Protagonist (alemão)"
+      ],
+      "curiosity": "No teatro grego, o 'protagonista' era literalmente o ator principal. Da mesma raiz: 'antagonista' (anti + agonistes = o que luta contra) e 'deuteragonista' (segundo ator)."
+    },
+    {
+      "word": "catástrofe",
+      "root": "katastrophē",
+      "language_origin": "grego",
+      "meaning_origin": "'kata' = para baixo + 'strephein' = virar → 'virada para baixo', a reviravolta final",
+      "evolution": [
+        "katastrophē (grego clássico)",
+        "catastropha (latim)",
+        "catastrophe (francês)",
+        "catástrofe (português)"
+      ],
+      "family": [
+        "catastrófico",
+        "catastrofismo"
+      ],
+      "cognates_other_languages": [
+        "catastrophe (inglês, francês)",
+        "Katastrophe (alemão)"
+      ],
+      "curiosity": "No teatro grego, 'catastrophe' era tecnicamente a resolução final da tragédia — a virada que encerra o drama. O sentido moderno de desastre vem do fato de que a maioria das resoluções gregas terminava mal."
+    },
+    {
+      "word": "estresse",
+      "root": "stress",
+      "language_origin": "inglês",
+      "meaning_origin": "Do inglês 'stress', do latim 'strictus' = apertado, tenso. Na física: força que deforma um material",
+      "evolution": [
+        "strictus (latim)",
+        "distress (inglês antigo = sofrimento)",
+        "stress (inglês técnico, séc.XIX)",
+        "estresse (português, séc.XX)"
+      ],
+      "family": [
+        "estressado",
+        "estressante",
+        "estressar"
+      ],
+      "cognates_other_languages": [
+        "stress (inglês, francês)",
+        "Stress (alemão)",
+        "estrés (espanhol)"
+      ],
+      "curiosity": "O psicólogo Hans Selye popularizou 'stress' em biologia nos anos 1930 para descrever a resposta do organismo a pressões externas. A palavra física virou fenômeno psicológico — e depois palavra de uso diário."
+    },
+    {
+      "word": "vacilar",
+      "root": "vacillar",
+      "language_origin": "espanhol",
+      "meaning_origin": "Do espanhol 'vacilar' = oscilar, hesitar, do latim 'vacillare' = balançar",
+      "evolution": [
+        "vacillare (latim)",
+        "vacilar (espanhol)",
+        "vacilar (português popular)",
+        "vacilar (gíria brasileira = trair, falhar)"
+      ],
+      "family": [
+        "vacilão",
+        "vacilada"
+      ],
+      "cognates_other_languages": [
+        "vaciller (francês)",
+        "vacillate (inglês)"
+      ],
+      "curiosity": "No português formal herdou o sentido latino de 'hesitar'. No português popular brasileiro, 'vacilar' ganhou o sentido específico de falhar com alguém que confiava em você — uma traição leve mas real."
+    }
+  ]
+}

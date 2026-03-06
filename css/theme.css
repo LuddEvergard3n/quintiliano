@@ -1,0 +1,92 @@
+/* theme.css — Quintiliano Design System
+ * Estética: editorial tipográfica, papel e tinta
+ * Paleta: creme envelhecido, tinta escura, vermelho-sépia como acento
+ */
+
+:root {
+  /* --- Cores base --- */
+  --color-paper:        #f5f0e8;
+  --color-paper-dark:   #ede6d6;
+  --color-paper-border: #d4c9b0;
+  --color-ink:          #1a1208;
+  --color-ink-mid:      #3d3020;
+  --color-ink-light:    #7a6a50;
+  --color-ink-ghost:    #b0a080;
+
+  /* --- Acentos --- */
+  --color-accent:       #8b1a1a;   /* vermelho-sépia — marcações, destaques */
+  --color-accent-soft:  #c44;      /* links ativos */
+  --color-gold:         #b8960c;   /* destaque secundário */
+  --color-green:        #2a5c2a;   /* acerto */
+  --color-red:          #8b1a1a;   /* erro */
+
+  /* --- Highlight interativo --- */
+  --color-highlight:    rgba(184, 150, 12, 0.25);
+  --color-highlight-strong: rgba(184, 150, 12, 0.55);
+  --color-select:       rgba(139, 26, 26, 0.15);
+
+  /* --- Tipografia --- */
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Crimson Text', 'Palatino Linotype', 'Georgia', serif;
+  --font-ui:        'Libre Baskerville', 'Georgia', serif;
+  --font-mono:      'Courier New', 'Courier', monospace;
+
+  /* --- Escala tipográfica --- */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1.125rem;
+  --text-lg:    1.3rem;
+  --text-xl:    1.6rem;
+  --text-2xl:   2rem;
+  --text-3xl:   2.8rem;
+  --text-4xl:   3.8rem;
+
+  /* --- Espaçamento --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* --- Layout --- */
+  --max-width:       1100px;
+  --content-width:   700px;
+  --sidebar-width:   260px;
+
+  /* --- Bordas e sombras --- */
+  --radius-sm:  2px;
+  --radius:     4px;
+  --radius-lg:  8px;
+  --shadow-sm:  0 1px 3px rgba(26, 18, 8, 0.12);
+  --shadow:     0 2px 8px rgba(26, 18, 8, 0.15);
+  --shadow-lg:  0 4px 20px rgba(26, 18, 8, 0.2);
+
+  /* --- Transições --- */
+  --transition-fast:   0.12s ease;
+  --transition:        0.22s ease;
+  --transition-slow:   0.4s ease;
+}
+
+/* Alto contraste */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:       0.01ms !important;
+    animation-iteration-count: 1     !important;
+    transition-duration:      0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-paper:      #fff;
+    --color-ink:        #000;
+    --color-ink-mid:    #111;
+    --color-accent:     #6b0000;
+  }
+}

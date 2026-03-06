@@ -1,0 +1,326 @@
+{
+  "amor": {
+    "sinonimos": [
+      "afeição",
+      "carinho",
+      "devoção",
+      "ternura",
+      "afeto",
+      "paixão"
+    ],
+    "antonimos": [
+      "ódio",
+      "aversão",
+      "desamor",
+      "indiferença"
+    ],
+    "hiperonimo": "sentimento",
+    "definicao": "Sentimento de afeição profunda por alguém ou algo."
+  },
+  "palavra": {
+    "sinonimos": [
+      "vocábulo",
+      "termo",
+      "vocação",
+      "verbo",
+      "expressão",
+      "dicção"
+    ],
+    "antonimos": [
+      "silêncio"
+    ],
+    "hiperonimo": "signo linguístico",
+    "definicao": "Unidade mínima de linguagem com significado independente."
+  },
+  "tristeza": {
+    "sinonimos": [
+      "melancolia",
+      "mágoa",
+      "pesar",
+      "desgosto",
+      "angústia",
+      "aflição"
+    ],
+    "antonimos": [
+      "alegria",
+      "felicidade",
+      "contentamento"
+    ],
+    "hiperonimo": "sentimento",
+    "definicao": "Estado afetivo de abatimento, sofrimento moral."
+  },
+  "alegria": {
+    "sinonimos": [
+      "felicidade",
+      "contentamento",
+      "júbilo",
+      "prazer",
+      "euforia",
+      "satisfação"
+    ],
+    "antonimos": [
+      "tristeza",
+      "melancolia",
+      "pesar",
+      "angústia"
+    ],
+    "hiperonimo": "sentimento",
+    "definicao": "Estado de satisfação ou prazer intenso."
+  },
+  "liberdade": {
+    "sinonimos": [
+      "autonomia",
+      "independência",
+      "emancipação",
+      "alforria",
+      "soberania"
+    ],
+    "antonimos": [
+      "escravidão",
+      "opressão",
+      "cativeiro",
+      "submissão"
+    ],
+    "hiperonimo": "condição social",
+    "definicao": "Condição de quem não está sujeito a restrições ou coerções."
+  },
+  "tempo": {
+    "sinonimos": [
+      "época",
+      "era",
+      "período",
+      "momento",
+      "instante",
+      "duração"
+    ],
+    "antonimos": [],
+    "hiperonimo": "grandeza",
+    "definicao": "Sucessão contínua de momentos; duração das coisas."
+  },
+  "morte": {
+    "sinonimos": [
+      "falecimento",
+      "óbito",
+      "finamento",
+      "passamento",
+      "decesso"
+    ],
+    "antonimos": [
+      "vida",
+      "nascimento"
+    ],
+    "hiperonimo": "evento biológico",
+    "definicao": "Cessação permanente das funções vitais de um organismo."
+  },
+  "vida": {
+    "sinonimos": [
+      "existência",
+      "vivência",
+      "ser",
+      "subsistência"
+    ],
+    "antonimos": [
+      "morte",
+      "finitude"
+    ],
+    "hiperonimo": "estado biológico",
+    "definicao": "Conjunto de funções que resistem à morte; existência."
+  },
+  "saudade": {
+    "sinonimos": [
+      "nostalgia",
+      "melancolia",
+      "longinquidade",
+      "soidade"
+    ],
+    "antonimos": [],
+    "hiperonimo": "sentimento",
+    "definicao": "Lembrança afetuosa e nostálgica de pessoa, lugar ou coisa ausente."
+  },
+  "beleza": {
+    "sinonimos": [
+      "formosura",
+      "lindeza",
+      "graciosidade",
+      "elegância",
+      "estética"
+    ],
+    "antonimos": [
+      "fealdade",
+      "feiura",
+      "deformidade"
+    ],
+    "hiperonimo": "qualidade estética",
+    "definicao": "Qualidade do que agrada pelos sentidos ou pelo espírito."
+  },
+  "silêncio": {
+    "sinonimos": [
+      "quietude",
+      "mutismo",
+      "calada",
+      "sossego",
+      "quietação"
+    ],
+    "antonimos": [
+      "barulho",
+      "ruído",
+      "alvoroço"
+    ],
+    "hiperonimo": "estado acústico",
+    "definicao": "Ausência de som; estado de quem não fala."
+  },
+  "verdade": {
+    "sinonimos": [
+      "realidade",
+      "veracidade",
+      "exatidão",
+      "autenticidade",
+      "certeza"
+    ],
+    "antonimos": [
+      "mentira",
+      "falsidade",
+      "engano",
+      "ilusão"
+    ],
+    "hiperonimo": "conceito epistemológico",
+    "definicao": "Conformidade do pensamento com a realidade."
+  },
+  "guerra": {
+    "sinonimos": [
+      "conflito",
+      "batalha",
+      "combate",
+      "luta",
+      "contenda"
+    ],
+    "antonimos": [
+      "paz",
+      "harmonia",
+      "concórdia"
+    ],
+    "hiperonimo": "conflito armado",
+    "definicao": "Conflito armado entre nações, estados ou grupos."
+  },
+  "paz": {
+    "sinonimos": [
+      "harmonia",
+      "tranquilidade",
+      "sossego",
+      "concórdia",
+      "serenidade"
+    ],
+    "antonimos": [
+      "guerra",
+      "conflito",
+      "discórdia",
+      "tumulto"
+    ],
+    "hiperonimo": "estado social",
+    "definicao": "Estado de ausência de conflito; tranquilidade."
+  },
+  "justiça": {
+    "sinonimos": [
+      "equidade",
+      "imparcialidade",
+      "direito",
+      "retidão",
+      "probidade"
+    ],
+    "antonimos": [
+      "injustiça",
+      "iniquidade",
+      "parcialidade",
+      "arbítrio"
+    ],
+    "hiperonimo": "valor moral",
+    "definicao": "Princípio moral de dar a cada um o que lhe é devido."
+  },
+  "homem": {
+    "sinonimos": [
+      "ser humano",
+      "indivíduo",
+      "pessoa",
+      "varão",
+      "sujeito"
+    ],
+    "antonimos": [
+      "mulher"
+    ],
+    "hiperonimo": "ser humano",
+    "hipônimos": [
+      "rapaz",
+      "menino",
+      "adulto",
+      "idoso"
+    ],
+    "definicao": "Ser humano do sexo masculino; ser humano em geral."
+  },
+  "mulher": {
+    "sinonimos": [
+      "dama",
+      "senhora",
+      "fêmea",
+      "feminino"
+    ],
+    "antonimos": [
+      "homem"
+    ],
+    "hiperonimo": "ser humano",
+    "hipônimos": [
+      "moça",
+      "menina",
+      "adulta",
+      "idosa"
+    ],
+    "definicao": "Ser humano do sexo feminino."
+  },
+  "terra": {
+    "sinonimos": [
+      "solo",
+      "chão",
+      "terreno",
+      "país",
+      "nação",
+      "pátria"
+    ],
+    "antonimos": [
+      "mar",
+      "água",
+      "céu"
+    ],
+    "hiperonimo": "superfície",
+    "definicao": "Superfície sólida do planeta; solo; país de origem."
+  },
+  "mar": {
+    "sinonimos": [
+      "oceano",
+      "deep",
+      "onda",
+      "vastidão",
+      "água salgada"
+    ],
+    "antonimos": [
+      "terra",
+      "continente"
+    ],
+    "hiperonimo": "corpo d'água",
+    "definicao": "Grande extensão de água salgada que cobre grande parte da Terra."
+  },
+  "noite": {
+    "sinonimos": [
+      "escuridão",
+      "trevas",
+      "madrugada",
+      "escuro"
+    ],
+    "antonimos": [
+      "dia",
+      "manhã",
+      "luz",
+      "claridade"
+    ],
+    "hiperonimo": "período do dia",
+    "definicao": "Período compreendido entre o pôr do sol e o nascer do sol."
+  }
+}
