@@ -79,6 +79,10 @@ function cacheSet(key, value, ttlMs = CACHE_TTL_MS) {
  * @returns {Promise<{ found: boolean, text: string, source: string } | { error: string }>}
  */
 export async function fetchEtymology(word) {
+  // Normaliza entrada: espaços extras e case.
+  // Retry com lowercase se a página não existir — Wiktionary PT usa minúsculas
+  // para substantivos comuns mas maiúsculas para nomes próprios.
+  word = word.trim();
   const cacheKey = `etym_${word.toLowerCase()}`;
   const cached = cacheGet(cacheKey);
   if (cached) return cached;
@@ -89,6 +93,20 @@ export async function fetchEtymology(word) {
     const sectionsRes = await fetch(sectionsUrl);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
+
+    // Retry com lowercase se a página não foi encontrada (ex: "Paralelepípedo" → "paralelepípedo")
+    if (sectionsData.error && word !== word.toLowerCase()) {
+      const wordLower = word.toLowerCase();
+      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&format=json&origin=*`;
+      const sectionsResLower = await fetch(sectionsUrlLower);
+      if (sectionsResLower.ok) {
+        const sectionsDataLower = await sectionsResLower.json();
+        if (!sectionsDataLower.error) {
+          word = wordLower;
+          Object.assign(sectionsData, sectionsDataLower);
+        }
+      }
+    }
 
     if (sectionsData.error) {
       const result = { found: false, text: '', source: 'wiktionary' };
@@ -139,6 +157,7 @@ export async function fetchEtymology(word) {
  * @returns {Promise<{ found: boolean, definitions: string[], partOfSpeech: string, source: string } | { error: string }>}
  */
 export async function fetchDefinition(word) {
+  word = word.trim();
   const cacheKey = `def_${word.toLowerCase()}`;
   const cached = cacheGet(cacheKey);
   if (cached) return cached;
@@ -148,6 +167,20 @@ export async function fetchDefinition(word) {
     const sectionsRes = await fetch(sectionsUrl);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
+
+    // Retry com lowercase (mesmo padrão de fetchEtymology)
+    if (sectionsData.error && word !== word.toLowerCase()) {
+      const wordLower = word.toLowerCase();
+      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&format=json&origin=*`;
+      const sectionsResLower = await fetch(sectionsUrlLower);
+      if (sectionsResLower.ok) {
+        const sectionsDataLower = await sectionsResLower.json();
+        if (!sectionsDataLower.error) {
+          word = wordLower;
+          Object.assign(sectionsData, sectionsDataLower);
+        }
+      }
+    }
 
     if (sectionsData.error) {
       const result = { found: false, definitions: [], partOfSpeech: '', source: 'wiktionary' };
