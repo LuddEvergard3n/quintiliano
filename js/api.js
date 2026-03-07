@@ -89,7 +89,8 @@ export async function fetchEtymology(word) {
 
   try {
     // Passo 1: lista de seções da página
-    const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&format=json&origin=*`;
+    // redirects=true faz a API seguir redirects (ex: "amores" → "amor")
+    const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&redirects=true&format=json&origin=*`;
     const sectionsRes = await fetch(sectionsUrl);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
@@ -97,7 +98,7 @@ export async function fetchEtymology(word) {
     // Retry com lowercase se a página não foi encontrada (ex: "Paralelepípedo" → "paralelepípedo")
     if (sectionsData.error && word !== word.toLowerCase()) {
       const wordLower = word.toLowerCase();
-      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&format=json&origin=*`;
+      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&redirects=true&format=json&origin=*`;
       const sectionsResLower = await fetch(sectionsUrlLower);
       if (sectionsResLower.ok) {
         const sectionsDataLower = await sectionsResLower.json();
@@ -126,7 +127,7 @@ export async function fetchEtymology(word) {
     }
 
     // Passo 3: busca HTML da seção de etimologia
-    const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${etymIndex}&format=json&origin=*`;
+    const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${etymIndex}&redirects=true&format=json&origin=*`;
     const htmlRes = await fetch(htmlUrl);
     if (!htmlRes.ok) throw new Error(`HTTP ${htmlRes.status}`);
     const htmlData = await htmlRes.json();
@@ -163,7 +164,7 @@ export async function fetchDefinition(word) {
   if (cached) return cached;
 
   try {
-    const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&format=json&origin=*`;
+    const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&redirects=true&format=json&origin=*`;
     const sectionsRes = await fetch(sectionsUrl);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
@@ -171,7 +172,7 @@ export async function fetchDefinition(word) {
     // Retry com lowercase (mesmo padrão de fetchEtymology)
     if (sectionsData.error && word !== word.toLowerCase()) {
       const wordLower = word.toLowerCase();
-      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&format=json&origin=*`;
+      const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&redirects=true&format=json&origin=*`;
       const sectionsResLower = await fetch(sectionsUrlLower);
       if (sectionsResLower.ok) {
         const sectionsDataLower = await sectionsResLower.json();
@@ -197,7 +198,7 @@ export async function fetchDefinition(word) {
       return result;
     }
 
-    const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${posSection.index}&format=json&origin=*`;
+    const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${posSection.index}&redirects=true&format=json&origin=*`;
     const htmlRes = await fetch(htmlUrl);
     if (!htmlRes.ok) throw new Error(`HTTP ${htmlRes.status}`);
     const htmlData = await htmlRes.json();
@@ -244,7 +245,16 @@ export async function fetchGutenbergExcerpt(gutenbergId, charLimit = 3000) {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    const fullText = await res.text();
+    // Detecta encoding pelo Content-Type para obras antigas servidas em Latin-1
+    const contentType = res.headers.get('content-type') ?? '';
+    const isLatin1 = /charset=iso-8859-1|charset=latin-1/i.test(contentType);
+    let fullText;
+    if (isLatin1) {
+      const bytes = await res.arrayBuffer();
+      fullText = new TextDecoder('iso-8859-1').decode(bytes);
+    } else {
+      fullText = await res.text();
+    }
     const excerpt  = extractGutenbergExcerpt(fullText, charLimit);
     const title    = extractGutenbergTitle(fullText);
 
@@ -296,7 +306,7 @@ function findEtymologySection(sections) {
  * @returns {{ index: string, line: string } | null}
  */
 function findPartOfSpeechSection(sections) {
-  const posTags = ['substantivo', 'verbo', 'adjetivo', 'advérbio', 'pronome', 'preposição'];
+  const posTags = ['substantivo', 'verbo', 'adjetivo', 'advérbio', 'pronome', 'preposição', 'conjunção', 'interjeição', 'artigo', 'numeral', 'contração', 'locução', 'afixo', 'sigla', 'símbolo'];
   let underPortuguese = false;
 
   for (const section of sections) {
@@ -393,12 +403,11 @@ function extractDefinitionsFromWikiHtml(html) {
  * @returns {string}
  */
 function extractGutenbergExcerpt(fullText, charLimit) {
-  // Marcador padrão do Gutenberg
+  // Marcadores padrão do Gutenberg (formato atual e legado)
   const startMarker = /\*{3}\s*START OF (THIS|THE) PROJECT GUTENBERG/i;
   const endMarker   = /\*{3}\s*END OF (THIS|THE) PROJECT GUTENBERG/i;
 
   const startMatch = startMarker.exec(fullText);
-  const endMatch   = endMarker.exec(fullText);
 
   let body = fullText;
 
@@ -408,8 +417,10 @@ function extractGutenbergExcerpt(fullText, charLimit) {
     body = fullText.slice(afterStart + 1);
   }
 
+  // Procura o endMarker em body (não em fullText) para evitar índice errado
+  const endMatch = endMarker.exec(body);
   if (endMatch) {
-    body = body.slice(0, endMatch.index - (startMatch?.index ?? 0));
+    body = body.slice(0, endMatch.index);
   }
 
   // Remove linhas em branco iniciais
