@@ -149,6 +149,24 @@ export function renderHome() {
       desc:   '40 cadeiras permanentes desde 1897. Patronos, ocupantes notáveis, recusas históricas e o que a consagração — e a rejeição — dizem sobre a literatura brasileira.',
       path:   '/abl',
     },
+    {
+      number: '✎',
+      title:  'Plano de Aula',
+      desc:   'Gerador de planos de aula com habilidades BNCC selecionáveis por ano/série, presets pedagógicos e documento pronto para imprimir ou salvar em PDF. Para Língua Portuguesa do 6º ano ao Ensino Médio.',
+      path:   '/plano-aula',
+    },
+    {
+      number: '?',
+      title:  'Guia do Professor',
+      desc:   'Cinco atividades práticas para usar o Quintiliano em sala de aula — análise de texto, sintaxe, etimologia, argumentação e literatura. Com alinhamento BNCC e variantes para diferentes níveis.',
+      path:   '/guia',
+    },
+    {
+      number: 'i',
+      title:  'Sobre',
+      desc:   'A origem do nome, a filosofia do projeto e os números atuais. O Quintiliano no contexto do ecossistema educacional — Heródoto, Euclides, Lavoisier, Humboldt, Archimedes e Johnson.',
+      path:   '/sobre',
+    },
   ];
 
   const grid = page.querySelector('#modules-grid');

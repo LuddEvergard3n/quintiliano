@@ -1,7 +1,7 @@
 {
   "name": "quintiliano",
-  "version": "0.20.0",
-  "description": "Ambiente de língua portuguesa e literatura — 18 rotas, 66 testes, zero dependências.",
+  "version": "0.21.0",
+  "description": "Ambiente de língua portuguesa e literatura — 21 rotas, 69 testes, zero dependências.",
   "type": "module",
   "private": true,
   "engines": {

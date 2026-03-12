@@ -171,6 +171,24 @@ async function init() {
     return renderABL();
   });
 
+  // --- Rota: Sobre ---
+  router.register('/sobre', async () => {
+    const { renderSobre } = await import('../modules/sobre/sobre.js');
+    return renderSobre();
+  });
+
+  // --- Rota: Guia do Professor ---
+  router.register('/guia', async () => {
+    const { renderGuia } = await import('../modules/guia/guia.js');
+    return renderGuia();
+  });
+
+  // --- Rota: Gerador de Plano de Aula ---
+  router.register('/plano-aula', async () => {
+    const { renderPlanoAula } = await import('../modules/plano-aula/plano-aula.js');
+    return renderPlanoAula();
+  });
+
   // Inicia o roteador (resolve o hash atual ou '/')
   router.start();
 

@@ -252,6 +252,27 @@ describe('Módulos independentes (sem dados externos)', () => {
     A.assertIsElement(el, 'renderABL');
   });
 
+  test('renderSobre exporta função e retorna elemento', async () => {
+    const { renderSobre } = await import('../modules/sobre/sobre.js');
+    assert.equal(typeof renderSobre, 'function');
+    const el = renderSobre();
+    A.assertIsElement(el, 'renderSobre');
+  });
+
+  test('renderGuia exporta função e retorna elemento', async () => {
+    const { renderGuia } = await import('../modules/guia/guia.js');
+    assert.equal(typeof renderGuia, 'function');
+    const el = renderGuia();
+    A.assertIsElement(el, 'renderGuia');
+  });
+
+  test('renderPlanoAula exporta função e retorna elemento', async () => {
+    const { renderPlanoAula } = await import('../modules/plano-aula/plano-aula.js');
+    assert.equal(typeof renderPlanoAula, 'function');
+    const el = renderPlanoAula();
+    A.assertIsElement(el, 'renderPlanoAula');
+  });
+
   test('renderHome exporta função e retorna elemento', async () => {
     const { renderHome } = await import('../modules/home.js');
     assert.equal(typeof renderHome, 'function');

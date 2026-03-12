@@ -5,6 +5,41 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ---
 
+## [0.21.0] — 2026-03-11
+
+### Adicionado
+
+#### Página: Sobre (`/sobre`)
+
+Apresentação do projeto em coluna única (860px). Origem do nome Quintiliano (Marco Fábio Quintiliano, c. 35–100 d.C.), filosofia em quatro princípios, métricas atuais e ecossistema educacional completo com links para os 7 projetos: Heródoto, Euclides, Quintiliano, Lavoisier, Humboldt, Archimedes, Johnson.
+
+#### Página: Guia do Professor (`/guia`)
+
+Material pedagógico com sidebar 220px sticky + conteúdo longo. Cinco atividades práticas (análise de parágrafo, desmontando frases, etimologia, identificação de falácias, perfil literário), cada uma com nível, duração, meta e variante. Tabela de módulos com nível BNCC, tabela de alinhamento de habilidades por módulo e seção explícita de limitações.
+
+#### Ferramenta: Gerador de Plano de Aula (`/plano-aula`)
+
+Dois painéis: formulário (470px) + preview em tempo real. Habilidades BNCC embutidas por ano/série (EF 6–9, EM 1–3, com aliases EM2/EM3 → EM1 conforme padrão CHS). Presets de objetivos, metodologias, recursos e avaliação selecionáveis por checkbox. Carga horária calculada automaticamente. Impressão via `window.print()` com `@media print` robusto (`print-color-adjust:exact`).
+
+#### Footer com ecossistema
+
+Rodapé atualizado com links para todos os 7 projetos do ecossistema educacional.
+
+### Alterado
+
+- `index.html`: 3 novos links no nav secundário (Plano de Aula, Guia do Professor, Sobre) e footer com links do ecossistema
+- `modules/home.js`: 3 novos cards na grade (Plano de Aula, Guia do Professor, Sobre)
+- `js/main.js`: 3 novas rotas registradas (`/sobre`, `/guia`, `/plano-aula`)
+- `package.json`: versão 0.21.0, descrição atualizada
+
+### Infraestrutura
+
+- 3 novos módulos JS: `modules/sobre/sobre.js`, `modules/guia/guia.js`, `modules/plano-aula/plano-aula.js`
+- 3 novos testes: `renderSobre`, `renderGuia`, `renderPlanoAula`
+- Total: 21 rotas, 69 testes
+
+---
+
 ## [0.20.0] — 2026-03-06
 
 ### Adicionado

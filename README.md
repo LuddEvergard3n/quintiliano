@@ -4,12 +4,16 @@
 
 Quintiliano é um ambiente interativo de língua portuguesa e literatura. O objetivo central não é ensinar regras gramaticais, mas ensinar como textos funcionam: como ler com profundidade, como identificar estrutura sintática, como entender o funcionamento de palavras e como a literatura se situa historicamente.
 
-**v0.20.0** — 18 rotas, 66 testes, 16 módulos temáticos + ABL + Grandes Nomes + Prêmios Literários + página inicial. Zero dependências externas.
+**v0.21.0** — 21 rotas, 69 testes, 16 módulos temáticos + ABL + Grandes Nomes + Prêmios Literários + Sobre + Guia do Professor + Plano de Aula + página inicial. Zero dependências externas.
 
 Faz parte de um ecossistema educacional composto por:
-- **Heródoto** — visualização histórica (tempo, espaço, contexto)
-- **Euclides** — raciocínio matemático manipulável
-- **Quintiliano** — interpretação e estrutura textual
+- **Heródoto** — [visualização histórica](https://luddevergard3n.github.io/Herodoto/) (tempo, espaço, contexto)
+- **Euclides** — [raciocínio matemático](https://luddevergard3n.github.io/euclides/) manipulável
+- **Quintiliano** — [interpretação e estrutura textual](https://luddevergard3n.github.io/quintiliano/)
+- **Lavoisier** — [laboratório virtual de química](https://luddevergard3n.github.io/lavoisier/)
+- **Humboldt** — [visualização geográfica](https://luddevergard3n.github.io/humboldt/)
+- **Archimedes** — [simulações de física](https://luddevergard3n.github.io/archimedes/)
+- **Johnson** — [língua inglesa](https://luddevergard3n.github.io/johnson-english/)
 
 
 ## Documentação
@@ -71,6 +75,12 @@ O diretório `docs/` contém toda a documentação do projeto:
 │   │   └── poetry.js            # Módulo 07: Poesia
 │   ├── /argumentation
 │   │   └── argumentation.js     # Módulo 08: Argumentação
+│   ├── /sobre
+│   │   └── sobre.js                 # Sobre o Quintiliano (nome, filosofia, ecossistema)
+│   ├── /guia
+│   │   └── guia.js                  # Guia do Professor (atividades, BNCC, limitações)
+│   ├── /plano-aula
+│   │   └── plano-aula.js            # Gerador de Plano de Aula (BNCC, presets, impressão)
 │   ├── /grandes-nomes
 │   │   └── grandes-nomes.js     # Módulo 16: Grandes Nomes da Língua Portuguesa
 │   └── /abl
@@ -255,6 +265,9 @@ Rotas disponíveis:
 - `#/autor/:id` — Perfil de autor (ex: `#/autor/machado`)
 - `#/modulo/grandes-nomes` — Grandes Nomes da Língua Portuguesa
 - `#/abl` — Academia Brasileira de Letras
+- `#/sobre` — Sobre o Quintiliano
+- `#/guia` — Guia do Professor
+- `#/plano-aula` — Gerador de Plano de Aula
 
 ---
 
@@ -342,6 +355,22 @@ Edite `SENTENCES[]` em `modules/syntax/syntax.js`:
 1. Crie `modules/novo/novo.js` exportando `renderNovo()`
 2. Registre em `js/main.js`: `router.register('/modulo/novo', async () => { ... })`
 3. Adicione botão em `index.html` (nav) e card em `modules/home.js`
+
+---
+
+## Páginas institucionais
+
+### Sobre (`/sobre`)
+
+Coluna única (860px). Apresenta a origem do nome Quintiliano, filosofia do projeto em quatro princípios, métricas atuais e o ecossistema educacional completo com links para todos os sete projetos.
+
+### Guia do Professor (`/guia`)
+
+Sidebar 220px sticky + conteúdo longo. Cinco atividades práticas com nível, duração e variantes; tabela de módulos com nível BNCC; alinhamento de habilidades por módulo; limitações explícitas.
+
+### Plano de Aula (`/plano-aula`)
+
+Dois painéis: formulário (470px) + preview em tempo real. Habilidades BNCC por ano/série (EF 6–9 e EM 1–3), presets de objetivos/metodologia/recursos/avaliação, carga horária calculada automaticamente. `window.print()` com `@media print` robusto — produz PDF sem dependências.
 
 ---
 
