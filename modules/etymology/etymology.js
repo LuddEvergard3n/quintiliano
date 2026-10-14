@@ -23,6 +23,8 @@ import { fetchEtymology, fetchDefinition } from '../../js/api.js';
  */
 export function renderEtimologia(localData) {
   const localWords = localData.words;
+  let requestId = 0;
+  let lookupController = null;
 
   const page = document.createElement('div');
   page.innerHTML = `
@@ -85,6 +87,8 @@ export function renderEtimologia(localData) {
     chip.setAttribute('aria-label', `Ver etimologia de: ${w.word}`);
     chip.addEventListener('click', () => {
       searchInput.value = w.word;
+      lookupController?.abort();
+      detailArea.dataset.requestId = String(++requestId);
       renderLocalWord(detailArea, w, localWords);
     });
     chipsBar.appendChild(chip);
@@ -92,13 +96,20 @@ export function renderEtimologia(localData) {
 
   // Busca
   const doSearch = () => {
-    const query = searchInput.value.trim();
-    if (!query) return;
+    const query = normalizeSearchWord(searchInput.value);
+    if (!query) {
+      detailArea.replaceChildren(buildInvalidSearchState());
+      return;
+    }
+    lookupController?.abort();
     const local = localWords.find(w => w.word.toLowerCase() === query.toLowerCase());
     if (local) {
+      detailArea.dataset.requestId = String(++requestId);
       renderLocalWord(detailArea, local, localWords);
     } else {
-      renderWiktionaryWord(detailArea, query, localWords);
+      lookupController = new AbortController();
+      detailArea.dataset.requestId = String(++requestId);
+      renderWiktionaryWord(detailArea, query, requestId, lookupController.signal);
     }
   };
 
@@ -108,17 +119,19 @@ export function renderEtimologia(localData) {
   searchInput.addEventListener('blur',  () => { searchInput.style.borderColor = 'var(--color-paper-border)'; });
 
   // Tecla '/' foca no campo
+  const controller = new AbortController();
   const onSlash = e => {
     if (e.key === '/' && document.activeElement !== searchInput) {
       e.preventDefault();
       searchInput.focus();
     }
   };
-  document.addEventListener('keydown', onSlash);
+  document.addEventListener('keydown', onSlash, { signal: controller.signal });
 
   // Exibe primeira palavra por padrão
   renderLocalWord(detailArea, localWords[0], localWords);
 
+  page.destroy = () => { controller.abort(); lookupController?.abort(); };
   return page;
 }
 
@@ -136,14 +149,16 @@ function renderLocalWord(container, word, allLocalWords) {
    RENDERIZAÇÃO: WIKTIONARY
    ================================================================ */
 
-async function renderWiktionaryWord(container, word, localWords) {
+async function renderWiktionaryWord(container, word, requestId, signal) {
   container.innerHTML = '';
   container.appendChild(buildLoadingState(word));
 
   const [etymResult, defResult] = await Promise.all([
-    fetchEtymology(word),
-    fetchDefinition(word),
+    fetchEtymology(word, { signal }),
+    fetchDefinition(word, { signal }),
   ]);
+
+  if (signal.aborted || requestId !== currentRequestId(container)) return;
 
   container.innerHTML = '';
 
@@ -160,6 +175,8 @@ async function renderWiktionaryWord(container, word, localWords) {
   container.appendChild(buildWiktionaryCard(word, etymResult, defResult));
   container.classList.add('fade-in');
 }
+
+function currentRequestId(container) { return Number(container.dataset.requestId || '0'); }
 
 /* ================================================================
    CARDS
@@ -281,15 +298,10 @@ function buildWiktionaryCard(word, etymResult, defResult) {
 
   const header = document.createElement('div');
   header.className = 'etymology-header';
-  header.innerHTML = `
-    <div style="display:flex;align-items:flex-start;justify-content:space-between">
-      <div>
-        <div class="etymology-word">${word}</div>
-        ${defResult.found ? `<div class="etymology-origin-label">${defResult.partOfSpeech}</div>` : ''}
-      </div>
-      <span class="tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.2)">Wiktionary</span>
-    </div>
-  `;
+  const title = document.createElement('div'); title.className = 'etymology-word'; title.textContent = word;
+  const label = document.createElement('div'); label.className = 'etymology-origin-label'; label.textContent = defResult.found ? defResult.partOfSpeech : '';
+  const tag = document.createElement('span'); tag.className = 'tag'; tag.textContent = 'Wiktionary';
+  header.append(title, label, tag);
   card.appendChild(header);
 
   const body = document.createElement('div');
@@ -297,7 +309,7 @@ function buildWiktionaryCard(word, etymResult, defResult) {
 
   if (etymResult.found && etymResult.text) {
     const s = buildSection('Etimologia');
-    s.innerHTML += `<p style="font-family:var(--font-body);font-size:var(--text-base);color:var(--color-ink-mid);line-height:1.8">${etymResult.text}</p>`;
+    const text = document.createElement('p'); text.style.cssText = 'font-family:var(--font-body);font-size:var(--text-base);color:var(--color-ink-mid);line-height:1.8'; text.textContent = etymResult.text; s.appendChild(text);
     body.appendChild(s);
   }
 
@@ -332,10 +344,9 @@ function buildLoadingState(word) {
   const el = document.createElement('div');
   el.className = 'card';
   el.style.cssText = 'text-align:center;padding:var(--space-12)';
-  el.innerHTML = `
-    <p style="font-family:var(--font-display);font-size:var(--text-2xl);color:var(--color-ink-mid);margin-bottom:var(--space-4)">${word}</p>
-    <p style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-ink-ghost)">Buscando no Wiktionary…</p>
-  `;
+  const title = document.createElement('p'); title.style.cssText = 'font-family:var(--font-display);font-size:var(--text-2xl);color:var(--color-ink-mid);margin-bottom:var(--space-4)'; title.textContent = word;
+  const text = document.createElement('p'); text.style.cssText = 'font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-ink-ghost)'; text.textContent = 'Buscando no Wiktionary…';
+  el.append(title, text);
   return el;
 }
 
@@ -357,13 +368,26 @@ function buildNotFoundState(word) {
   const el = document.createElement('div');
   el.className = 'card';
   el.style.cssText = 'text-align:center;padding:var(--space-8)';
-  el.innerHTML = `
-    <p style="font-family:var(--font-display);font-size:var(--text-xl);color:var(--color-ink-mid);margin-bottom:var(--space-4)">"${word}"</p>
-    <p style="font-family:var(--font-body);color:var(--color-ink-light)">Palavra não encontrada no Wiktionary PT. Verifique a grafia.</p>
-    <a href="https://pt.wiktionary.org/wiki/${encodeURIComponent(word)}" target="_blank" rel="noopener"
-       class="btn btn-secondary" style="margin-top:var(--space-4);display:inline-flex">Buscar no Wiktionary →</a>
-  `;
+  const title = document.createElement('p'); title.style.cssText = 'font-family:var(--font-display);font-size:var(--text-xl);color:var(--color-ink-mid);margin-bottom:var(--space-4)'; title.textContent = `“${word}”`;
+  const message = document.createElement('p'); message.style.cssText = 'font-family:var(--font-body);color:var(--color-ink-light)'; message.textContent = 'Palavra não encontrada no Wiktionary PT. Verifique a grafia.';
+  el.append(title, message, buildWiktionaryLink(word, 'Buscar no Wiktionary →'));
   return el;
+}
+
+function buildInvalidSearchState() {
+  const el = document.createElement('div'); el.className = 'panel';
+  el.textContent = 'Digite uma palavra em português, com até 80 caracteres.';
+  return el;
+}
+
+function buildWiktionaryLink(word, label) {
+  const link = document.createElement('a'); link.className = 'btn btn-secondary'; link.style.cssText = 'margin-top:var(--space-4);display:inline-flex'; link.target = '_blank'; link.rel = 'noopener'; link.href = `https://pt.wiktionary.org/wiki/${encodeURIComponent(word)}`; link.textContent = label;
+  return link;
+}
+
+function normalizeSearchWord(value) {
+  const word = String(value ?? '').trim().normalize('NFC');
+  return /^[\p{L}][\p{L}'’-]*(?:\s+[\p{L}][\p{L}'’-]*){0,3}$/u.test(word) && word.length <= 80 ? word : '';
 }
 
 /* ================================================================

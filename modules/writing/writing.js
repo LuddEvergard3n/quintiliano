@@ -297,7 +297,7 @@ async function renderAnalysis(container, analysis, text) {
       el.style.marginBottom = 'var(--space-3)';
       el.innerHTML = `
         <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-accent);margin-bottom:var(--space-2)">${extractWords(sent).length} palavras</p>
-        <p style="font-family:var(--font-body);font-style:italic;color:var(--color-ink-mid)">${sent.trim()}</p>
+        <p style="font-family:var(--font-body);font-style:italic;color:var(--color-ink-mid)">${escapeHTML(sent.trim())}</p>
       `;
       list.appendChild(el);
     });
@@ -403,17 +403,17 @@ function renderSynonymPanel(container, word, entry) {
 
   let html = `
     <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:var(--space-4)">
-      <h4 style="font-family:var(--font-display);font-size:var(--text-xl)">${word}</h4>
+      <h4 style="font-family:var(--font-display);font-size:var(--text-xl)">${escapeHTML(word)}</h4>
       <span style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-ink-ghost)">OpenWordNet-PT</span>
     </div>
   `;
 
   if (entry.definicao) {
-    html += `<p style="font-family:var(--font-body);font-size:var(--text-sm);color:var(--color-ink-mid);margin-bottom:var(--space-4);font-style:italic">${entry.definicao}</p>`;
+    html += `<p style="font-family:var(--font-body);font-size:var(--text-sm);color:var(--color-ink-mid);margin-bottom:var(--space-4);font-style:italic">${escapeHTML(entry.definicao)}</p>`;
   }
 
   if (entry.hiperonimo) {
-    html += `<p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-ink-ghost);margin-bottom:var(--space-4)">Categoria: <strong style="color:var(--color-ink-mid)">${entry.hiperonimo}</strong></p>`;
+    html += `<p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-ink-ghost);margin-bottom:var(--space-4)">Categoria: <strong style="color:var(--color-ink-mid)">${escapeHTML(entry.hiperonimo)}</strong></p>`;
   }
 
   if (entry.sinonimos?.length) {
@@ -421,7 +421,7 @@ function renderSynonymPanel(container, word, entry) {
       <div style="margin-bottom:var(--space-4)">
         <p style="font-family:var(--font-ui);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.08em;color:var(--color-green);margin-bottom:var(--space-2)">Sinônimos</p>
         <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">
-          ${entry.sinonimos.map(s => `<span class="word-chip">${s}</span>`).join('')}
+          ${entry.sinonimos.map(s => `<span class="word-chip">${escapeHTML(s)}</span>`).join('')}
         </div>
       </div>
     `;
@@ -432,7 +432,7 @@ function renderSynonymPanel(container, word, entry) {
       <div>
         <p style="font-family:var(--font-ui);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.08em;color:var(--color-accent);margin-bottom:var(--space-2)">Antônimos</p>
         <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">
-          ${entry.antonimos.map(a => `<span class="word-chip">${a}</span>`).join('')}
+          ${entry.antonimos.map(a => `<span class="word-chip">${escapeHTML(a)}</span>`).join('')}
         </div>
       </div>
     `;
@@ -452,6 +452,10 @@ function splitSentences(text) {
 
 function extractWords(text) {
   return text.toLowerCase().match(/[a-záàãâéêíóôõúüç]+/g) ?? [];
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[character]));
 }
 
 function buildFrequencyMap(words) {

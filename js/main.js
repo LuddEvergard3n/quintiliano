@@ -12,11 +12,14 @@
  */
 
 import { Router } from './router.js';
+import { applyEditorialContract } from './editorial.js';
 
 /** Dados globais carregados uma única vez */
 let textsData    = null;
 let authorsData  = null;
 let etymData     = null;
+let guidedReadingsData = null;
+let editorialSourcesData = null;
 
 /**
  * Carrega um arquivo JSON local.
@@ -34,12 +37,16 @@ async function loadJSON(path) {
  * Carrega apenas uma vez — resultados são cacheados nas variáveis do módulo.
  */
 async function ensureDataLoaded() {
-  if (!textsData || !authorsData || !etymData) {
-    [textsData, authorsData, etymData] = await Promise.all([
+  if (!textsData || !authorsData || !etymData || !guidedReadingsData || !editorialSourcesData) {
+    [textsData, authorsData, etymData, guidedReadingsData, editorialSourcesData] = await Promise.all([
       loadJSON('./data/texts.json'),
       loadJSON('./data/authors.json'),
       loadJSON('./data/etymology.json'),
+      loadJSON('./data/guided-readings.json'),
+      loadJSON('./data/editorial-sources.json'),
     ]);
+    textsData = { ...textsData, texts: [...textsData.texts, ...guidedReadingsData.texts] };
+    applyEditorialContract({ texts: textsData, authors: authorsData, etymology: etymData, sources: [...editorialSourcesData.sources, ...guidedReadingsData.sources] });
   }
 }
 
@@ -49,6 +56,11 @@ async function init() {
   if (!outlet) throw new Error('Elemento #main-content não encontrado no DOM.');
 
   const router = new Router(outlet);
+  if ('serviceWorker' in navigator && window.isSecureContext) {
+    navigator.serviceWorker.register('./service-worker.js').catch(() => {
+      // O aplicativo continua utilizável sem cache offline.
+    });
+  }
 
   // --- Rota: Página inicial ---
   router.register('/', async () => {
@@ -56,18 +68,23 @@ async function init() {
     return renderHome();
   });
 
+  router.register('/progresso', async () => {
+    const { renderProgresso } = await import('../modules/progresso/progresso.js');
+    return renderProgresso();
+  });
+
   // --- Rota: Leitura estrutural ---
-  router.register('/modulo/leitura', async () => {
+  router.register('/modulo/leitura', async ({ query }) => {
     await ensureDataLoaded();
     const { renderLeituraEstrutura } = await import('../modules/reading/reading.js');
-    return renderLeituraEstrutura(textsData);
+    return renderLeituraEstrutura(textsData, validTextId(query.get('texto')));
   });
 
   // --- Rota: Interpretação ---
-  router.register('/modulo/interpretacao', async () => {
+  router.register('/modulo/interpretacao', async ({ query }) => {
     await ensureDataLoaded();
     const { renderInterpretacao } = await import('../modules/interpretation/interpretation.js');
-    return renderInterpretacao(textsData);
+    return renderInterpretacao(textsData, validTextId(query.get('texto')));
   });
 
   // --- Rota: Sintaxe ---
@@ -178,9 +195,9 @@ async function init() {
   });
 
   // --- Rota: Guia do Professor ---
-  router.register('/guia', async () => {
+  router.register('/guia', async ({ query }) => {
     const { renderGuia } = await import('../modules/guia/guia.js');
-    return renderGuia();
+    return renderGuia(query.get('sec'));
   });
 
   // --- Rota: Gerador de Plano de Aula ---
@@ -197,6 +214,12 @@ async function init() {
   const mainNav     = document.getElementById('main-nav');
   const secondaryNav = document.getElementById('main-nav-secondary');
   if (navToggle && mainNav) {
+    const closeMenu = (restoreFocus = false) => {
+      mainNav.classList.remove('open');
+      secondaryNav?.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      if (restoreFocus) navToggle.focus();
+    };
     navToggle.addEventListener('click', () => {
       const open = mainNav.classList.toggle('open');
       if (secondaryNav) secondaryNav.classList.toggle('open', open);
@@ -207,10 +230,11 @@ async function init() {
       const outside = !mainNav.contains(e.target) &&
                       !(secondaryNav && secondaryNav.contains(e.target)) &&
                       !navToggle.contains(e.target);
-      if (outside) {
-        mainNav.classList.remove('open');
-        if (secondaryNav) secondaryNav.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
+      if (outside) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        closeMenu(true);
       }
     });
   }
@@ -218,6 +242,10 @@ async function init() {
   // Atualiza classe 'active' na navegação quando a rota muda
   window.addEventListener('hashchange', updateNavActive);
   updateNavActive();
+}
+
+function validTextId(value) {
+  return typeof value === 'string' && /^[a-z0-9_]+$/i.test(value) ? value : null;
 }
 
 /**

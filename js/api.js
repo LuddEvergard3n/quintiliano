@@ -21,6 +21,18 @@ const CACHE_TTL_MS   = 7 * 24 * 60 * 60 * 1000; // 7 dias
 const WIKTIONARY_API = 'https://pt.wiktionary.org/w/api.php';
 const GUTENBERG_BASE = 'https://www.gutenberg.org/cache/epub';
 
+/** Cancela consultas lentas para que uma busca antiga não prenda a interface. */
+function fetchWithTimeout(url, signal, timeoutMs = 8000) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(new Error('Tempo de consulta esgotado')), timeoutMs);
+  const abort = () => controller.abort(signal?.reason);
+  signal?.addEventListener('abort', abort, { once: true });
+  return fetch(url, { signal: controller.signal }).finally(() => {
+    clearTimeout(timeout);
+    signal?.removeEventListener('abort', abort);
+  });
+}
+
 /* ================================================================
    CACHE (localStorage)
    ================================================================ */
@@ -78,7 +90,7 @@ function cacheSet(key, value, ttlMs = CACHE_TTL_MS) {
  * @param {string} word
  * @returns {Promise<{ found: boolean, text: string, source: string } | { error: string }>}
  */
-export async function fetchEtymology(word) {
+export async function fetchEtymology(word, { signal } = {}) {
   // Normaliza entrada: espaços extras e case.
   // Retry com lowercase se a página não existir — Wiktionary PT usa minúsculas
   // para substantivos comuns mas maiúsculas para nomes próprios.
@@ -91,7 +103,7 @@ export async function fetchEtymology(word) {
     // Passo 1: lista de seções da página
     // redirects=true faz a API seguir redirects (ex: "amores" → "amor")
     const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&redirects=true&format=json&origin=*`;
-    const sectionsRes = await fetch(sectionsUrl);
+    const sectionsRes = await fetchWithTimeout(sectionsUrl, signal);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
 
@@ -99,7 +111,7 @@ export async function fetchEtymology(word) {
     if (sectionsData.error && word !== word.toLowerCase()) {
       const wordLower = word.toLowerCase();
       const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&redirects=true&format=json&origin=*`;
-      const sectionsResLower = await fetch(sectionsUrlLower);
+      const sectionsResLower = await fetchWithTimeout(sectionsUrlLower, signal);
       if (sectionsResLower.ok) {
         const sectionsDataLower = await sectionsResLower.json();
         if (!sectionsDataLower.error) {
@@ -128,7 +140,7 @@ export async function fetchEtymology(word) {
 
     // Passo 3: busca HTML da seção de etimologia
     const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${etymIndex}&redirects=true&format=json&origin=*`;
-    const htmlRes = await fetch(htmlUrl);
+    const htmlRes = await fetchWithTimeout(htmlUrl, signal);
     if (!htmlRes.ok) throw new Error(`HTTP ${htmlRes.status}`);
     const htmlData = await htmlRes.json();
 
@@ -157,7 +169,7 @@ export async function fetchEtymology(word) {
  * @param {string} word
  * @returns {Promise<{ found: boolean, definitions: string[], partOfSpeech: string, source: string } | { error: string }>}
  */
-export async function fetchDefinition(word) {
+export async function fetchDefinition(word, { signal } = {}) {
   word = word.trim();
   const cacheKey = `def_${word.toLowerCase()}`;
   const cached = cacheGet(cacheKey);
@@ -165,7 +177,7 @@ export async function fetchDefinition(word) {
 
   try {
     const sectionsUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=sections&redirects=true&format=json&origin=*`;
-    const sectionsRes = await fetch(sectionsUrl);
+    const sectionsRes = await fetchWithTimeout(sectionsUrl, signal);
     if (!sectionsRes.ok) throw new Error(`HTTP ${sectionsRes.status}`);
     const sectionsData = await sectionsRes.json();
 
@@ -173,7 +185,7 @@ export async function fetchDefinition(word) {
     if (sectionsData.error && word !== word.toLowerCase()) {
       const wordLower = word.toLowerCase();
       const sectionsUrlLower = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(wordLower)}&prop=sections&redirects=true&format=json&origin=*`;
-      const sectionsResLower = await fetch(sectionsUrlLower);
+      const sectionsResLower = await fetchWithTimeout(sectionsUrlLower, signal);
       if (sectionsResLower.ok) {
         const sectionsDataLower = await sectionsResLower.json();
         if (!sectionsDataLower.error) {
@@ -199,7 +211,7 @@ export async function fetchDefinition(word) {
     }
 
     const htmlUrl = `${WIKTIONARY_API}?action=parse&page=${encodeURIComponent(word)}&prop=text&section=${posSection.index}&redirects=true&format=json&origin=*`;
-    const htmlRes = await fetch(htmlUrl);
+    const htmlRes = await fetchWithTimeout(htmlUrl, signal);
     if (!htmlRes.ok) throw new Error(`HTTP ${htmlRes.status}`);
     const htmlData = await htmlRes.json();
 
@@ -234,7 +246,7 @@ export async function fetchDefinition(word) {
  * @param {number} [charLimit]  — Máximo de caracteres a retornar (padrão: 3000)
  * @returns {Promise<{ found: boolean, text: string, title: string } | { error: string }>}
  */
-export async function fetchGutenbergExcerpt(gutenbergId, charLimit = 3000) {
+export async function fetchGutenbergExcerpt(gutenbergId, charLimit = 3000, { signal } = {}) {
   const cacheKey = `gutenberg_${gutenbergId}_${charLimit}`;
   const cached = cacheGet(cacheKey);
   if (cached) return cached;
@@ -242,7 +254,7 @@ export async function fetchGutenbergExcerpt(gutenbergId, charLimit = 3000) {
   try {
     // Gutenberg serve os textos como UTF-8 plain text
     const url = `${GUTENBERG_BASE}/${gutenbergId}/pg${gutenbergId}.txt`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url, signal);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     // Detecta encoding pelo Content-Type para obras antigas servidas em Latin-1

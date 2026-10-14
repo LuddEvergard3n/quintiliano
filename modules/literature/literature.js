@@ -361,6 +361,8 @@ export function renderAutorPerfil(authors, authorId, textsData, router) {
 
   // Lida com clicks nos botões "Ler trecho"
   const gutenbergSection = page.querySelector('#gutenberg-section');
+  const excerptController = new AbortController();
+  let excerptRequest = 0;
   page.addEventListener('click', async e => {
     const btn = e.target.closest('[data-gutenberg-id]');
     if (!btn) return;
@@ -376,7 +378,9 @@ export function renderAutorPerfil(authors, authorId, textsData, router) {
     gutenbergSection.appendChild(buildExcerptLoading(title));
     gutenbergSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    const result = await fetchGutenbergExcerpt(id, 4000);
+    const request = ++excerptRequest;
+    const result = await fetchGutenbergExcerpt(id, 4000, { signal: excerptController.signal });
+    if (excerptController.signal.aborted || request !== excerptRequest) return;
 
     gutenbergSection.innerHTML = '';
 
@@ -410,7 +414,7 @@ export function renderAutorPerfil(authors, authorId, textsData, router) {
 
     authorTexts.forEach(text => {
       const row = document.createElement('a');
-      row.href = `#/modulo/interpretacao`;
+      row.href = `#/modulo/interpretacao?texto=${encodeURIComponent(text.id)}`;
       row.style.cssText = `
         display:flex;align-items:center;gap:var(--space-4);
         padding:var(--space-4) var(--space-5);
@@ -454,6 +458,7 @@ export function renderAutorPerfil(authors, authorId, textsData, router) {
     authorTextsSection.appendChild(note);
   }
 
+  page.destroy = () => excerptController.abort();
   return page;
 }
 

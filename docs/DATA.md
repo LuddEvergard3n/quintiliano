@@ -8,7 +8,7 @@ Documentação dos quatro arquivos JSON em `data/`. Para cada um: estrutura, cam
 
 Banco central de textos literários e didáticos com exercícios associados.
 
-**Estado atual:** 40 textos, 87 exercícios.
+**Estado atual:** 40 textos do banco principal, cinco leituras guiadas complementares e 93 exercícios no banco principal. Leituras guiadas usam comentário crítico original quando não há permissão de reprodução de excerto.
 
 ### Estrutura raiz
 

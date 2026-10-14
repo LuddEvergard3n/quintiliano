@@ -69,6 +69,8 @@ class HTMLElement {
   get innerHTML() { return this._innerHTML; }
 
   appendChild(child) { this.children.push(child); return child; }
+  append(...children) { children.forEach(child => this.appendChild(child)); }
+  replaceChildren(...children) { this.children = [...children]; this._innerHTML = ''; }
 
   querySelector(sel) {
     // Suporta '#id' e '.class' e tag simples
@@ -112,6 +114,7 @@ class Document {
   querySelectorAll() { return []; }
   getElementById()   { return null; }
   createTextNode(t)  { return { textContent: t, nodeType: 3 }; }
+  createDocumentFragment() { return new HTMLElement('fragment'); }
   addEventListener() {}
   removeEventListener() {}
   get activeElement() { return new HTMLElement(); }

@@ -31,6 +31,8 @@ class HTMLElement {
   set innerHTML(v) { this._innerHTML = v; }
   get innerHTML()  { return this._innerHTML; }
   appendChild(child) { this.children.push(child); return child; }
+  append(...children) { children.forEach(child => this.appendChild(child)); }
+  replaceChildren(...children) { this.children = [...children]; this._innerHTML = ''; }
   classList = { add: () => {} };
   addEventListener(ev, fn) {
     this._listeners[ev] = this._listeners[ev] ?? [];
@@ -63,7 +65,7 @@ globalThis.window      = sharedWindow;
 globalThis.HTMLElement = HTMLElement;
 globalThis.document    = new Document();
 
-const { Router } = await import('../js/router.js');
+const { Router, parseHash } = await import('../js/router.js');
 
 /* ================================================================
    HELPERS
@@ -89,6 +91,12 @@ function makeEnv() {
    ================================================================ */
 
 describe('Router — matching', () => {
+
+  test('preserva parâmetros de consulta sem misturá-los ao caminho', () => {
+    const parsed = parseHash('#/modulo/leitura?texto=machado_capitu');
+    assert.equal(parsed.path, '/modulo/leitura');
+    assert.equal(parsed.query.get('texto'), 'machado_capitu');
+  });
 
   test('rota exata "/" é resolvida via navigate', async () => {
     const { fire } = makeEnv();
@@ -126,7 +134,9 @@ describe('Router — matching', () => {
     fire('#/modulo/leitura/texto/machado_capitu');
     await new Promise(r => setTimeout(r, 20));
 
-    assert.deepEqual(params, { mod: 'leitura', id: 'machado_capitu' });
+    assert.equal(params.mod, 'leitura');
+    assert.equal(params.id, 'machado_capitu');
+    assert.ok(params.query instanceof URLSearchParams);
   });
 
   test('rota não encontrada renderiza 404 sem lançar exceção', async () => {

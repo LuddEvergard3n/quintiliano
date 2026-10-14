@@ -22,7 +22,12 @@
         "italiano": "amore",
         "inglês": "amour (empréstimo)"
       },
-      "curiosity": "A mesma raiz latina gerou o nome 'Romeu' por via indireta e o mês de 'abril' — do latim 'aperire', abrir, mês em que a primavera abre as flores."
+      "curiosity": "A mesma raiz latina gerou o nome 'Romeu' por via indireta e o mês de 'abril' — do latim 'aperire', abrir, mês em que a primavera abre as flores.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "palavra",
@@ -42,7 +47,12 @@
         "francês": "parole",
         "catalão": "paraula"
       },
-      "curiosity": "A palavra 'parábola' (história com ensinamento moral) e 'palavra' têm a mesma raiz — ambas vêm da ideia grega de comparação e discurso metafórico."
+      "curiosity": "A palavra 'parábola' (história com ensinamento moral) e 'palavra' têm a mesma raiz — ambas vêm da ideia grega de comparação e discurso metafórico.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "livro",
@@ -63,7 +73,12 @@
         "francês": "livre",
         "italiano": "libro"
       },
-      "curiosity": "Liber era a camada entre a casca e o lenho das árvores, usada como suporte de escrita antes do pergaminho. O mesmo radical gerou 'liberdade' (liber = livre) — coincidência que os romanos exploravam retoricamente."
+      "curiosity": "Liber era a camada entre a casca e o lenho das árvores, usada como suporte de escrita antes do pergaminho. O mesmo radical gerou 'liberdade' (liber = livre) — coincidência que os romanos exploravam retoricamente.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "escola",
@@ -84,7 +99,12 @@
         "inglês": "school",
         "italiano": "scuola"
       },
-      "curiosity": "O grego skholē significava 'lazer' ou 'tempo livre' — porque estudar era um privilégio dos que não precisavam trabalhar. A escola era, originalmente, o lugar do ócio intelectual."
+      "curiosity": "O grego skholē significava 'lazer' ou 'tempo livre' — porque estudar era um privilégio dos que não precisavam trabalhar. A escola era, originalmente, o lugar do ócio intelectual.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "tempo",
@@ -106,7 +126,12 @@
         "francês": "temps",
         "italiano": "tempo"
       },
-      "curiosity": "'Tempestade' e 'tempero' compartilham a mesma raiz: ambas vêm da ideia de mistura e proporção adequada — a tempestade é o clima fora de proporção; o tempero é a mistura na proporção certa."
+      "curiosity": "'Tempestade' e 'tempero' compartilham a mesma raiz: ambas vêm da ideia de mistura e proporção adequada — a tempestade é o clima fora de proporção; o tempero é a mistura na proporção certa.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "língua",
@@ -127,7 +152,12 @@
         "francês": "langue",
         "italiano": "lingua"
       },
-      "curiosity": "O mesmo órgão que saboreia a comida é o que articula a fala — e os romanos usavam 'lingua' para ambos. 'Linguiça' vem da mesma raiz: era um embutido feito com língua de porco."
+      "curiosity": "O mesmo órgão que saboreia a comida é o que articula a fala — e os romanos usavam 'lingua' para ambos. 'Linguiça' vem da mesma raiz: era um embutido feito com língua de porco.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "autor",
@@ -148,7 +178,12 @@
         "francês": "auteur",
         "inglês": "author"
       },
-      "curiosity": "Auctor vem de 'augere' (aumentar, fazer crescer). O autor é quem 'faz crescer' uma obra. 'Autoridade' compartilha a raiz — a autoridade é quem tem o poder de 'fazer crescer' ou sancionar algo."
+      "curiosity": "Auctor vem de 'augere' (aumentar, fazer crescer). O autor é quem 'faz crescer' uma obra. 'Autoridade' compartilha a raiz — a autoridade é quem tem o poder de 'fazer crescer' ou sancionar algo.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "forma",
@@ -172,7 +207,12 @@
         "inglês": "form",
         "italiano": "forma"
       },
-      "curiosity": "'Informar' significa literalmente 'dar forma' a uma ideia na mente de alguém. 'Uniforme' é o que tem 'uma só forma'. A raiz está em mais de 50 palavras portuguesas."
+      "curiosity": "'Informar' significa literalmente 'dar forma' a uma ideia na mente de alguém. 'Uniforme' é o que tem 'uma só forma'. A raiz está em mais de 50 palavras portuguesas.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "texto",
@@ -194,7 +234,12 @@
         "francês": "texte",
         "inglês": "text"
       },
-      "curiosity": "Um texto é, literalmente, um tecido — fios de palavras entrelaçados. 'Contexto' é o que está 'tecido junto' ao redor. 'Pretexto' é o que está 'tecido na frente' para esconder outra coisa."
+      "curiosity": "Um texto é, literalmente, um tecido — fios de palavras entrelaçados. 'Contexto' é o que está 'tecido junto' ao redor. 'Pretexto' é o que está 'tecido na frente' para esconder outra coisa.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "verso",
@@ -217,7 +262,12 @@
         "francês": "vers",
         "inglês": "verse"
       },
-      "curiosity": "O verso da poesia tem esse nome porque, quando se chegava ao fim de uma linha na pedra ou argila, o escriba 'virava' (vertere) para continuar na linha seguinte. 'Universo' é o que foi 'girado em uma só direção'."
+      "curiosity": "O verso da poesia tem esse nome porque, quando se chegava ao fim de uma linha na pedra ou argila, o escriba 'virava' (vertere) para continuar na linha seguinte. 'Universo' é o que foi 'girado em uma só direção'.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "nome",
@@ -239,7 +289,12 @@
         "francês": "nom",
         "inglês": "noun (via francês)"
       },
-      "curiosity": "O latim 'nomen' deu origem à categoria gramatical 'substantivo' via 'nome'. Em muitas línguas (espanhol, francês, inglês), a palavra para 'nome' e para 'substantivo' são a mesma."
+      "curiosity": "O latim 'nomen' deu origem à categoria gramatical 'substantivo' via 'nome'. Em muitas línguas (espanhol, francês, inglês), a palavra para 'nome' e para 'substantivo' são a mesma.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "sentido",
@@ -261,7 +316,12 @@
         "francês": "sens",
         "inglês": "sense"
       },
-      "curiosity": "A mesma palavra cobre os cinco sentidos corporais, o 'sentido' de uma palavra e a 'direção' de uma via de trânsito. Em todos os casos, a ideia é de percepção orientada."
+      "curiosity": "A mesma palavra cobre os cinco sentidos corporais, o 'sentido' de uma palavra e a 'direção' de uma via de trânsito. Em todos os casos, a ideia é de percepção orientada.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "gramática",
@@ -283,7 +343,12 @@
         "francês": "grammaire",
         "inglês": "grammar"
       },
-      "curiosity": "Gramma em grego significava qualquer coisa escrita ou desenhada — uma letra, um sinal, um desenho. Daí vêm 'programa' (escrito de antemão), 'telegrama' (escrito à distância) e 'diagrama' (desenhado através)."
+      "curiosity": "Gramma em grego significava qualquer coisa escrita ou desenhada — uma letra, um sinal, um desenho. Daí vêm 'programa' (escrito de antemão), 'telegrama' (escrito à distância) e 'diagrama' (desenhado através).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "poesia",
@@ -303,7 +368,12 @@
         "francês": "poésie",
         "inglês": "poetry"
       },
-      "curiosity": "Poiēsis em grego era um termo geral para qualquer ato de criação — fazer um sapato ou fazer um poema. Aristóteles o especializou para a criação literária. Heidegger o resgatou no século XX como conceito filosófico."
+      "curiosity": "Poiēsis em grego era um termo geral para qualquer ato de criação — fazer um sapato ou fazer um poema. Aristóteles o especializou para a criação literária. Heidegger o resgatou no século XX como conceito filosófico.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "metáfora",
@@ -322,7 +392,12 @@
         "francês": "métaphore",
         "inglês": "metaphor"
       },
-      "curiosity": "Em grego moderno, 'metaphorá' ainda significa 'caminhão de mudança' ou 'transporte'. A metáfora é literalmente um veículo: ela transporta o sentido de um domínio para outro."
+      "curiosity": "Em grego moderno, 'metaphorá' ainda significa 'caminhão de mudança' ou 'transporte'. A metáfora é literalmente um veículo: ela transporta o sentido de um domínio para outro.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "ironia",
@@ -342,7 +417,12 @@
         "francês": "ironie",
         "inglês": "irony"
       },
-      "curiosity": "O eirōn era um tipo cômico grego: o personagem que fingia ser mais tolo do que era para enganar o alazon (o fanfarrão). Sócrates foi chamado de eirōn por seus contemporâneos — fingindo não saber para revelar a ignorância dos outros."
+      "curiosity": "O eirōn era um tipo cômico grego: o personagem que fingia ser mais tolo do que era para enganar o alazon (o fanfarrão). Sócrates foi chamado de eirōn por seus contemporâneos — fingindo não saber para revelar a ignorância dos outros.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "símbolo",
@@ -363,7 +443,12 @@
         "francês": "symbole",
         "inglês": "symbol"
       },
-      "curiosity": "O symbolon era um objeto (moeda, osso, anel) partido ao meio: cada parte ficava com um contratante. Para autenticar o acordo, juntavam as metades. O símbolo é algo que 'junta' dois mundos — o visível e o invisível."
+      "curiosity": "O symbolon era um objeto (moeda, osso, anel) partido ao meio: cada parte ficava com um contratante. Para autenticar o acordo, juntavam as metades. O símbolo é algo que 'junta' dois mundos — o visível e o invisível.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "crise",
@@ -385,7 +470,12 @@
         "francês": "crise",
         "inglês": "crisis"
       },
-      "curiosity": "Na medicina grega, krisis era o momento decisivo de uma doença — quando o paciente ou melhorava ou morria. A crise não é o caos: é o ponto em que se decide. 'Hipócrita' vem da mesma raiz: o que 'julga por baixo', interpreta um papel."
+      "curiosity": "Na medicina grega, krisis era o momento decisivo de uma doença — quando o paciente ou melhorava ou morria. A crise não é o caos: é o ponto em que se decide. 'Hipócrita' vem da mesma raiz: o que 'julga por baixo', interpreta um papel.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "lógica",
@@ -410,7 +500,12 @@
         "francês": "logique",
         "inglês": "logic"
       },
-      "curiosity": "Logos em grego carregava três sentidos simultâneos: palavra, razão e discurso. Daí deriva metade do vocabulário científico em '-logia' (biologia, psicologia, sociologia) — cada ciência é um logos sobre seu objeto."
+      "curiosity": "Logos em grego carregava três sentidos simultâneos: palavra, razão e discurso. Daí deriva metade do vocabulário científico em '-logia' (biologia, psicologia, sociologia) — cada ciência é um logos sobre seu objeto.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "retórica",
@@ -429,7 +524,12 @@
         "francês": "rhétorique",
         "inglês": "rhetoric"
       },
-      "curiosity": "Aristóteles definiu retórica como 'a faculdade de descobrir os meios de persuasão disponíveis em cada caso'. Para os gregos, era uma ciência séria — não o uso vazio de palavras belas, como o termo pejorativamente sugere hoje."
+      "curiosity": "Aristóteles definiu retórica como 'a faculdade de descobrir os meios de persuasão disponíveis em cada caso'. Para os gregos, era uma ciência séria — não o uso vazio de palavras belas, como o termo pejorativamente sugere hoje.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "sintaxe",
@@ -449,7 +549,12 @@
         "francês": "syntaxe",
         "inglês": "syntax"
       },
-      "curiosity": "Tassein em grego era um termo militar: ordenar as tropas em formação. A sintaxe é a disposição das palavras em 'formação de combate' — cada uma no posto que lhe confere função e sentido."
+      "curiosity": "Tassein em grego era um termo militar: ordenar as tropas em formação. A sintaxe é a disposição das palavras em 'formação de combate' — cada uma no posto que lhe confere função e sentido.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "alface",
@@ -464,7 +569,12 @@
         "espanhol": "lechuga (do latim)",
         "catalão": "enciam"
       },
-      "curiosity": "O português tem mais de 900 palavras de origem árabe, legado dos sete séculos de presença mourisca na Península Ibérica (711-1492). Quase todas começam com 'al-' — o artigo árabe que se fundiu com a palavra."
+      "curiosity": "O português tem mais de 900 palavras de origem árabe, legado dos sete séculos de presença mourisca na Península Ibérica (711-1492). Quase todas começam com 'al-' — o artigo árabe que se fundiu com a palavra.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "algoritmo",
@@ -481,7 +591,12 @@
         "inglês": "algorithm",
         "francês": "algorithme"
       },
-      "curiosity": "Al-Khwārizmī (c. 780-850) foi o matemático que formalizou a álgebra — palavra que também vem do árabe 'al-jabr' (reunião de partes fraturadas), do título de seu livro. Seu nome tornou-se sinônimo de procedimento de cálculo."
+      "curiosity": "Al-Khwārizmī (c. 780-850) foi o matemático que formalizou a álgebra — palavra que também vem do árabe 'al-jabr' (reunião de partes fraturadas), do título de seu livro. Seu nome tornou-se sinônimo de procedimento de cálculo.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "álgebra",
@@ -499,7 +614,12 @@
         "inglês": "algebra",
         "francês": "algèbre"
       },
-      "curiosity": "Al-jabr era originalmente um termo de medicina — a ação de 'reunir' ossos fraturados. Al-Khwārizmī o usou metaforicamente para a operação de 'reunir' termos de uma equação. Na Espanha medieval, algebrista era sinônimo de cirurgião ortopedista."
+      "curiosity": "Al-jabr era originalmente um termo de medicina — a ação de 'reunir' ossos fraturados. Al-Khwārizmī o usou metaforicamente para a operação de 'reunir' termos de uma equação. Na Espanha medieval, algebrista era sinônimo de cirurgião ortopedista.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "assassino",
@@ -517,7 +637,12 @@
         "inglês": "assassin",
         "francês": "assassin"
       },
-      "curiosity": "Hashshāshīn era o nome dado pelos cruzados a uma ordem muçulmana de guerreiros secretos (os Nizaris). A lenda dizia que consumiam haxixe antes de suas missões. Marco Polo popularizou a história. O nome chegou ao português via italiano medieval."
+      "curiosity": "Hashshāshīn era o nome dado pelos cruzados a uma ordem muçulmana de guerreiros secretos (os Nizaris). A lenda dizia que consumiam haxixe antes de suas missões. Marco Polo popularizou a história. O nome chegou ao português via italiano medieval.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "caju",
@@ -535,7 +660,12 @@
         "inglês": "cashew (via português)",
         "francês": "cajou"
       },
-      "curiosity": "A palavra 'caju' é um dos inúmeros tupismos que o português brasileiro absorveu — especialmente para flora e fauna sem equivalente europeu. O inglês 'cashew' e o francês 'cajou' vêm do português, que veio do tupi."
+      "curiosity": "A palavra 'caju' é um dos inúmeros tupismos que o português brasileiro absorveu — especialmente para flora e fauna sem equivalente europeu. O inglês 'cashew' e o francês 'cajou' vêm do português, que veio do tupi.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "abacaxi",
@@ -550,7 +680,12 @@
         "espanhol": "piña (do espanhol)",
         "inglês": "pineapple"
       },
-      "curiosity": "O espanhol e o inglês chamam o abacaxi de 'piña/pineapple' por sua semelhança visual com a pinha do pinheiro. O português usou o nome tupi, que descreve o cheiro intenso da fruta. 'Abacaxi' no sentido de 'problema difícil' é um uso brasileiro do século XX."
+      "curiosity": "O espanhol e o inglês chamam o abacaxi de 'piña/pineapple' por sua semelhança visual com a pinha do pinheiro. O português usou o nome tupi, que descreve o cheiro intenso da fruta. 'Abacaxi' no sentido de 'problema difícil' é um uso brasileiro do século XX.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "marimbondo",
@@ -562,7 +697,12 @@
       ],
       "family": [],
       "cognates_other_languages": {},
-      "curiosity": "O quimbundo é uma das línguas bantas de Angola, trazida ao Brasil pelos escravizados. Além de marimbondo, deixou palavras como moleque, quilombo, caçula, candomblé, samba e mocambo."
+      "curiosity": "O quimbundo é uma das línguas bantas de Angola, trazida ao Brasil pelos escravizados. Além de marimbondo, deixou palavras como moleque, quilombo, caçula, candomblé, samba e mocambo.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "samba",
@@ -578,7 +718,12 @@
         "sambódromo"
       ],
       "cognates_other_languages": {},
-      "curiosity": "A umbigada (semba) era um gesto ritual das danças bantas em que os dançarinos se tocavam os umbigos — convite ao par para dançar. O ritmo e a dança que conhecemos hoje como samba foram forjados no Brasil, mas a palavra e os gestos fundadores vêm diretamente da África."
+      "curiosity": "A umbigada (semba) era um gesto ritual das danças bantas em que os dançarinos se tocavam os umbigos — convite ao par para dançar. O ritmo e a dança que conhecemos hoje como samba foram forjados no Brasil, mas a palavra e os gestos fundadores vêm diretamente da África.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "guerra",
@@ -598,7 +743,12 @@
         "francês": "guerre",
         "italiano": "guerra"
       },
-      "curiosity": "O latim tinha 'bellum' para guerra — que sobreviveu em 'bélico', 'beligerante', 'rebelde'. Mas o termo do dia a dia do português (e espanhol, francês, italiano) veio dos invasores germânicos que não tinham equivalente palatável para 'bellum'."
+      "curiosity": "O latim tinha 'bellum' para guerra — que sobreviveu em 'bélico', 'beligerante', 'rebelde'. Mas o termo do dia a dia do português (e espanhol, francês, italiano) veio dos invasores germânicos que não tinham equivalente palatável para 'bellum'.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "guarda",
@@ -619,7 +769,12 @@
         "francês": "garder",
         "inglês": "ward, guard (do mesmo radical)"
       },
-      "curiosity": "O inglês 'guard' e o francês 'garder' vêm do mesmo radical germânico. O português tomou a palavra via francês, com o prefixo 'gu-' característico das palavras de origem germânica."
+      "curiosity": "O inglês 'guard' e o francês 'garder' vêm do mesmo radical germânico. O português tomou a palavra via francês, com o prefixo 'gu-' característico das palavras de origem germânica.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "coragem",
@@ -639,7 +794,12 @@
         "francês": "courage",
         "inglês": "courage"
       },
-      "curiosity": "Coragem literalmente significa 'o que vem do coração'. O mesmo vale para 'acordo' (ad + cor: de coração a coração), 'recordar' (re + cor: trazer de volta ao coração) e 'discórdia' (dis + cor: corações separados)."
+      "curiosity": "Coragem literalmente significa 'o que vem do coração'. O mesmo vale para 'acordo' (ad + cor: de coração a coração), 'recordar' (re + cor: trazer de volta ao coração) e 'discórdia' (dis + cor: corações separados).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "virtude",
@@ -659,7 +819,12 @@
         "francês": "vertu",
         "inglês": "virtue"
       },
-      "curiosity": "'Virtual' vem da mesma raiz: 'virtus' no sentido escolástico medieval de 'potência' ou 'força em potencial'. O 'mundo virtual' é o mundo que tem a potência de existir, mas não existe visivelmente."
+      "curiosity": "'Virtual' vem da mesma raiz: 'virtus' no sentido escolástico medieval de 'potência' ou 'força em potencial'. O 'mundo virtual' é o mundo que tem a potência de existir, mas não existe visivelmente.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "argumento",
@@ -679,7 +844,12 @@
         "francês": "argument",
         "inglês": "argument"
       },
-      "curiosity": "Arguere em latim significava 'tornar claro' — o argumento é o que ilumina, não o que confunde. Em teatro latino, argumentum era o resumo do enredo — sentido que sobrevive quando falamos do 'argumento' de um filme."
+      "curiosity": "Arguere em latim significava 'tornar claro' — o argumento é o que ilumina, não o que confunde. Em teatro latino, argumentum era o resumo do enredo — sentido que sobrevive quando falamos do 'argumento' de um filme.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "discurso",
@@ -702,7 +872,12 @@
         "francês": "discours",
         "inglês": "discourse"
       },
-      "curiosity": "O pensamento 'corre' de ideia em ideia — daí 'discurso'. A mesma raiz 'currere' deu 'currículo' (percurso de vida), 'corrida', 'corrente', 'concurso' (correr junto) e 'incursão' (correr sobre o inimigo)."
+      "curiosity": "O pensamento 'corre' de ideia em ideia — daí 'discurso'. A mesma raiz 'currere' deu 'currículo' (percurso de vida), 'corrida', 'corrente', 'concurso' (correr junto) e 'incursão' (correr sobre o inimigo).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "fábula",
@@ -724,7 +899,12 @@
         "francês": "fable",
         "inglês": "fable"
       },
-      "curiosity": "'Infante' (criança) vem da mesma raiz: in + fans = 'aquele que não fala ainda'. 'Nefasto' é o que não se pode pronunciar (nefas = proibido de falar). 'Fama' é o que as pessoas falam sobre alguém."
+      "curiosity": "'Infante' (criança) vem da mesma raiz: in + fans = 'aquele que não fala ainda'. 'Nefasto' é o que não se pode pronunciar (nefas = proibido de falar). 'Fama' é o que as pessoas falam sobre alguém.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "narrar",
@@ -745,7 +925,12 @@
         "francês": "narrer",
         "inglês": "narrate"
       },
-      "curiosity": "Narrare vem de gnarus — 'aquele que sabe'. Narrar é tornar algo conhecido. A mesma raiz gnarus deu 'ignorar' (ig + narus = não saber) e, via grego, 'gnose' (conhecimento espiritual)."
+      "curiosity": "Narrare vem de gnarus — 'aquele que sabe'. Narrar é tornar algo conhecido. A mesma raiz gnarus deu 'ignorar' (ig + narus = não saber) e, via grego, 'gnose' (conhecimento espiritual).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "parágrafo",
@@ -764,7 +949,12 @@
         "francês": "paragraphe",
         "inglês": "paragraph"
       },
-      "curiosity": "Na Antiguidade, o parágrafo era um sinal (uma linha ou ângulo) desenhado na margem para indicar uma mudança de assunto — não o bloco de texto em si. Só no século XVI o sentido migrou para o bloco de texto."
+      "curiosity": "Na Antiguidade, o parágrafo era um sinal (uma linha ou ângulo) desenhado na margem para indicar uma mudança de assunto — não o bloco de texto em si. Só no século XVI o sentido migrou para o bloco de texto.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "página",
@@ -784,7 +974,12 @@
         "francês": "page",
         "inglês": "page"
       },
-      "curiosity": "Pagina vem de pangere (fixar, pregar) — a mesma raiz de 'pagar' (fixar um débito). A página era originalmente a 'grade' de texto fixada em colunas na folha de papiro."
+      "curiosity": "Pagina vem de pangere (fixar, pregar) — a mesma raiz de 'pagar' (fixar um débito). A página era originalmente a 'grade' de texto fixada em colunas na folha de papiro.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "estilo",
@@ -805,7 +1000,12 @@
         "francês": "style",
         "inglês": "style"
       },
-      "curiosity": "Estilo era o instrumento de ferro ou osso com que os romanos escreviam nas tabuinhas de cera — um estilete. Como cada escritor tinha uma forma particular de mover o stilus, o instrumento tornou-se metáfora para a maneira individual de escrever."
+      "curiosity": "Estilo era o instrumento de ferro ou osso com que os romanos escreviam nas tabuinhas de cera — um estilete. Como cada escritor tinha uma forma particular de mover o stilus, o instrumento tornou-se metáfora para a maneira individual de escrever.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "clássico",
@@ -826,7 +1026,12 @@
         "francês": "classique",
         "inglês": "classic"
       },
-      "curiosity": "Classicus era o cidadão romano da primeira classe censitária — o mais rico, o modelo. A obra 'clássica' é a que serve de modelo para todas as outras. O uso se expande no Renascimento para designar os autores greco-latinos como padrão de excelência."
+      "curiosity": "Classicus era o cidadão romano da primeira classe censitária — o mais rico, o modelo. A obra 'clássica' é a que serve de modelo para todas as outras. O uso se expande no Renascimento para designar os autores greco-latinos como padrão de excelência.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "crítica",
@@ -849,7 +1054,12 @@
         "francês": "critique",
         "inglês": "critique, critic"
       },
-      "curiosity": "Krinein em grego significava separar fisicamente — como separar o joio do trigo. A crítica é a faculdade de separar o que tem valor do que não tem. 'Crise' e 'crítico' têm a mesma raiz: ambos são momentos de julgamento e separação."
+      "curiosity": "Krinein em grego significava separar fisicamente — como separar o joio do trigo. A crítica é a faculdade de separar o que tem valor do que não tem. 'Crise' e 'crítico' têm a mesma raiz: ambos são momentos de julgamento e separação.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "ensaio",
@@ -868,7 +1078,12 @@
         "francês": "essai",
         "inglês": "essay"
       },
-      "curiosity": "Montaigne (1533-1592) chamou seus textos de 'Essais' — tentativas, experimentos. O gênero literário do ensaio é, literalmente, uma 'pesagem' de ideias sem a pretensão de concluir. A mesma raiz deu 'exame' (outra forma de pesar/testar)."
+      "curiosity": "Montaigne (1533-1592) chamou seus textos de 'Essais' — tentativas, experimentos. O gênero literário do ensaio é, literalmente, uma 'pesagem' de ideias sem a pretensão de concluir. A mesma raiz deu 'exame' (outra forma de pesar/testar).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "tese",
@@ -891,7 +1106,12 @@
         "francês": "thèse",
         "inglês": "thesis"
       },
-      "curiosity": "Tithenai é uma das raízes mais produtivas do vocabulário intelectual: 'tese' (o que se coloca), 'antítese' (o que se coloca contra), 'síntese' (o que se coloca junto), 'hipótese' (o que se coloca como base). 'Parêntese' é o que se 'coloca entre'."
+      "curiosity": "Tithenai é uma das raízes mais produtivas do vocabulário intelectual: 'tese' (o que se coloca), 'antítese' (o que se coloca contra), 'síntese' (o que se coloca junto), 'hipótese' (o que se coloca como base). 'Parêntese' é o que se 'coloca entre'.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "cânone",
@@ -911,7 +1131,12 @@
         "francês": "canon",
         "inglês": "canon"
       },
-      "curiosity": "Kanōn era a régua do carpinteiro — instrumento de medição. O cânone bíblico é o conjunto de textos que 'medem' a fé. O cânone literário é o conjunto de obras que 'medem' a literatura. Na música, o cânone é a composição em que as vozes seguem a mesma 'régua' com defasagem."
+      "curiosity": "Kanōn era a régua do carpinteiro — instrumento de medição. O cânone bíblico é o conjunto de textos que 'medem' a fé. O cânone literário é o conjunto de obras que 'medem' a literatura. Na música, o cânone é a composição em que as vozes seguem a mesma 'régua' com defasagem.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "capim",
@@ -928,7 +1153,12 @@
         "capinar"
       ],
       "cognates_other_languages": [],
-      "curiosity": "Os colonizadores usaram a palavra tupi porque não tinham termo para o capim da savana brasileira. Passou direto ao português sem adaptação."
+      "curiosity": "Os colonizadores usaram a palavra tupi porque não tinham termo para o capim da savana brasileira. Passou direto ao português sem adaptação.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "piranha",
@@ -946,7 +1176,12 @@
       "cognates_other_languages": [
         "piranha (inglês, espanhol — palavra emprestada)"
       ],
-      "curiosity": "Entrou em várias línguas europeias sem tradução — a criatura era tão específica que o nome tupi foi adotado diretamente."
+      "curiosity": "Entrou em várias línguas europeias sem tradução — a criatura era tão específica que o nome tupi foi adotado diretamente.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "açúcar",
@@ -970,7 +1205,12 @@
         "zucchero (italiano)",
         "Zucker (alemão)"
       ],
-      "curiosity": "O açúcar chegou à Europa via comércio árabe. A palavra percorreu sânscrito → persa → árabe → italiano/português — rastro da Rota da Seda."
+      "curiosity": "O açúcar chegou à Europa via comércio árabe. A palavra percorreu sânscrito → persa → árabe → italiano/português — rastro da Rota da Seda.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "alquimia",
@@ -992,7 +1232,12 @@
         "alchimie (francês)",
         "Alchemie (alemão)"
       ],
-      "curiosity": "O prefixo 'al-' é o artigo definido árabe. Dezenas de palavras científicas portuguesas começam com 'al-': álgebra, algoritmo, alambique, alcool."
+      "curiosity": "O prefixo 'al-' é o artigo definido árabe. Dezenas de palavras científicas portuguesas começam com 'al-': álgebra, algoritmo, alambique, alcool.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "soneto",
@@ -1014,7 +1259,12 @@
         "sonnet (inglês, francês)",
         "Sonett (alemão)"
       ],
-      "curiosity": "Inventado na Sicília no século XIII, o soneto chegou ao português via Itália e Espanha. Camões o consagrou em português no século XVI — 14 versos, dois quartetos, dois tercetos."
+      "curiosity": "Inventado na Sicília no século XIII, o soneto chegou ao português via Itália e Espanha. Camões o consagrou em português no século XVI — 14 versos, dois quartetos, dois tercetos.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "piano",
@@ -1034,7 +1284,12 @@
       "cognates_other_languages": [
         "piano (inglês, francês, espanhol, alemão — empréstimo universal)"
       ],
-      "curiosity": "Inventado por Bartolomeo Cristofori por volta de 1700 em Florença. Seu nome completo descrevia a inovação técnica: podia tocar suave (piano) e forte — ao contrário do cravo."
+      "curiosity": "Inventado por Bartolomeo Cristofori por volta de 1700 em Florença. Seu nome completo descrevia a inovação técnica: podia tocar suave (piano) e forte — ao contrário do cravo.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "clichê",
@@ -1053,7 +1308,12 @@
         "cliché (inglês — mesmo empréstimo)",
         "Klischee (alemão)"
       ],
-      "curiosity": "Na tipografia, 'cliché' era a placa metálica usada para reproduzir imagens. A metáfora é exata: uma ideia-clichê é reproduzida mecanicamente, sem criação."
+      "curiosity": "Na tipografia, 'cliché' era a placa metálica usada para reproduzir imagens. A metáfora é exata: uma ideia-clichê é reproduzida mecanicamente, sem criação.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "romance",
@@ -1077,7 +1337,12 @@
         "romanzo (italiano)",
         "novel (inglês — via outro caminho)"
       ],
-      "curiosity": "No início, 'romance' era qualquer texto escrito em língua vulgar (não em latim). Depois especializou-se em narrativa ficcional longa. O inglês preferiu 'novel' para o mesmo gênero."
+      "curiosity": "No início, 'romance' era qualquer texto escrito em língua vulgar (não em latim). Depois especializou-se em narrativa ficcional longa. O inglês preferiu 'novel' para o mesmo gênero.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "ambição",
@@ -1098,7 +1363,12 @@
         "ambition (inglês, francês)",
         "Ambition (alemão)"
       ],
-      "curiosity": "O sentido original era neutro: andar em torno para conseguir votos. A conotação negativa (desejo excessivo de poder) veio depois, quando os romanos passaram a ver com desconfiança quem 'circulava demais'."
+      "curiosity": "O sentido original era neutro: andar em torno para conseguir votos. A conotação negativa (desejo excessivo de poder) veio depois, quando os romanos passaram a ver com desconfiança quem 'circulava demais'.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "candidato",
@@ -1121,7 +1391,12 @@
         "candidat (francês)",
         "Kandidat (alemão)"
       ],
-      "curiosity": "Da mesma raiz vem 'cândido' (puro, ingênuo) e 'incandescente' (brilhante de calor). A toga branca sinalizava tanto pureza moral quanto visibilidade pública."
+      "curiosity": "Da mesma raiz vem 'cândido' (puro, ingênuo) e 'incandescente' (brilhante de calor). A toga branca sinalizava tanto pureza moral quanto visibilidade pública.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "capital",
@@ -1145,7 +1420,12 @@
         "Kapital (alemão)",
         "capitale (italiano)"
       ],
-      "curiosity": "'Capitão', 'capítulo', 'capita', 'decapitar', 'recapitular' — todos vêm de 'caput'. A metáfora da cabeça como centro de controle está em toda a família."
+      "curiosity": "'Capitão', 'capítulo', 'capita', 'decapitar', 'recapitular' — todos vêm de 'caput'. A metáfora da cabeça como centro de controle está em toda a família.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "fórum",
@@ -1165,7 +1445,12 @@
         "forum (inglês)",
         "forum (francês, alemão — empréstimo direto)"
       ],
-      "curiosity": "O 'Fórum Romano' era o centro político de Roma. A palavra migrou para o direito (forense = do fórum) e para a internet (fórum de discussão) mantendo o sentido de espaço coletivo de debate."
+      "curiosity": "O 'Fórum Romano' era o centro político de Roma. A palavra migrou para o direito (forense = do fórum) e para a internet (fórum de discussão) mantendo o sentido de espaço coletivo de debate.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "enciclopédia",
@@ -1186,7 +1471,12 @@
         "encyclopédie (francês)",
         "Enzyklopädie (alemão)"
       ],
-      "curiosity": "O projeto enciclopédico pressupõe que o conhecimento é circular e completo — pode ser abraçado. A Grande Enciclopédia Francesa (1751–1772) de Diderot e D'Alembert foi o projeto mais ambicioso do Iluminismo."
+      "curiosity": "O projeto enciclopédico pressupõe que o conhecimento é circular e completo — pode ser abraçado. A Grande Enciclopédia Francesa (1751–1772) de Diderot e D'Alembert foi o projeto mais ambicioso do Iluminismo.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "nostalgia",
@@ -1205,7 +1495,12 @@
       "cognates_other_languages": [
         "nostalgia (inglês, espanhol, italiano — empréstimo universal)"
       ],
-      "curiosity": "Criada em 1688 pelo médico suíço Johannes Hofer para descrever uma doença dos soldados suíços que queriam voltar para os Alpes. Começou como diagnóstico clínico, virou sentimento universal."
+      "curiosity": "Criada em 1688 pelo médico suíço Johannes Hofer para descrever uma doença dos soldados suíços que queriam voltar para os Alpes. Começou como diagnóstico clínico, virou sentimento universal.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "protagonista",
@@ -1226,7 +1521,12 @@
         "protagoniste (francês)",
         "Protagonist (alemão)"
       ],
-      "curiosity": "No teatro grego, o 'protagonista' era literalmente o ator principal. Da mesma raiz: 'antagonista' (anti + agonistes = o que luta contra) e 'deuteragonista' (segundo ator)."
+      "curiosity": "No teatro grego, o 'protagonista' era literalmente o ator principal. Da mesma raiz: 'antagonista' (anti + agonistes = o que luta contra) e 'deuteragonista' (segundo ator).",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "catástrofe",
@@ -1247,7 +1547,12 @@
         "catastrophe (inglês, francês)",
         "Katastrophe (alemão)"
       ],
-      "curiosity": "No teatro grego, 'catastrophe' era tecnicamente a resolução final da tragédia — a virada que encerra o drama. O sentido moderno de desastre vem do fato de que a maioria das resoluções gregas terminava mal."
+      "curiosity": "No teatro grego, 'catastrophe' era tecnicamente a resolução final da tragédia — a virada que encerra o drama. O sentido moderno de desastre vem do fato de que a maioria das resoluções gregas terminava mal.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "estresse",
@@ -1270,7 +1575,12 @@
         "Stress (alemão)",
         "estrés (espanhol)"
       ],
-      "curiosity": "O psicólogo Hans Selye popularizou 'stress' em biologia nos anos 1930 para descrever a resposta do organismo a pressões externas. A palavra física virou fenômeno psicológico — e depois palavra de uso diário."
+      "curiosity": "O psicólogo Hans Selye popularizou 'stress' em biologia nos anos 1930 para descrever a resposta do organismo a pressões externas. A palavra física virou fenômeno psicológico — e depois palavra de uso diário.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     },
     {
       "word": "vacilar",
@@ -1291,7 +1601,12 @@
         "vaciller (francês)",
         "vacillate (inglês)"
       ],
-      "curiosity": "No português formal herdou o sentido latino de 'hesitar'. No português popular brasileiro, 'vacilar' ganhou o sentido específico de falhar com alguém que confiava em você — uma traição leve mas real."
+      "curiosity": "No português formal herdou o sentido latino de 'hesitar'. No português popular brasileiro, 'vacilar' ganhou o sentido específico de falhar com alguém que confiava em você — uma traição leve mas real.",
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "openwordnet-pt"
+      ]
     }
   ]
 }

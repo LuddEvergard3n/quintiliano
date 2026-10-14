@@ -1,402 +1,188 @@
-/**
- * exercise-engine.js — Motor de exercícios
- *
- * Responsabilidades:
- *   - Renderizar qualquer tipo de exercício definido nos dados
- *   - Verificar respostas
- *   - Emitir feedback imediato
- *   - Controlar fluxo (próximo exercício, reinício)
- *
- * Tipos de exercício suportados:
- *   - 'estrutura'     — Identificação de elementos no texto (clique em tokens)
- *   - 'interpretacao' — Múltipla escolha sobre sentido do texto
- *   - 'tom'           — Múltipla escolha sobre tom/voz do autor
- *   - 'fato_opiniao'  — Classificar itens como fato ou opinião
- *   - 'inferencia'    — Múltipla escolha sobre inferência
- *   - 'figuras'       — Identificação de figuras de linguagem no texto
- */
+import { clearHighlights, clearSelection, highlightWords } from './text-viewer.js';
 
-import { highlightWords, clearHighlights } from './text-viewer.js';
-
-/**
- * Cria o motor de exercícios para uma sequência de exercícios.
- *
- * @param {object} options
- * @param {Array}        options.exercises       — Array de objetos de exercício
- * @param {HTMLElement}  options.textViewer      — Componente text-viewer para highlight
- * @param {(result: object) => void} [options.onComplete] — Chamado ao concluir todos os exercícios
- * @returns {{ element: HTMLElement, destroy: () => void }}
- */
-export function createExerciseEngine({ exercises, textViewer, onComplete }) {
+/** Motor determinístico para escolha, classificação e seleção textual. */
+export function createExerciseEngine({ exercises, textViewer, onAnswer, onComplete, activityPrefix = 'activity' }) {
   let currentIndex = 0;
   let score = 0;
   let answered = false;
-
   const container = document.createElement('div');
   container.className = 'exercise-container';
-
   renderCurrent();
 
   function renderCurrent() {
-    container.innerHTML = '';
+    container.replaceChildren();
     clearHighlights(textViewer);
-
-    if (currentIndex >= exercises.length) {
-      renderCompletion();
-      return;
-    }
-
+    clearSelection(textViewer);
+    textViewer._tokenClickHandler = textViewer._defaultTokenClickHandler;
+    if (currentIndex >= exercises.length) return renderCompletion();
     const exercise = exercises[currentIndex];
-
-    // Barra de progresso
     container.appendChild(createProgressBar(currentIndex, exercises.length));
-
-    // Renderiza o tipo correto
-    switch (exercise.type) {
-      case 'interpretacao':
-      case 'tom':
-      case 'inferencia':
-        container.appendChild(renderMultipleChoice(exercise));
-        break;
-      case 'fato_opiniao':
-        container.appendChild(renderFatoOpiniao(exercise));
-        break;
-      case 'estrutura':
-      case 'figuras':
-        container.appendChild(renderStructureExercise(exercise));
-        break;
-      default:
-        container.appendChild(renderMultipleChoice(exercise));
-    }
+    const mode = resolveResponseMode(exercise);
+    if (mode === 'choice') container.appendChild(renderChoice(exercise));
+    else if (mode === 'classification') container.appendChild(renderClassification(exercise));
+    else if (mode === 'self-assessment') container.appendChild(renderSelfAssessment(exercise));
+    else container.appendChild(renderSelection(exercise));
   }
 
-  /** Múltipla escolha genérica */
-  function renderMultipleChoice(exercise) {
+  function renderChoice(exercise) {
     answered = false;
     const wrapper = document.createElement('div');
-
-    wrapper.appendChild(createInstruction(exercise.instruction));
-
-    const optionList = document.createElement('ul');
-    optionList.className = 'options-list';
-    optionList.setAttribute('role', 'list');
-
+    wrapper.append(createInstruction(exercise.instruction), createHintButton(exercise, textViewer));
+    const list = document.createElement('ul'); list.className = 'options-list';
     const letters = ['A', 'B', 'C', 'D', 'E'];
-
-    exercise.options.forEach((option, i) => {
-      const li = document.createElement('li');
-      li.className = 'option-item';
-
-      const btn = document.createElement('button');
-      btn.className = 'option-btn';
-      btn.setAttribute('type', 'button');
-      btn.innerHTML = `
-        <span class="option-letter" aria-hidden="true">${letters[i]}</span>
-        <span>${option}</span>
-      `;
-
-      btn.addEventListener('click', () => {
+    exercise.options.forEach((option, index) => {
+      const item = document.createElement('li'); item.className = 'option-item';
+      const button = document.createElement('button'); button.type = 'button'; button.className = 'option-btn';
+      const letter = document.createElement('span'); letter.className = 'option-letter'; letter.setAttribute('aria-hidden', 'true'); letter.textContent = letters[index] ?? String(index + 1);
+      const text = document.createElement('span'); text.textContent = option;
+      button.append(letter, text);
+      button.addEventListener('click', () => {
         if (answered) return;
         answered = true;
-        const isCorrect = i === exercise.correct;
-        if (isCorrect) score++;
-
-        // Marca visualmente as opções
-        optionList.querySelectorAll('.option-item').forEach((item, idx) => {
-          item.querySelector('.option-btn').disabled = true;
-          if (idx === exercise.correct) item.classList.add('correct');
-          if (idx === i && !isCorrect) item.classList.add('incorrect');
+        const correct = index === exercise.correct;
+        if (correct) score++;
+        list.querySelectorAll('button').forEach((candidate, candidateIndex) => {
+          candidate.disabled = true;
+          candidate.closest('li').classList.toggle('correct', candidateIndex === exercise.correct);
+          candidate.closest('li').classList.toggle('incorrect', candidateIndex === index && !correct);
         });
-
-        showFeedback(wrapper, isCorrect, exercise.explanation);
-        clearHighlights(textViewer);
-        renderControls(wrapper, exercise);
+        finish(wrapper, exercise, correct);
       });
-
-      li.appendChild(btn);
-      optionList.appendChild(li);
+      item.appendChild(button); list.appendChild(item);
     });
-
-    wrapper.appendChild(optionList);
-    wrapper.appendChild(createFeedbackArea());
-    wrapper.appendChild(createHintButton(exercise, textViewer));
-
+    wrapper.append(list, createFeedbackArea());
     return wrapper;
   }
 
-  /** Exercício de Fato vs. Opinião */
-  function renderFatoOpiniao(exercise) {
+  function renderClassification(exercise) {
     answered = false;
     const wrapper = document.createElement('div');
-
     wrapper.appendChild(createInstruction(exercise.instruction));
-
-    const itemsContainer = document.createElement('div');
-    itemsContainer.style.display = 'flex';
-    itemsContainer.style.flexDirection = 'column';
-    itemsContainer.style.gap = 'var(--space-4)';
-    itemsContainer.style.marginBottom = 'var(--space-6)';
-
-    const userAnswers = {};
-    let answeredCount = 0;
-
-    exercise.items.forEach((item, i) => {
-      const row = document.createElement('div');
-      row.style.cssText = 'display:flex; align-items:flex-start; gap:var(--space-4); border:1px solid var(--color-paper-border); border-radius:var(--radius); padding:var(--space-3) var(--space-4); background:var(--color-paper)';
-
-      const textSpan = document.createElement('span');
-      textSpan.style.cssText = 'flex:1; font-family:var(--font-body); font-style:italic; color:var(--color-ink-mid)';
-      textSpan.textContent = `"${item.text}"`;
-
-      const btnGroup = document.createElement('div');
-      btnGroup.style.cssText = 'display:flex; gap:var(--space-2); flex-shrink:0';
-
-      ['fato', 'opiniao'].forEach(type => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.textContent = type === 'fato' ? 'Fato' : 'Opinião';
-        btn.className = 'btn btn-secondary';
-        btn.style.cssText = 'padding:var(--space-1) var(--space-3); font-size:var(--text-xs)';
-        btn.dataset.type = type;
-
-        btn.addEventListener('click', () => {
+    const rows = document.createElement('div');
+    const selected = new Map();
+    exercise.items.forEach((item, index) => {
+      const row = document.createElement('div'); row.className = 'exercise-classification-row';
+      const label = document.createElement('span'); label.textContent = `“${item.text}”`;
+      const controls = document.createElement('div');
+      ['fato', 'opiniao'].forEach(value => {
+        const button = document.createElement('button'); button.type = 'button'; button.className = 'btn btn-secondary'; button.textContent = value === 'fato' ? 'Fato' : 'Opinião';
+        button.addEventListener('click', () => {
           if (answered) return;
-          // Atualiza seleção visual
-          btnGroup.querySelectorAll('button').forEach(b => {
-            b.classList.remove('btn-accent');
-            b.classList.add('btn-secondary');
-          });
-          btn.classList.add('btn-accent');
-          btn.classList.remove('btn-secondary');
-
-          const wasAnswered = item.id in userAnswers;
-          userAnswers[item.id ?? i] = type;
-          if (!wasAnswered) answeredCount++;
-
-          if (answeredCount === exercise.items.length && !answered) {
+          selected.set(index, value);
+          controls.querySelectorAll('button').forEach(candidate => candidate.classList.toggle('btn-accent', candidate === button));
+          if (selected.size === exercise.items.length) {
             answered = true;
-            let allCorrect = true;
-            exercise.items.forEach((it, idx) => {
-              const key = it.id ?? idx;
-              const correct = userAnswers[key] === it.answer;
-              if (!correct) allCorrect = false;
-            });
-            if (allCorrect) score++;
-            showFeedback(wrapper, allCorrect, exercise.explanation);
-            renderControls(wrapper, exercise);
+            const correct = exercise.items.every((candidate, candidateIndex) => selected.get(candidateIndex) === candidate.answer);
+            if (correct) score++;
+            finish(wrapper, exercise, correct);
           }
         });
-
-        btnGroup.appendChild(btn);
+        controls.appendChild(button);
       });
-
-      item.id = i; // garante chave
-      row.appendChild(textSpan);
-      row.appendChild(btnGroup);
-      itemsContainer.appendChild(row);
+      row.append(label, controls); rows.appendChild(row);
     });
-
-    wrapper.appendChild(itemsContainer);
-    wrapper.appendChild(createFeedbackArea());
-
+    wrapper.append(rows, createFeedbackArea());
     return wrapper;
   }
 
-  /** Exercício de identificação estrutural (clique nos tokens do texto) */
-  function renderStructureExercise(exercise) {
+  function renderSelection(exercise) {
     answered = false;
     const wrapper = document.createElement('div');
-
-    const targets = Array.isArray(exercise.targets) ? exercise.targets : [exercise.target];
-
-    wrapper.appendChild(createInstruction(
-      exercise.instruction + '<br><small style="color:var(--color-ink-ghost)">Clique nas palavras do texto acima para selecionar.</small>'
-    ));
-
-    // Coleta seleção via clique no text-viewer
+    wrapper.append(createInstruction(exercise.instruction), createHintButton(exercise, textViewer));
     const selected = new Set();
-
-    const originalOnClick = textViewer._onTokenClick;
-    textViewer._tokenClickHandler = (word, index, span) => {
+    textViewer._tokenClickHandler = (_value, index, token) => {
       if (answered) return;
-      span.classList.toggle('selected');
-      if (span.classList.contains('selected')) {
-        selected.add(word.toLowerCase());
-      } else {
-        selected.delete(word.toLowerCase());
-      }
+      token.classList.toggle('selected');
+      token.classList.contains('selected') ? selected.add(String(index)) : selected.delete(String(index));
     };
-
-    // Reconnecta handler — texto já foi renderizado, reatribui eventos
-    textViewer.querySelectorAll('.token[data-type="word"]').forEach(span => {
-      span.onclick = () => textViewer._tokenClickHandler?.(span.dataset.value, span.dataset.index, span);
-    });
-
-    const checkBtn = document.createElement('button');
-    checkBtn.type = 'button';
-    checkBtn.className = 'btn btn-primary';
-    checkBtn.textContent = 'Verificar seleção';
-    checkBtn.style.marginBottom = 'var(--space-4)';
-
-    checkBtn.addEventListener('click', () => {
+    const verify = document.createElement('button'); verify.type = 'button'; verify.className = 'btn btn-primary'; verify.textContent = 'Verificar seleção';
+    verify.addEventListener('click', () => {
       if (answered) return;
       answered = true;
-
-      const normalizedTargets = targets.map(t => t.toLowerCase());
-      const normalizedSelected = Array.from(selected);
-
-      // Aceita se ao menos uma das palavras-alvo foi selecionada
-      const hits = normalizedSelected.filter(w => {
-        return normalizedTargets.some(t => t.includes(w) || w.includes(t));
-      });
-
-      const isCorrect = hits.length > 0;
-      if (isCorrect) score++;
-
-      // Destaca resposta correta no texto.
-      // hint_highlight é opcional — se ausente, usa targets como fallback.
-      // Filtra para não chamar highlightWords com array vazio.
-      const toHighlight = (exercise.hint_highlight?.length ? exercise.hint_highlight : targets)
-        .filter(w => typeof w === 'string' && w.trim() !== '');
-      if (toHighlight.length) highlightWords(textViewer, toHighlight, false);
-      showFeedback(wrapper, isCorrect, exercise.explanation);
-      renderControls(wrapper, exercise);
+      const expected = selectionTargets(exercise, textViewer);
+      const correct = expected.size > 0 && expected.size === selected.size && [...expected].every(index => selected.has(index));
+      if (correct) score++;
+      const hints = exercise.hint_highlight?.length ? exercise.hint_highlight : (exercise.targets ?? [exercise.target]).filter(Boolean);
+      if (hints.length) highlightWords(textViewer, hints, false);
+      finish(wrapper, exercise, correct);
     });
-
-    wrapper.appendChild(checkBtn);
-    wrapper.appendChild(createFeedbackArea());
-    wrapper.appendChild(createHintButton(exercise, textViewer));
-
+    wrapper.append(verify, createFeedbackArea());
     return wrapper;
   }
 
-  /** Mostra feedback de resposta */
-  function showFeedback(wrapper, isCorrect, explanation) {
+  function renderSelfAssessment(exercise) {
+    const wrapper = document.createElement('div');
+    wrapper.appendChild(createInstruction(exercise.instruction));
+    const reminder = document.createElement('p'); reminder.className = 'exercise-feedback visible'; reminder.textContent = 'A escrita fica somente nesta tela. Revise-a pelos critérios indicados e registre a realização quando terminar.';
+    const writing = document.createElement('textarea'); writing.rows = 6; writing.className = 'exercise-writing'; writing.setAttribute('aria-label', 'Resposta de autoavaliação');
+    const complete = document.createElement('button'); complete.type = 'button'; complete.className = 'btn btn-primary'; complete.textContent = 'Registrar autoavaliação realizada';
+    complete.addEventListener('click', () => {
+      if (answered) return;
+      answered = true;
+      onAnswer?.({ exercise, index: currentIndex, correct: null, score, total: exercises.length, activityId: `${activityPrefix}:${exercise.id ?? currentIndex}`, selfAssessment: true });
+      const next = document.createElement('button'); next.type = 'button'; next.className = 'btn btn-secondary'; next.textContent = currentIndex === exercises.length - 1 ? 'Ver resultado' : 'Próximo exercício';
+      next.addEventListener('click', () => { currentIndex++; renderCurrent(); });
+      complete.disabled = true; wrapper.appendChild(next);
+    });
+    wrapper.append(reminder, writing, complete);
+    return wrapper;
+  }
+
+  function finish(wrapper, exercise, correct) {
     const feedback = wrapper.querySelector('.exercise-feedback');
-    if (!feedback) return;
-
-    feedback.classList.add('visible');
-    feedback.classList.add(isCorrect ? 'success' : 'error');
-
-    const title = feedback.querySelector('.feedback-title');
-    const exp   = feedback.querySelector('.feedback-explanation');
-
-    title.textContent    = isCorrect ? 'Correto' : 'Não exatamente';
-    exp.textContent      = explanation ?? '';
+    feedback.classList.add('visible', correct ? 'success' : 'error');
+    feedback.querySelector('.feedback-title').textContent = correct ? 'Correto' : 'Revise a resposta';
+    feedback.querySelector('.feedback-explanation').textContent = exercise.explanation ?? '';
+    onAnswer?.({ exercise, index: currentIndex, correct, score, total: exercises.length, activityId: `${activityPrefix}:${exercise.id ?? currentIndex}` });
+    const next = document.createElement('button'); next.type = 'button'; next.className = 'btn btn-primary'; next.textContent = currentIndex === exercises.length - 1 ? 'Ver resultado' : 'Próximo exercício';
+    next.addEventListener('click', () => { currentIndex++; renderCurrent(); });
+    wrapper.appendChild(next);
   }
 
-  /** Renderiza controles de navegação após resposta */
-  function renderControls(wrapper, exercise) {
-    const controls = document.createElement('div');
-    controls.className = 'exercise-controls';
-
-    const isLast = currentIndex === exercises.length - 1;
-
-    const nextBtn = document.createElement('button');
-    nextBtn.type = 'button';
-    nextBtn.className = 'btn btn-primary';
-    nextBtn.textContent = isLast ? 'Ver resultado' : 'Próximo exercício →';
-    nextBtn.addEventListener('click', () => {
-      currentIndex++;
-      renderCurrent();
-    });
-
-    controls.appendChild(nextBtn);
-    wrapper.appendChild(controls);
-  }
-
-  /** Tela de conclusão */
   function renderCompletion() {
-    const total   = exercises.length;
-    const pct     = Math.round((score / total) * 100);
-    const message = pct >= 80 ? 'Excelente trabalho.' : pct >= 50 ? 'Bom progresso.' : 'Continue praticando.';
-
-    const el = document.createElement('div');
-    el.className = 'card card-elevated';
-    el.innerHTML = `
-      <h3 style="font-family:var(--font-display);margin-bottom:var(--space-4)">Exercícios concluídos</h3>
-      <p style="font-size:var(--text-3xl);font-family:var(--font-display);font-weight:700;color:var(--color-accent);margin-bottom:var(--space-2)">
-        ${score}/${total}
-      </p>
-      <p style="color:var(--color-ink-mid);margin-bottom:var(--space-6)">${message}</p>
-      <button type="button" class="btn btn-secondary" id="restart-exercises">Repetir exercícios</button>
-    `;
-
-    el.querySelector('#restart-exercises').addEventListener('click', () => {
-      currentIndex = 0;
-      score = 0;
-      renderCurrent();
-    });
-
-    container.appendChild(el);
-
+    const total = exercises.length; const pct = total ? Math.round((score / total) * 100) : 0;
+    const card = document.createElement('div'); card.className = 'card card-elevated';
+    const title = document.createElement('h3'); title.textContent = 'Exercícios concluídos';
+    const result = document.createElement('p'); result.textContent = `${score}/${total}`;
+    const restart = document.createElement('button'); restart.type = 'button'; restart.className = 'btn btn-secondary'; restart.textContent = 'Repetir exercícios';
+    restart.addEventListener('click', () => { currentIndex = 0; score = 0; renderCurrent(); });
+    card.append(title, result, restart); container.appendChild(card);
     onComplete?.({ score, total, pct });
   }
 
-  return {
-    element: container,
-    /** Libera event listeners e referências */
-    destroy() {
-      if (textViewer) {
-        textViewer._tokenClickHandler = null;
-      }
-    },
-  };
+  return { element: container, destroy() { clearSelection(textViewer); } };
 }
 
-/* --- Helpers internos --- */
+export function resolveResponseMode(exercise) {
+  if (exercise.type === 'autoavaliacao') return 'self-assessment';
+  if (Array.isArray(exercise.options)) return 'choice';
+  if (Array.isArray(exercise.items)) return 'classification';
+  return 'selection';
+}
+
+function selectionTargets(exercise, viewer) {
+  const result = new Set();
+  const tokens = [...viewer.querySelectorAll('.token[data-type="word"], .token[data-type="number"]')];
+  for (const target of (exercise.targets ?? [exercise.target]).filter(Boolean)) {
+    const expected = String(target).match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu)?.map(normalize) ?? [];
+    for (let start = 0; expected.length && start <= tokens.length - expected.length; start += 1) {
+      if (!expected.every((word, offset) => normalize(tokens[start + offset].dataset.value) === word)) continue;
+      expected.forEach((_, offset) => result.add(tokens[start + offset].dataset.index));
+      break;
+    }
+  }
+  return result;
+}
+
+function normalize(value) { return String(value).toLocaleLowerCase('pt-BR').normalize('NFC'); }
 
 function createProgressBar(current, total) {
-  const pct = Math.round((current / total) * 100);
-  const el = document.createElement('div');
-  el.className = 'exercise-progress';
-  el.innerHTML = `
-    <span>Exercício ${current + 1} de ${total}</span>
-    <div class="progress-bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-fill" style="width:${pct}%"></div>
-    </div>
-  `;
-  return el;
+  const wrapper = document.createElement('div'); wrapper.className = 'exercise-progress';
+  const label = document.createElement('span'); label.textContent = `Exercício ${current + 1} de ${total}`;
+  const bar = document.createElement('div'); bar.className = 'progress-bar'; bar.setAttribute('role', 'progressbar'); bar.setAttribute('aria-valuenow', String(Math.round((current / total) * 100))); bar.setAttribute('aria-valuemin', '0'); bar.setAttribute('aria-valuemax', '100');
+  const fill = document.createElement('div'); fill.className = 'progress-fill'; fill.style.width = `${Math.round((current / total) * 100)}%`; bar.appendChild(fill); wrapper.append(label, bar); return wrapper;
 }
 
-function createInstruction(html) {
-  const el = document.createElement('div');
-  el.className = 'exercise-instruction';
-  el.innerHTML = html;
-  return el;
-}
-
-function createFeedbackArea() {
-  const el = document.createElement('div');
-  el.className = 'exercise-feedback';
-  el.innerHTML = `
-    <p class="feedback-title"></p>
-    <p class="feedback-explanation"></p>
-  `;
-  return el;
-}
-
-function createHintButton(exercise, textViewer) {
-  if (!exercise.hint_highlight?.length) return document.createDocumentFragment();
-
-  let used = false;
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.className = 'hint-btn';
-  btn.setAttribute('aria-label', 'Pedir dica');
-  btn.textContent = 'Dica';
-
-  btn.addEventListener('click', () => {
-    if (used) {
-      clearHighlights(textViewer);
-      btn.textContent = 'Dica';
-      used = false;
-    } else {
-      highlightWords(textViewer, exercise.hint_highlight);
-      btn.textContent = 'Ocultar dica';
-      used = true;
-    }
-  });
-
-  return btn;
-}
+function createInstruction(text) { const element = document.createElement('p'); element.className = 'exercise-instruction'; element.textContent = text; return element; }
+function createFeedbackArea() { const element = document.createElement('div'); element.className = 'exercise-feedback'; const title = document.createElement('p'); title.className = 'feedback-title'; const explanation = document.createElement('p'); explanation.className = 'feedback-explanation'; element.append(title, explanation); return element; }
+function createHintButton(exercise, textViewer) { if (!exercise.hint_highlight?.length) return document.createDocumentFragment(); const button = document.createElement('button'); button.type = 'button'; button.className = 'hint-btn'; button.textContent = 'Dica'; let used = false; button.addEventListener('click', () => { used = !used; used ? highlightWords(textViewer, exercise.hint_highlight) : clearHighlights(textViewer); button.textContent = used ? 'Ocultar dica' : 'Dica'; }); return button; }

@@ -7,12 +7,14 @@
 
 import { createTextViewer, classifyToken, clearClassifications } from '../../components/text-viewer.js';
 import { createExerciseEngine } from '../../components/exercise-engine.js';
+import { createEditorialNote } from '../../components/editorial-note.js';
+import { recordActivity, setState } from '../../js/state.js';
 
 /**
  * @param {object} data — Conteúdo de texts.json
  * @returns {HTMLElement}
  */
-export function renderLeituraEstrutura(data) {
+export function renderLeituraEstrutura(data, textId = null) {
   const page = document.createElement('div');
 
   const texts = data.texts.filter(t => t.exercises.some(e => e.type === 'estrutura'));
@@ -31,7 +33,9 @@ export function renderLeituraEstrutura(data) {
   `;
 
   const content = page.querySelector('#reading-content');
-  renderTextSelector(content, texts, data);
+  const selected = texts.find(text => text.id === textId);
+  if (selected) renderTextAnalysis(content, selected, () => { content.replaceChildren(); renderTextSelector(content, texts, data); });
+  else renderTextSelector(content, texts, data);
 
   return page;
 }
@@ -62,6 +66,7 @@ function renderTextSelector(container, texts, data) {
     btn.addEventListener('mouseleave', () => { btn.style.boxShadow = ''; });
     btn.addEventListener('click', () => {
       container.innerHTML = '';
+      setState('lastStudy', { moduleId: 'leitura', textId: text.id });
       renderTextAnalysis(container, text, () => {
         container.innerHTML = '';
         renderTextSelector(container, texts, data);
@@ -96,14 +101,15 @@ function renderTextAnalysis(container, textData, onBack) {
     <span class="text-meta-item">${textData.year}</span>
   `;
   container.appendChild(meta);
+  container.appendChild(createEditorialNote(textData));
 
   // Texto interativo
   const viewer = createTextViewer({
     text: textData.content,
     interactive: true,
-    onTokenClick: (word, index, span) => {
+    onTokenClick: (word, index) => {
       // Aplica a categoria ativa ao token clicado
-      classifyToken(viewer, word, activeCategory);
+      classifyToken(viewer, index, activeCategory);
     },
   });
   container.appendChild(viewer);
@@ -160,6 +166,8 @@ function renderTextAnalysis(container, textData, onBack) {
     const engine = createExerciseEngine({
       exercises: structureExercises,
       textViewer: viewer,
+      activityPrefix: `leitura:${textData.id}`,
+      onAnswer: result => recordActivity({ moduleId: 'leitura', textId: textData.id, exerciseId: result.activityId, ...result }),
     });
     container.appendChild(engine.element);
   }

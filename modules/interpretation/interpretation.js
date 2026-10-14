@@ -7,12 +7,14 @@
 
 import { createTextViewer } from '../../components/text-viewer.js';
 import { createExerciseEngine } from '../../components/exercise-engine.js';
+import { createEditorialNote } from '../../components/editorial-note.js';
+import { recordActivity, setState } from '../../js/state.js';
 
 /**
  * @param {object} data — Conteúdo de texts.json
  * @returns {HTMLElement}
  */
-export function renderInterpretacao(data) {
+export function renderInterpretacao(data, textId = null) {
   const page = document.createElement('div');
 
   page.innerHTML = `
@@ -41,20 +43,21 @@ export function renderInterpretacao(data) {
   const content = page.querySelector('#interp-content');
 
   // Filtra textos que têm exercícios de interpretação
-  const interpTypes = ['interpretacao', 'tom', 'fato_opiniao', 'inferencia'];
+  const interpTypes = ['interpretacao', 'tom', 'fato_opiniao', 'inferencia', 'autoavaliacao'];
   const texts = data.texts.filter(t =>
     t.exercises.some(e => interpTypes.includes(e.type))
   );
 
-  renderTextList(content, texts);
+  renderTextList(content, texts, textId);
 
   return page;
 }
 
-function renderTextList(container, texts) {
+function renderTextList(container, texts, textId) {
   texts.forEach(textData => {
     const section = document.createElement('section');
     section.style.cssText = 'margin-bottom:var(--space-12);max-width:var(--content-width)';
+    if (textData.id === textId) section.id = 'texto-selecionado';
 
     // Cabeçalho do texto
     const header = document.createElement('div');
@@ -72,6 +75,7 @@ function renderTextList(container, texts) {
     });
     viewer.style.marginBottom = 'var(--space-6)';
     section.appendChild(viewer);
+    section.appendChild(createEditorialNote(textData));
 
     const divider = document.createElement('div');
     divider.className = 'divider';
@@ -79,13 +83,15 @@ function renderTextList(container, texts) {
 
     // Exercícios de interpretação
     const interpExercises = textData.exercises.filter(e =>
-      ['interpretacao', 'tom', 'fato_opiniao', 'inferencia'].includes(e.type)
+      ['interpretacao', 'tom', 'fato_opiniao', 'inferencia', 'autoavaliacao'].includes(e.type)
     );
 
     if (interpExercises.length > 0) {
       const engine = createExerciseEngine({
         exercises: interpExercises,
         textViewer: viewer,
+        activityPrefix: `interpretacao:${textData.id}`,
+        onAnswer: result => recordActivity({ moduleId: 'interpretacao', textId: textData.id, exerciseId: result.activityId, ...result }),
       });
       section.appendChild(engine.element);
     }
@@ -97,4 +103,9 @@ function renderTextList(container, texts) {
     spacer.style.cssText = 'height:3px;background:linear-gradient(to right, var(--color-accent), transparent);margin-bottom:var(--space-12)';
     container.appendChild(spacer);
   });
+  const selected = textId && container.querySelector('#texto-selecionado');
+  if (selected) {
+    setState('lastStudy', { moduleId: 'interpretacao', textId });
+    queueMicrotask(() => selected.scrollIntoView({ block: 'start' }));
+  }
 }

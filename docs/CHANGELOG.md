@@ -5,6 +5,29 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ---
 
+## [0.22.0] — 2026-10-13
+
+### Corrigido
+
+- O roteador agora descarta resultados assíncronos obsoletos, aceita parâmetros de consulta e libera a tela anterior quando ela declara `destroy()`.
+- Atividades de estrutura e figuras com alternativas usam escolha única; a seleção textual passou a preservar pontuação, números, acentos e ocorrência de cada token.
+- As consultas ao Wiktionary validam a palavra, têm cancelamento e prazo de resposta, e não inserem o retorno remoto como HTML.
+- O executor de testes passou a interpretar o formato atual do `node:test` e informa a contagem real.
+
+### Adicionado
+
+- Progresso local versionado, rota `#/progresso`, retomada na página inicial e links diretos para leitura/interpretação por `?texto=<id>`.
+- Cinco leituras guiadas de Chico Buarque, Milton Hatoum, Raduan Nassar, Daniel Galera e Patrícia Melo. Elas são comentários críticos originais, sem reprodução de excertos não verificados.
+- Metadados editoriais leves e referências expansíveis nas leituras.
+- Manifesto, ícones locais e Service Worker para o núcleo estático e os dados essenciais.
+
+### Limites declarados
+
+- Itens legados estão catalogados para revisão de fonte; somente unidades novas são marcadas como revisadas nesta versão.
+- Não há licença declarada para o código ou para o acervo; a ausência de uma obra no Gutenberg não é tratada como autorização de reprodução.
+
+---
+
 ## [0.21.0] — 2026-03-11
 
 ### Adicionado

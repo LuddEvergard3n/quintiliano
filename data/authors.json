@@ -56,6 +56,11 @@
           "genre": "Novela",
           "gutenberg_id": 57703
         }
+      ],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
       ]
     },
     {
@@ -91,7 +96,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "lima",
@@ -135,6 +145,11 @@
           "genre": "Romance",
           "gutenberg_id": 65285
         }
+      ],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
       ]
     },
     {
@@ -179,6 +194,11 @@
           "genre": "Romance",
           "gutenberg_id": 32880
         }
+      ],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
       ]
     },
     {
@@ -213,6 +233,11 @@
           "genre": "Poema épico",
           "gutenberg_id": 3333
         }
+      ],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
       ]
     },
     {
@@ -248,7 +273,12 @@
           "genre": "Poesia"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "drummond",
@@ -283,7 +313,12 @@
           "genre": "Poesia"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "graciliano",
@@ -318,7 +353,12 @@
           "genre": "Memórias"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "rosa",
@@ -353,7 +393,12 @@
           "genre": "Contos"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "eca",
@@ -397,6 +442,11 @@
           "genre": "Romance",
           "gutenberg_id": 10765
         }
+      ],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
       ]
     },
     {
@@ -432,7 +482,12 @@
           "genre": "Poesia"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "adelia",
@@ -467,7 +522,12 @@
           "genre": "Poesia"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "verissimo",
@@ -502,7 +562,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "carolina",
@@ -532,7 +597,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "conceicao",
@@ -567,7 +637,12 @@
           "genre": "Contos"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "euclides",
@@ -592,7 +667,12 @@
           "genre": "Ensaios"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "lobato",
@@ -627,7 +707,12 @@
           "genre": "Literatura infantil"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "chico_buarque",
@@ -662,7 +747,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "milton_hatoum",
@@ -697,7 +787,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "raduan_nassar",
@@ -727,7 +822,12 @@
           "genre": "Contos"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "daniel_galera",
@@ -762,7 +862,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     },
     {
       "id": "patricia_melo",
@@ -797,7 +902,12 @@
           "genre": "Romance"
         }
       ],
-      "gutenberg_works": []
+      "gutenberg_works": [],
+      "lastReviewed": "2026-10-13",
+      "reviewStatus": "catalogued",
+      "sourceIds": [
+        "abl-biografias"
+      ]
     }
   ]
 }

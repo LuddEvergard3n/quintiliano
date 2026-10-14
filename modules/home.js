@@ -1,3 +1,5 @@
+import { getState } from '../js/state.js';
+
 /**
  * home.js — Módulo da página inicial
  *
@@ -9,6 +11,8 @@
  */
 export function renderHome() {
   const page = document.createElement('div');
+  const lastStudy = getState('lastStudy');
+  const resumeHref = getResumeHref(lastStudy);
 
   page.innerHTML = `
     <section class="home-hero">
@@ -24,6 +28,8 @@ export function renderHome() {
 
     <div class="divider"></div>
 
+    ${resumeHref ? `<section style="max-width:var(--content-width);margin:0 auto var(--space-12)"><div class="panel panel-info"><strong>Continuar estudando</strong><p>Retome a última atividade registrada no seu navegador.</p><a class="btn btn-secondary" href="${resumeHref}">Retomar</a> <a class="btn btn-ghost" href="#/progresso">Ver progresso</a></div></section>` : ''}
+
     <section style="margin-bottom:var(--space-16)">
       <h2 class="section-title">Módulos</h2>
       <div class="modules-grid" id="modules-grid"></div>
@@ -34,7 +40,7 @@ export function renderHome() {
         <p style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-ink-mid)">
           <strong>Para professores:</strong> cada módulo pode ser projetado em sala.
           Use o modo de exercício guiado para acompanhar a turma coletivamente.
-          Todos os materiais funcionam sem conexão com a internet.
+          O conteúdo local pode ser usado offline depois de armazenado. Consultas ao Wiktionary e ao Gutenberg exigem conexão.
         </p>
       </div>
     </section>
@@ -185,4 +191,10 @@ export function renderHome() {
   });
 
   return page;
+}
+
+function getResumeHref(study) {
+  if (!study || !/^[a-z-]+$/i.test(study.moduleId ?? '')) return null;
+  const text = typeof study.textId === 'string' && /^[a-z0-9_]+$/i.test(study.textId) ? `?texto=${encodeURIComponent(study.textId)}` : '';
+  return `#/modulo/${study.moduleId}${text}`;
 }

@@ -562,9 +562,13 @@ function secao(titulo, corpo) {
   </div>`;
 }
 
+function escapeHTML(value) {
+  return String(value).replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[character]));
+}
+
 /** Gera e injeta o documento no painel de preview. */
 function gerarDocumento() {
-  const v = id => (document.getElementById(id)?.value || '').trim();
+  const v = id => escapeHTML((document.getElementById(id)?.value || '').trim());
 
   const escola    = v('f-escola');
   const professor = v('f-professor');
@@ -576,11 +580,12 @@ function gerarDocumento() {
   const dur       = v('f-dur');
   const carga     = v('f-carga');
   const tema      = v('f-tema');
-  const objetivo  = coletarMarcados('obt-ck', 'xa-obj');
-  const bncc      = coletarMarcados('bncc-ck', 'xa-bncc');
-  const met       = coletarMarcados('met-ck', 'xa-met');
-  const rec       = coletarMarcados('rec-ck', 'xa-rec');
-  const ava       = coletarMarcados('ava-ck', 'xa-ava');
+  const safeItems = items => items.map(item => ({ ...item, id: escapeHTML(item.id ?? ''), text: escapeHTML(item.text ?? '') }));
+  const objetivo  = safeItems(coletarMarcados('obt-ck', 'xa-obj'));
+  const bncc      = safeItems(coletarMarcados('bncc-ck', 'xa-bncc'));
+  const met       = safeItems(coletarMarcados('met-ck', 'xa-met'));
+  const rec       = safeItems(coletarMarcados('rec-ck', 'xa-rec'));
+  const ava       = safeItems(coletarMarcados('ava-ck', 'xa-ava'));
   const obsExtra  = v('f-obs');
 
   const durLabel = dur === '1h30' ? '1h30min' : `${dur} min`;

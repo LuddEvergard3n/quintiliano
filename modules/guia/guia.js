@@ -328,7 +328,7 @@ const CSS = `
  * Template 2: sidebar 220px sticky + conteúdo longo com âncoras.
  * @returns {HTMLElement}
  */
-export function renderGuia() {
+export function renderGuia(sectionId = null) {
   const page = document.createElement('div');
   page.className = 'guia-page';
 
@@ -364,6 +364,10 @@ export function renderGuia() {
       <a href="#limitacoes"   class="guia-sidebar-link">Limitações</a>
     </div>
   `;
+  sidebar.querySelectorAll('a[href^="#"]').forEach(link => {
+    const id = link.getAttribute('href').slice(1);
+    link.href = `#/guia?sec=${encodeURIComponent(id)}`;
+  });
 
   /* ── Conteúdo ─────────────────────────────────────────────── */
   const content = document.createElement('main');
@@ -654,5 +658,8 @@ export function renderGuia() {
   layout.appendChild(sidebar);
   layout.appendChild(content);
   page.appendChild(layout);
+  if (/^[a-z0-9-]+$/i.test(sectionId ?? '')) {
+    queueMicrotask(() => page.querySelector(`#${sectionId}`)?.scrollIntoView({ block: 'start' }));
+  }
   return page;
 }

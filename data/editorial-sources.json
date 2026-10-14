@@ -1,0 +1,9 @@
+{
+  "sources": [
+    { "id": "project-editorial", "author": "Equipe editorial Quintiliano", "title": "Notas e atividades didáticas originais", "type": "material didático", "year": 2026, "locator": "identificado em cada unidade" },
+    { "id": "biblioteca-digital", "author": "Fundação Biblioteca Nacional", "title": "Biblioteca Nacional Digital", "type": "acervo institucional", "year": 2026, "url": "https://bndigital.bn.gov.br/", "locator": "catálogo e edições digitalizadas; conferir edição antes de reproduzir trecho" },
+    { "id": "machado-byu", "author": "Machado de Assis em linha / BYU", "title": "O Espelho e corpus de Machado de Assis", "type": "edição digital acadêmica", "year": 2026, "url": "https://machado.byu.edu/text/o-espelho/", "locator": "texto e metadados da edição" },
+    { "id": "abl-biografias", "author": "Academia Brasileira de Letras", "title": "Acervo e perfis de autores", "type": "fonte institucional", "year": 2026, "url": "https://www.academia.org.br/", "locator": "perfil e acervo correspondente" },
+    { "id": "openwordnet-pt", "author": "OpenWordNet-PT", "title": "OpenWordNet-PT", "type": "base lexical", "year": 2026, "url": "https://openwordnet-pt.org/", "locator": "entrada lexical correspondente" }
+  ]
+}

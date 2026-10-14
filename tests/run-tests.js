@@ -28,6 +28,7 @@ const ALL_SUITES = [
   { flag: '--data',    file: 'test-data.js',    label: 'Integridade dos JSONs' },
   { flag: '--router',  file: 'test-router.js',  label: 'Router'                },
   { flag: '--modules', file: 'test-modules.js', label: 'Módulos (render)'      },
+  { flag: '--state',   file: 'test-state.js',   label: 'Estado local'         },
 ];
 
 /* ================================================================
@@ -67,8 +68,8 @@ function runSuite(suite) {
       const duration = Date.now() - start;
 
       // Extrai contadores do TAP emitido pelo node:test
-      const passMatch = stdout.match(/^# pass\s+(\d+)/m);
-      const failMatch = stdout.match(/^# fail\s+(\d+)/m);
+      const passMatch = stdout.match(/^(?:#\s*pass|ℹ pass)\s+(\d+)/m);
+      const failMatch = stdout.match(/^(?:#\s*fail|ℹ fail)\s+(\d+)/m);
       const pass = passMatch ? parseInt(passMatch[1], 10) : 0;
       const fail = failMatch ? parseInt(failMatch[1], 10) : (code !== 0 ? 1 : 0);
 

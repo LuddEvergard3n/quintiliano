@@ -11,6 +11,7 @@
 
 import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
+import { resolveResponseMode } from '../components/exercise-engine.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
@@ -26,6 +27,8 @@ function loadJSON(name) {
 const texts    = loadJSON('texts.json');
 const authors  = loadJSON('authors.json');
 const etymology = loadJSON('etymology.json');
+const guidedReadings = loadJSON('guided-readings.json');
+const editorialSources = loadJSON('editorial-sources.json');
 
 /* ================================================================
    texts.json
@@ -150,6 +153,46 @@ describe('texts.json', () => {
         );
       });
     });
+  });
+
+  test('estrutura e figuras com alternativas usam formato de escolha', () => {
+    const affected = texts.texts.flatMap(text => text.exercises.filter(ex =>
+      ['estrutura', 'figuras'].includes(ex.type) && Array.isArray(ex.options)
+    ));
+    assert.equal(affected.length, 21, 'o inventário conhecido de alternativas deve continuar coberto');
+    affected.forEach(ex => {
+      assert.ok(Array.isArray(ex.options) && Number.isInteger(ex.correct));
+      assert.equal(resolveResponseMode(ex), 'choice');
+    });
+  });
+});
+
+describe('guided-readings.json', () => {
+  test('cinco leituras guiadas preservam autoria, referência e três atividades', () => {
+    assert.equal(guidedReadings.texts.length, 5);
+    guidedReadings.texts.forEach(text => {
+      assert.ok(typeof text.authorId === 'string' && text.authorId.length > 0);
+      assert.equal(text.textKind, 'texto didático original');
+      assert.ok(Array.isArray(text.sourceIds) && text.sourceIds.length > 0);
+      assert.equal(text.exercises.length, 3);
+      assert.ok(text.exercises.some(exercise => exercise.type === 'autoavaliacao'));
+    });
+  });
+
+  test('fontes das leituras guiadas são resolvíveis localmente', () => {
+    const ids = new Set(guidedReadings.sources.map(source => source.id));
+    guidedReadings.texts.forEach(text => text.sourceIds.forEach(id => assert.ok(ids.has(id), `${text.id}: fonte ausente ${id}`)));
+  });
+});
+
+describe('Contrato editorial', () => {
+  test('acervos legados possuem revisão e fonte rastreável', () => {
+    const sourceIds = new Set([...editorialSources.sources, ...guidedReadings.sources].map(source => source.id));
+    [texts.texts, authors.authors, etymology.words].forEach(entries => entries.forEach(entry => {
+      assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(entry.lastReviewed), 'lastReviewed deve ser ISO');
+      assert.ok(typeof entry.reviewStatus === 'string' && entry.reviewStatus.length > 0);
+      entry.sourceIds.forEach(id => assert.ok(sourceIds.has(id), `fonte não resolvida: ${id}`));
+    }));
   });
 });
 
