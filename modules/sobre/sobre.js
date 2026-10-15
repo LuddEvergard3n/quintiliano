@@ -81,6 +81,27 @@ const ECOSSISTEMA = [
     url:    'https://luddevergard3n.github.io/johnson-english/',
     ativo:  false,
   },
+  {
+    nome:   'Alberti',
+    sub:    'Arte',
+    desc:   'Museu interativo para observar obras, compará-las e aprender linguagem visual.',
+    url:    'https://luddevergard3n.github.io/alberti/',
+    ativo:  false,
+  },
+  {
+    nome:   'Aristóteles',
+    sub:    'Filosofia',
+    desc:   'Leitura, conceitos e argumentação para o estudo de filosofia.',
+    url:    'https://luddevergard3n.github.io/aristoteles/',
+    ativo:  false,
+  },
+  {
+    nome:   'Darwin',
+    sub:    'Biologia',
+    desc:   'Atlas de processos biológicos, da célula ao ecossistema.',
+    url:    'https://luddevergard3n.github.io/darwin/',
+    ativo:  false,
+  },
 ];
 
 /* ================================================================
@@ -331,6 +352,10 @@ const CSS = `
     margin-bottom: var(--space-8);
     line-height: 1.6;
   }
+  .sobre-eco-code { display:flex; flex-wrap:wrap; gap:var(--space-2); align-items:center; margin-top:var(--space-5); }
+  .sobre-eco-code strong { color:var(--color-paper); }
+  .sobre-eco-code a { color:#fff8de; border:1px solid rgba(255,255,255,.58); border-radius:3px; padding:.35rem .55rem; text-decoration:none; }
+  .sobre-eco-code a:hover, .sobre-eco-code a:focus-visible { color:var(--color-ink); background:#fff3c4; outline:2px solid #fff; outline-offset:2px; }
   .sobre-eco-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -538,6 +563,7 @@ export function renderSobre() {
         </${p.ativo ? 'div' : 'a'}>
       `).join('')}
     </div>
+    <div class="sobre-eco-code"><strong>Código</strong><a href="https://github.com/LuddEvergard3n/alberti" target="_blank" rel="noopener">Alberti</a><a href="https://github.com/LuddEvergard3n/archimedes" target="_blank" rel="noopener">Archimedes</a><a href="https://github.com/LuddEvergard3n/aristoteles" target="_blank" rel="noopener">Aristóteles</a><a href="https://github.com/LuddEvergard3n/darwin" target="_blank" rel="noopener">Darwin</a><a href="https://github.com/LuddEvergard3n/euclides" target="_blank" rel="noopener">Euclides</a><a href="https://github.com/LuddEvergard3n/Herodoto" target="_blank" rel="noopener">Heródoto</a><a href="https://github.com/LuddEvergard3n/humboldt" target="_blank" rel="noopener">Humboldt</a><a href="https://github.com/LuddEvergard3n/johnson-english" target="_blank" rel="noopener">Johnson</a><a href="https://github.com/LuddEvergard3n/lavoisier" target="_blank" rel="noopener">Lavoisier</a></div>
   `;
 
   page.appendChild(card);
